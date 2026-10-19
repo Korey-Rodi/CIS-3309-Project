@@ -1,0 +1,2 @@
+# Add dashboard Screen (Show the number of assets by type and more)
+# Create a form for users to rent out devices
