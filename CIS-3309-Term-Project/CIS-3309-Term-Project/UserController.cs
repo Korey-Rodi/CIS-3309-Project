@@ -8,5 +8,13 @@ namespace CIS_3309_Term_Project
 {
     internal class UserController
     {
+        public bool ViewUser(User user)
+        {
+            return true;
+        }
+        public bool EditUser()
+        {
+            return true;
+        }
     }
 }

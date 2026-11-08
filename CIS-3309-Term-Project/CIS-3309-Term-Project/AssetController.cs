@@ -8,5 +8,13 @@ namespace CIS_3309_Term_Project
 {
     internal class AssetController
     {
+        public bool ViewAsset(Asset asset)
+        {
+            return true;
+        }
+        public bool EditAsset()
+        {
+            return true;
+        }
     }
 }

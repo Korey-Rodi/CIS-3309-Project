@@ -120,4 +120,12 @@
   <metadata name="miHome.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>11, 12</value>
   </metadata>
+  <data name="lblDashboardIntro.Text" xml:space="preserve">
+    <value>Welcome to your Dashboard! Here, you can view an overview of your managed assets and users.
+ Including relevant statistics and organizational data.
+
+Use the menu bar to navigate between forms to view, add, edit, and delete assets and users, 
+as well as manage your personal profile settings.
+</value>
+  </data>
 </root>
