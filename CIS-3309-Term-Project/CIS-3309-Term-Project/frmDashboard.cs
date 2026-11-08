@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CIS_3309_Term_Project
 {
-    public partial class Form1 : Form
+    public partial class frmDashboard : Form
     {
-        public Form1()
+        public frmDashboard()
         {
             InitializeComponent();
         }

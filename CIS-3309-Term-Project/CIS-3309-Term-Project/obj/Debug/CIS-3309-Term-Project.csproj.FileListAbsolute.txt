@@ -1,0 +1,13 @@
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\Asset.accdb
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.exe.config
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.exe
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.pdb
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.csproj.AssemblyReference.cache
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmLoginCreate.resources
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.Properties.Resources.resources
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.csproj.GenerateResource.cache
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.csproj.CoreCompileInputs.cache
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.exe
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.pdb
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmCreate.resources
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmDashboard.resources
