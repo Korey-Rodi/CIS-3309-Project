@@ -17,32 +17,30 @@ namespace CIS_3309_Term_Project
         {
             return true;
         }
-        public void LoadAssets()
+        public bool EditAsset()
+        {
+            
+        }
+        public List<Asset> LoadAssets()
         {
 
         }
-        public void LoadStock()
+        public List<Asset> LoadStock()
         {
             // Load every Asset
         }
-        public void LoadInUse()
+        public List<Asset> LoadInUse()
         {
             // Load assets Marked in use
         }
-        public void LoadAvailable()
+        public List<Asset> LoadAvailable()
         {
             // Load assets marked as in stock
 
         }
-        public void LoadRecentAsset()
+        public List<Asset> LoadRecentAsset()
         {
 
-        }
-        public Asset GetAsset()
-        {
-            // Place Holder Code
-            Asset asset = null;
-            return asset;
         }
         public int GetAssetCount()
         {

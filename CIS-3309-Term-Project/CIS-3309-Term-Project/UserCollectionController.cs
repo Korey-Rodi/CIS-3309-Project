@@ -17,16 +17,24 @@ namespace CIS_3309_Term_Project
         {
             return true;
         }
-        public void LoadUser()
+        public bool EditUser()
+        {
+            
+        }
+        public List<User> LoadUsers()
         {
 
         }
-        public int LoadTotalUsers()
+        public User ValidateUser(String username, String password)
+        {
+            
+        }
+        public int GetTotalUsers()
         {
             // Place holder code
             return 0;
         }
-        public void LoadUsersByDept()
+        public List<User> LoadUsersByDept()
         {
 
         }
