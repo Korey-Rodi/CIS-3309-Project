@@ -23,10 +23,15 @@ namespace CIS_3309_Term_Project
         }
         public void LoadStock()
         {
-
+            // Load every Asset
         }
         public void LoadInUse()
         {
+            // Load assets Marked in use
+        }
+        public void LoadAvailable()
+        {
+            // Load assets marked as in stock
 
         }
         public void LoadRecentAsset()
