@@ -22,10 +22,13 @@ namespace CIS_3309_Term_Project
         public State AssetState {get; set;}
         public String Location { get; set; }
         public String AssetImage { get; set; }
-        public List<String> MachineSpecs {  get; set; }
+        public String CPU {get; set;}
+        public String Ram {get; set;}
+        public String OS {get; set;}
+        public String Storage {get; set;}
 
         public Asset(String assetID,String make, String Model, DateTime date, State assetState, String location, String assetImage,
-            List<String> machineSpecs)
+            String cpu, String ram, String os, String storage)
         {
             this.AssetID = assetID;
             this.Make = make;
@@ -34,7 +37,10 @@ namespace CIS_3309_Term_Project
             this.AssetState = assetState;
             this.Location = location;
             this.AssetImage = assetImage;
-            this.MachineSpecs = machineSpecs;
+            this.CPU = cpu;
+            this.Ram = ram;
+            this.OS = os;
+            this.Storage = storage;
         }
 
     }

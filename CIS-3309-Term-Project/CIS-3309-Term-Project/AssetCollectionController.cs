@@ -42,6 +42,10 @@ namespace CIS_3309_Term_Project
         {
 
         }
+        public List<Asset> GetAssetsByState()
+        {
+            
+        }
         public int GetAssetCount()
         {
             // Place Holder code
