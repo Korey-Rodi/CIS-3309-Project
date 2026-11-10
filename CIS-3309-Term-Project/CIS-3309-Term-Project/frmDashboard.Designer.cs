@@ -50,9 +50,6 @@
             this.lblDashboardIntro = new System.Windows.Forms.Label();
             this.lblTotalUsersData = new System.Windows.Forms.Label();
             this.lblTotalAssetsData = new System.Windows.Forms.Label();
-            this.assetRentalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miHome.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,8 +85,7 @@
             // miAsset
             // 
             this.miAsset.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewAssetsToolStripMenuItem,
-            this.assetRentalToolStripMenuItem});
+            this.viewAssetsToolStripMenuItem});
             this.miAsset.Name = "miAsset";
             this.miAsset.Size = new System.Drawing.Size(71, 32);
             this.miAsset.Text = "Asset";
@@ -99,6 +95,7 @@
             this.viewAssetsToolStripMenuItem.Name = "viewAssetsToolStripMenuItem";
             this.viewAssetsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.viewAssetsToolStripMenuItem.Text = "View Assets";
+            this.viewAssetsToolStripMenuItem.Click += new System.EventHandler(this.viewAssetsToolStripMenuItem_Click);
             // 
             // miUser
             // 
@@ -111,8 +108,8 @@
             // viewUserToolStripMenuItem
             // 
             this.viewUserToolStripMenuItem.Name = "viewUserToolStripMenuItem";
-            this.viewUserToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
-            this.viewUserToolStripMenuItem.Text = "View User";
+            this.viewUserToolStripMenuItem.Size = new System.Drawing.Size(199, 34);
+            this.viewUserToolStripMenuItem.Text = "View Users";
             // 
             // miProfile
             // 
@@ -129,6 +126,7 @@
             this.viewProfileToolStripMenuItem.Name = "viewProfileToolStripMenuItem";
             this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(216, 36);
             this.viewProfileToolStripMenuItem.Text = "View Profile";
+            this.viewProfileToolStripMenuItem.Click += new System.EventHandler(this.viewProfileToolStripMenuItem_Click);
             // 
             // fpPieChart
             // 
@@ -259,27 +257,6 @@
             this.lblTotalAssetsData.TabIndex = 13;
             this.lblTotalAssetsData.Text = "450 Managed Assets";
             // 
-            // assetRentalToolStripMenuItem
-            // 
-            this.assetRentalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checkInToolStripMenuItem,
-            this.checkOutToolStripMenuItem});
-            this.assetRentalToolStripMenuItem.Name = "assetRentalToolStripMenuItem";
-            this.assetRentalToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.assetRentalToolStripMenuItem.Text = "Asset Rental";
-            // 
-            // checkInToolStripMenuItem
-            // 
-            this.checkInToolStripMenuItem.Name = "checkInToolStripMenuItem";
-            this.checkInToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.checkInToolStripMenuItem.Text = "Check In";
-            // 
-            // checkOutToolStripMenuItem
-            // 
-            this.checkOutToolStripMenuItem.Name = "checkOutToolStripMenuItem";
-            this.checkOutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.checkOutToolStripMenuItem.Text = "Check Out";
-            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -335,8 +312,5 @@
         private System.Windows.Forms.Label lblDashboardIntro;
         private System.Windows.Forms.Label lblTotalUsersData;
         private System.Windows.Forms.Label lblTotalAssetsData;
-        private System.Windows.Forms.ToolStripMenuItem assetRentalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkInToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkOutToolStripMenuItem;
     }
 }

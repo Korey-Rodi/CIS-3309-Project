@@ -48,7 +48,7 @@
             this.pbxProfileIcon.Location = new System.Drawing.Point(615, 183);
             this.pbxProfileIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbxProfileIcon.Name = "pbxProfileIcon";
-            this.pbxProfileIcon.Size = new System.Drawing.Size(262, 252);
+            this.pbxProfileIcon.Size = new System.Drawing.Size(264, 227);
             this.pbxProfileIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxProfileIcon.TabIndex = 0;
             this.pbxProfileIcon.TabStop = false;
@@ -124,7 +124,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::CIS_3309_Term_Project.Properties.Resources.BlueGradientBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1476, 1094);
+            this.ClientSize = new System.Drawing.Size(1478, 1069);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.btnCreateAccount);

@@ -1,16 +1,10 @@
-C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\Asset.accdb
-C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.exe.config
-C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.exe
-C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.pdb
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.csproj.AssemblyReference.cache
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmCreate.resources
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmDashboard.resources
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmLoginCreate.resources
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.Properties.Resources.resources
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.csproj.GenerateResource.cache
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.csproj.CoreCompileInputs.cache
-C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.exe
-C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.pdb
-C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmCreate.resources
-C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmDashboard.resources
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\x86\libSkiaSharp.so
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\x64\libSkiaSharp.so
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\arm\libSkiaSharp.so
@@ -26,6 +20,10 @@ C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\x86\libSkiaSharp.dll
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\x64\libSkiaSharp.dll
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\arm64\libSkiaSharp.dll
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\Asset.accdb
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.exe.config
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.exe
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\CIS-3309-Term-Project.pdb
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\HarfBuzzSharp.dll
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\OpenTK.dll
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\OpenTK.GLControl.dll
@@ -55,3 +53,6 @@ C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309.3592F5B7.Up2Date
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.exe
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.pdb
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmUserProfile.resources

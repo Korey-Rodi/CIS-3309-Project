@@ -19,15 +19,15 @@ namespace CIS_3309_Term_Project
         }
         public bool EditUser()
         {
-            
+            return true;
         }
         public List<User> LoadUsers()
         {
-
+            return null;
         }
         public User ValidateUser(String username, String password)
         {
-            
+            return null;
         }
         public int GetTotalUsers()
         {
@@ -36,7 +36,7 @@ namespace CIS_3309_Term_Project
         }
         public List<User> LoadUsersByDept()
         {
-
+            return null;
         }
         // Search Interface
         public interface ISearch

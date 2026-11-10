@@ -16,5 +16,17 @@ namespace CIS_3309_Term_Project
         {
             InitializeComponent();
         }
+
+        private void viewProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmUserProfile();
+            frm.ShowDialog();
+        }
+
+        private void viewAssetsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Form frm = new frmAsset();
+            //frm.ShowDialog();
+        }
     }
 }

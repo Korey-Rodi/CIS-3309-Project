@@ -19,32 +19,35 @@ namespace CIS_3309_Term_Project
         }
         public bool EditAsset()
         {
-            
+            return true;
         }
         public List<Asset> LoadAssets()
         {
-
+            return null;
         }
         public List<Asset> LoadStock()
         {
             // Load every Asset
+            return null;
         }
         public List<Asset> LoadInUse()
         {
             // Load assets Marked in use
+            return null;
         }
         public List<Asset> LoadAvailable()
         {
             // Load assets marked as in stock
+            return null;
 
         }
         public List<Asset> LoadRecentAsset()
         {
-
+            return null;
         }
         public List<Asset> GetAssetsByState()
         {
-            
+            return null;
         }
         public int GetAssetCount()
         {

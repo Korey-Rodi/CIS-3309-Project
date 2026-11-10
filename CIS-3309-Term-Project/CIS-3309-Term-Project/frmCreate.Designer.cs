@@ -45,6 +45,14 @@
             this.txtUrl = new System.Windows.Forms.TextBox();
             this.chkLinkDevice = new System.Windows.Forms.CheckBox();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblState = new System.Windows.Forms.Label();
+            this.lblCity = new System.Windows.Forms.Label();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.txtState = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +89,7 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPassword.Location = new System.Drawing.Point(467, 333);
+            this.lblPassword.Location = new System.Drawing.Point(467, 294);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(82, 20);
             this.lblPassword.TabIndex = 4;
@@ -92,7 +100,7 @@
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
             this.lblFirstName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblFirstName.Location = new System.Drawing.Point(467, 412);
+            this.lblFirstName.Location = new System.Drawing.Point(459, 342);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(90, 20);
             this.lblFirstName.TabIndex = 5;
@@ -103,7 +111,7 @@
             this.lblProfileImage.AutoSize = true;
             this.lblProfileImage.BackColor = System.Drawing.Color.Transparent;
             this.lblProfileImage.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblProfileImage.Location = new System.Drawing.Point(401, 598);
+            this.lblProfileImage.Location = new System.Drawing.Point(399, 658);
             this.lblProfileImage.Name = "lblProfileImage";
             this.lblProfileImage.Size = new System.Drawing.Size(155, 20);
             this.lblProfileImage.TabIndex = 5;
@@ -114,7 +122,7 @@
             this.lblLastName.AutoSize = true;
             this.lblLastName.BackColor = System.Drawing.Color.Transparent;
             this.lblLastName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblLastName.Location = new System.Drawing.Point(467, 479);
+            this.lblLastName.Location = new System.Drawing.Point(464, 384);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(90, 20);
             this.lblLastName.TabIndex = 6;
@@ -122,6 +130,7 @@
             // 
             // cbxDept
             // 
+            this.cbxDept.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxDept.FormattingEnabled = true;
             this.cbxDept.Items.AddRange(new object[] {
             "IT",
@@ -129,7 +138,7 @@
             "Claims",
             "Finance",
             "Facility"});
-            this.cbxDept.Location = new System.Drawing.Point(592, 543);
+            this.cbxDept.Location = new System.Drawing.Point(591, 609);
             this.cbxDept.Name = "cbxDept";
             this.cbxDept.Size = new System.Drawing.Size(257, 28);
             this.cbxDept.TabIndex = 7;
@@ -139,7 +148,7 @@
             this.lblDept.AutoSize = true;
             this.lblDept.BackColor = System.Drawing.Color.Transparent;
             this.lblDept.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDept.Location = new System.Drawing.Point(467, 546);
+            this.lblDept.Location = new System.Drawing.Point(456, 609);
             this.lblDept.Name = "lblDept";
             this.lblDept.Size = new System.Drawing.Size(98, 20);
             this.lblDept.TabIndex = 8;
@@ -154,28 +163,28 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(592, 337);
+            this.txtPassword.Location = new System.Drawing.Point(592, 294);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(257, 26);
             this.txtPassword.TabIndex = 10;
             // 
             // txtFirst
             // 
-            this.txtFirst.Location = new System.Drawing.Point(592, 412);
+            this.txtFirst.Location = new System.Drawing.Point(591, 339);
             this.txtFirst.Name = "txtFirst";
             this.txtFirst.Size = new System.Drawing.Size(257, 26);
             this.txtFirst.TabIndex = 11;
             // 
             // txtLast
             // 
-            this.txtLast.Location = new System.Drawing.Point(592, 479);
+            this.txtLast.Location = new System.Drawing.Point(591, 384);
             this.txtLast.Name = "txtLast";
             this.txtLast.Size = new System.Drawing.Size(257, 26);
             this.txtLast.TabIndex = 12;
             // 
             // txtUrl
             // 
-            this.txtUrl.Location = new System.Drawing.Point(592, 598);
+            this.txtUrl.Location = new System.Drawing.Point(592, 658);
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(257, 26);
             this.txtUrl.TabIndex = 13;
@@ -185,7 +194,7 @@
             this.chkLinkDevice.AutoSize = true;
             this.chkLinkDevice.BackColor = System.Drawing.Color.Transparent;
             this.chkLinkDevice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.chkLinkDevice.Location = new System.Drawing.Point(625, 644);
+            this.chkLinkDevice.Location = new System.Drawing.Point(645, 709);
             this.chkLinkDevice.Name = "chkLinkDevice";
             this.chkLinkDevice.Size = new System.Drawing.Size(140, 24);
             this.chkLinkDevice.TabIndex = 14;
@@ -195,12 +204,84 @@
             // btnCreate
             // 
             this.btnCreate.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(583, 735);
+            this.btnCreate.Location = new System.Drawing.Point(591, 775);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(265, 42);
+            this.btnCreate.Size = new System.Drawing.Size(258, 42);
             this.btnCreate.TabIndex = 15;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
+            // 
+            // lblPhoneNumber
+            // 
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhoneNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPhoneNumber.Location = new System.Drawing.Point(430, 427);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(119, 20);
+            this.lblPhoneNumber.TabIndex = 17;
+            this.lblPhoneNumber.Text = "Phone Number:";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblAddress.Location = new System.Drawing.Point(477, 471);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(72, 20);
+            this.lblAddress.TabIndex = 18;
+            this.lblAddress.Text = "Address:";
+            // 
+            // lblState
+            // 
+            this.lblState.AutoSize = true;
+            this.lblState.BackColor = System.Drawing.Color.Transparent;
+            this.lblState.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblState.Location = new System.Drawing.Point(497, 563);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(52, 20);
+            this.lblState.TabIndex = 19;
+            this.lblState.Text = "State:";
+            // 
+            // lblCity
+            // 
+            this.lblCity.AutoSize = true;
+            this.lblCity.BackColor = System.Drawing.Color.Transparent;
+            this.lblCity.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblCity.Location = new System.Drawing.Point(514, 518);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(35, 20);
+            this.lblCity.TabIndex = 20;
+            this.lblCity.Text = "City";
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(592, 427);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(257, 26);
+            this.txtPhoneNumber.TabIndex = 21;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(592, 471);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(257, 26);
+            this.txtAddress.TabIndex = 22;
+            // 
+            // txtCity
+            // 
+            this.txtCity.Location = new System.Drawing.Point(591, 518);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(257, 26);
+            this.txtCity.TabIndex = 23;
+            // 
+            // txtState
+            // 
+            this.txtState.Location = new System.Drawing.Point(592, 563);
+            this.txtState.Name = "txtState";
+            this.txtState.Size = new System.Drawing.Size(257, 26);
+            this.txtState.TabIndex = 24;
             // 
             // frmCreate
             // 
@@ -209,6 +290,14 @@
             this.BackgroundImage = global::CIS_3309_Term_Project.Properties.Resources.BlueGradientBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1478, 1069);
+            this.Controls.Add(this.txtState);
+            this.Controls.Add(this.txtCity);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtPhoneNumber);
+            this.Controls.Add(this.lblCity);
+            this.Controls.Add(this.lblState);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.lblPhoneNumber);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.chkLinkDevice);
             this.Controls.Add(this.txtUrl);
@@ -251,5 +340,13 @@
         private System.Windows.Forms.TextBox txtUrl;
         private System.Windows.Forms.CheckBox chkLinkDevice;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Label lblPhoneNumber;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Label lblState;
+        private System.Windows.Forms.Label lblCity;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.TextBox txtState;
     }
 }
