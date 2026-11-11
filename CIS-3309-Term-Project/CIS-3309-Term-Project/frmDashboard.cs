@@ -48,5 +48,13 @@ namespace CIS_3309_Term_Project
             lblTotalUsersData.Text = userCollection.GetTotalUsers().ToString();
             lblTotalAssetsData.Text = assetCollection.GetAssetCount().ToString();
         }
+
+        private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form frm = new frmDashboard(currentUser);
+            frm.Show();
+
+        }
     }
 }

@@ -64,7 +64,6 @@
             this.miProfile});
             this.miHome.Location = new System.Drawing.Point(0, 0);
             this.miHome.Name = "miHome";
-            this.miHome.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.miHome.Size = new System.Drawing.Size(1478, 36);
             this.miHome.TabIndex = 0;
             this.miHome.Text = "menuStrip1";
@@ -80,8 +79,9 @@
             // dashboardToolStripMenuItem
             // 
             this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(202, 34);
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.dashboardToolStripMenuItem.Text = "Dashboard";
+            this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
             // 
             // miAsset
             // 
