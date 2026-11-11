@@ -163,7 +163,7 @@ namespace CIS_3309_Term_Project
             }
             return assets;
         }
-        // Search Interface
+        // Asset Search Interface
         public interface ISearch
         {
             List<Asset> Search(String search);
@@ -172,8 +172,24 @@ namespace CIS_3309_Term_Project
         {
             public List<Asset> Search(String search)
             {
-                List<Asset> Results = new List<Asset>();
-                return new List<Asset>();
+                List<Asset> results = new List<Asset>();
+                return results;
+            }
+        }
+        public class SearchByMake : ISearch
+        {
+            public List<Asset> Search(String search)
+            {
+                List<Asset> results = new List<Asset>();
+                return results;
+            }
+        }
+        public class SearchByModel : ISearch
+        {
+            public List<Asset> Search(String search)
+            {
+                List<Asset> results = new List<Asset>();
+                return results;
             }
         }
     }

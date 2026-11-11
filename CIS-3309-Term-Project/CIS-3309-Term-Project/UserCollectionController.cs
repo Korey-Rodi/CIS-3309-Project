@@ -125,7 +125,7 @@ namespace CIS_3309_Term_Project
         {
             return null;
         }
-        // Search Interface
+        // User Search Interface
         public interface ISearch
         {
             List<User> Search(String search);
@@ -134,8 +134,24 @@ namespace CIS_3309_Term_Project
         {
             public List<User> Search(String search)
             {
-                List<User> Results = new List<User>();
-                return Results;
+                List<User> results = new List<User>();
+                return results;
+            }
+        }
+        public class SearchByName : ISearch
+        {
+            public List<User> Search(String search)
+            {
+                List<User> results = new List<User>();
+                return results;
+            }
+        }
+        public class SearchByUsername : ISearch
+        {
+            public List<User> Search(String search)
+            {
+                List<User> results = new List<User>();
+                return results;
             }
         }
     }
