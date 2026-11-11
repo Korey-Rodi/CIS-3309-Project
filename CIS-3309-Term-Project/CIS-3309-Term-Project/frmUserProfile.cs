@@ -13,6 +13,7 @@ namespace CIS_3309_Term_Project
     public partial class frmUserProfile : Form
     {
         private User currentUser;
+        private AssetCollectionController assetCollection;
         public frmUserProfile(User user)
         {
             currentUser = user;
@@ -46,6 +47,7 @@ namespace CIS_3309_Term_Project
             txtUrl.Text = currentUser.ProfilePicture;
             cbxDept.SelectedItem = currentUser.UserDepartment.ToString();
             txtUrl.Text = currentUser.ProfilePicture;
+            // Call the method to fill in the devices associated with the users
 
         }
     }

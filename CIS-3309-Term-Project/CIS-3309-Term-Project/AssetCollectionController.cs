@@ -110,17 +110,33 @@ namespace CIS_3309_Term_Project
         public List<Asset> LoadStock()
         {
             // Load every Asset
+            // This is redundant
             return null;
         }
         public List<Asset> LoadInUse()
         {
+            List<Asset> assets = new List<Asset>();
+            foreach (Asset asset in assetCollection.Assets)
+            {
+                if (asset.AssetState.Equals(Asset.State.In_Use.ToString())){
+                    assets.Add(asset);
+                }
+            }
             // Load assets Marked in use
-            return null;
+            return assets;
         }
         public List<Asset> LoadAvailable()
         {
+            List<Asset> assets = new List<Asset>();
+            foreach (Asset asset in assetCollection.Assets)
+            {
+                if (asset.AssetState.Equals(Asset.State.In_Stock.ToString()))
+                {
+                    assets.Add(asset);
+                }
+            }
             // Load assets marked as in stock
-            return null;
+            return assets;
 
         }
         public List<Asset> LoadRecentAsset()
@@ -134,6 +150,18 @@ namespace CIS_3309_Term_Project
         public int GetAssetCount()
         {
             return assetCollection.Assets.Count;
+        }
+        public List<Asset> LoadMyDevices(User currentUser)
+        {
+            List<Asset> assets = new List<Asset>();
+            foreach (Asset asset in assetCollection.Assets)
+            {
+                if(asset.AssignedUserId == currentUser.UserID)
+                {
+                    assets.Add(asset);
+                }
+            }
+            return assets;
         }
         // Search Interface
         public interface ISearch
