@@ -197,7 +197,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Asset.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\BlueGradientBackground.jpg" />
     <Content Include="Images\ProfileIcon.png" />

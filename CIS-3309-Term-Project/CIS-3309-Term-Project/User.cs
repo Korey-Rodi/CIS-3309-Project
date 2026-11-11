@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CIS_3309_Term_Project
 {
-    internal class User
+    public class User
     {
         public int UserID {  get; set; }
         public String Username { get; set; }

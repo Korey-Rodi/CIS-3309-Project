@@ -137,6 +137,7 @@
             this.Name = "frmLoginCreate";
             this.ShowIcon = false;
             this.Text = "Asset Manager System -  Logon";
+            this.Load += new System.EventHandler(this.frmLoginCreate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfileIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

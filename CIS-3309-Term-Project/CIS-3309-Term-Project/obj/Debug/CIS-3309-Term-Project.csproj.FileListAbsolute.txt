@@ -56,3 +56,5 @@ C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.exe
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.pdb
 C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmUserProfile.resources
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmAsset.resources
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmUser.resources

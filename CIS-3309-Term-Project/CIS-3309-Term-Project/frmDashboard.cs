@@ -12,14 +12,20 @@ namespace CIS_3309_Term_Project
 {
     public partial class frmDashboard : Form
     {
-        public frmDashboard()
+        private UserCollectionController userCollection = new UserCollectionController();
+        private AssetCollectionController assetCollection = new AssetCollectionController();
+        private User currentUser;
+
+
+        public frmDashboard(User user)
         {
+            currentUser = user;
             InitializeComponent();
         }
 
         private void viewProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new frmUserProfile();
+            Form frm = new frmUserProfile(currentUser);
             frm.ShowDialog();
         }
         //asset form
@@ -33,6 +39,14 @@ namespace CIS_3309_Term_Project
         {
             Form frm = new frmUser();
             frm.ShowDialog();
+        }
+
+        private void frmDashboard_Load(object sender, EventArgs e)
+        {
+            userCollection.LoadUsers();
+            assetCollection.LoadAssets();
+            lblTotalUsersData.Text = userCollection.GetTotalUsers().ToString();
+            lblTotalAssetsData.Text = assetCollection.GetAssetCount().ToString();
         }
     }
 }

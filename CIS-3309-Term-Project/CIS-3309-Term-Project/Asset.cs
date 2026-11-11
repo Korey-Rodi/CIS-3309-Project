@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CIS_3309_Term_Project
 {
-    internal class Asset
+    public class Asset
     {
         public int AssetID { get; set; }
         public string Make { get; set; }

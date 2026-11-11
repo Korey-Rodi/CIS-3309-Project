@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace CIS_3309_Term_Project
 {
-    internal class AssetCollectionController
+    public class AssetCollectionController
     {
         OleDbConnection myConnection;
         OleDbDataAdapter myDataAdapter;
         DataSet myDataSet;
         private AssetCollection assetCollection = new AssetCollection();
-        internal AssetCollectionController()
+        public AssetCollectionController()
         {
             myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Asset.accdb;");
         }
@@ -26,6 +26,15 @@ namespace CIS_3309_Term_Project
             myDataAdapter.Fill(myDataSet, "AssetTable");
 
             return myDataSet;
+        }
+        private void UserExecuteQuery(String strSQL)
+        {
+            // This works for Update, Insert and Delete statements
+            OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+            myConnection.Open();
+            myCommand.ExecuteNonQuery();
+            myConnection.Close();
         }
         public bool AddAsset()
         {
@@ -124,8 +133,7 @@ namespace CIS_3309_Term_Project
         }
         public int GetAssetCount()
         {
-            // Place Holder code
-            return 0;
+            return assetCollection.Assets.Count;
         }
         // Search Interface
         public interface ISearch

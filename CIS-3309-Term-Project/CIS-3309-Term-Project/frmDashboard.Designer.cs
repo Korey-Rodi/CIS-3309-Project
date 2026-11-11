@@ -55,6 +55,7 @@
             // 
             // miHome
             // 
+            this.miHome.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.miHome.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.miHome.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homeToolStripMenuItem,
@@ -63,8 +64,8 @@
             this.miProfile});
             this.miHome.Location = new System.Drawing.Point(0, 0);
             this.miHome.Name = "miHome";
-            this.miHome.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.miHome.Size = new System.Drawing.Size(985, 25);
+            this.miHome.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.miHome.Size = new System.Drawing.Size(1478, 36);
             this.miHome.TabIndex = 0;
             this.miHome.Text = "menuStrip1";
             // 
@@ -73,13 +74,13 @@
             this.homeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dashboardToolStripMenuItem});
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 23);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(77, 32);
             this.homeToolStripMenuItem.Text = "Home";
             // 
             // dashboardToolStripMenuItem
             // 
             this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(202, 34);
             this.dashboardToolStripMenuItem.Text = "Dashboard";
             // 
             // miAsset
@@ -87,13 +88,13 @@
             this.miAsset.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewAssetsToolStripMenuItem});
             this.miAsset.Name = "miAsset";
-            this.miAsset.Size = new System.Drawing.Size(47, 23);
+            this.miAsset.Size = new System.Drawing.Size(71, 32);
             this.miAsset.Text = "Asset";
             // 
             // viewAssetsToolStripMenuItem
             // 
             this.viewAssetsToolStripMenuItem.Name = "viewAssetsToolStripMenuItem";
-            this.viewAssetsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewAssetsToolStripMenuItem.Size = new System.Drawing.Size(207, 34);
             this.viewAssetsToolStripMenuItem.Text = "View Assets";
             this.viewAssetsToolStripMenuItem.Click += new System.EventHandler(this.viewAssetsToolStripMenuItem_Click);
             // 
@@ -102,13 +103,13 @@
             this.miUser.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewUserToolStripMenuItem});
             this.miUser.Name = "miUser";
-            this.miUser.Size = new System.Drawing.Size(42, 23);
+            this.miUser.Size = new System.Drawing.Size(63, 32);
             this.miUser.Text = "User";
             // 
             // viewUserToolStripMenuItem
             // 
             this.viewUserToolStripMenuItem.Name = "viewUserToolStripMenuItem";
-            this.viewUserToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewUserToolStripMenuItem.Size = new System.Drawing.Size(199, 34);
             this.viewUserToolStripMenuItem.Text = "View Users";
             this.viewUserToolStripMenuItem.Click += new System.EventHandler(this.viewUsersToolStripMenuItem_Click);
             // 
@@ -119,38 +120,35 @@
             this.viewProfileToolStripMenuItem});
             this.miProfile.Font = new System.Drawing.Font("Ebrima", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.miProfile.Name = "miProfile";
-            this.miProfile.Size = new System.Drawing.Size(59, 23);
+            this.miProfile.Size = new System.Drawing.Size(84, 32);
             this.miProfile.Text = "Profile";
             // 
             // viewProfileToolStripMenuItem
             // 
             this.viewProfileToolStripMenuItem.Name = "viewProfileToolStripMenuItem";
-            this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(216, 36);
             this.viewProfileToolStripMenuItem.Text = "View Profile";
             this.viewProfileToolStripMenuItem.Click += new System.EventHandler(this.viewProfileToolStripMenuItem_Click);
             // 
             // fpPieChart
             // 
-            this.fpPieChart.Location = new System.Drawing.Point(625, 49);
-            this.fpPieChart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fpPieChart.Location = new System.Drawing.Point(938, 75);
             this.fpPieChart.Name = "fpPieChart";
-            this.fpPieChart.Size = new System.Drawing.Size(326, 276);
+            this.fpPieChart.Size = new System.Drawing.Size(489, 425);
             this.fpPieChart.TabIndex = 1;
             // 
             // fpBarChartAssetsByState
             // 
-            this.fpBarChartAssetsByState.Location = new System.Drawing.Point(511, 426);
-            this.fpBarChartAssetsByState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fpBarChartAssetsByState.Location = new System.Drawing.Point(766, 655);
             this.fpBarChartAssetsByState.Name = "fpBarChartAssetsByState";
-            this.fpBarChartAssetsByState.Size = new System.Drawing.Size(452, 192);
+            this.fpBarChartAssetsByState.Size = new System.Drawing.Size(678, 295);
             this.fpBarChartAssetsByState.TabIndex = 2;
             // 
             // fpBarChartUsersByDept
             // 
-            this.fpBarChartUsersByDept.Location = new System.Drawing.Point(20, 426);
-            this.fpBarChartUsersByDept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fpBarChartUsersByDept.Location = new System.Drawing.Point(30, 655);
             this.fpBarChartUsersByDept.Name = "fpBarChartUsersByDept";
-            this.fpBarChartUsersByDept.Size = new System.Drawing.Size(452, 192);
+            this.fpBarChartUsersByDept.Size = new System.Drawing.Size(678, 295);
             this.fpBarChartUsersByDept.TabIndex = 3;
             // 
             // lblStock
@@ -159,10 +157,9 @@
             this.lblStock.BackColor = System.Drawing.Color.Transparent;
             this.lblStock.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStock.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblStock.Location = new System.Drawing.Point(761, 336);
-            this.lblStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStock.Location = new System.Drawing.Point(1142, 517);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(52, 21);
+            this.lblStock.Size = new System.Drawing.Size(76, 32);
             this.lblStock.TabIndex = 4;
             this.lblStock.Text = "Stock";
             // 
@@ -172,10 +169,9 @@
             this.lblAssetsByState.BackColor = System.Drawing.Color.Transparent;
             this.lblAssetsByState.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssetsByState.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAssetsByState.Location = new System.Drawing.Point(673, 404);
-            this.lblAssetsByState.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAssetsByState.Location = new System.Drawing.Point(1010, 622);
             this.lblAssetsByState.Name = "lblAssetsByState";
-            this.lblAssetsByState.Size = new System.Drawing.Size(127, 21);
+            this.lblAssetsByState.Size = new System.Drawing.Size(192, 32);
             this.lblAssetsByState.TabIndex = 5;
             this.lblAssetsByState.Text = "Assets By State:";
             // 
@@ -185,10 +181,9 @@
             this.lblUsersByDept.BackColor = System.Drawing.Color.Transparent;
             this.lblUsersByDept.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsersByDept.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsersByDept.Location = new System.Drawing.Point(160, 404);
-            this.lblUsersByDept.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsersByDept.Location = new System.Drawing.Point(240, 622);
             this.lblUsersByDept.Name = "lblUsersByDept";
-            this.lblUsersByDept.Size = new System.Drawing.Size(174, 21);
+            this.lblUsersByDept.Size = new System.Drawing.Size(262, 32);
             this.lblUsersByDept.TabIndex = 6;
             this.lblUsersByDept.Text = "Users By Department:";
             // 
@@ -198,10 +193,9 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Ebrima", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTitle.Location = new System.Drawing.Point(13, 32);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Location = new System.Drawing.Point(20, 49);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(184, 45);
+            this.lblTitle.Size = new System.Drawing.Size(273, 65);
             this.lblTitle.TabIndex = 7;
             this.lblTitle.Text = "Dashboard";
             // 
@@ -211,10 +205,9 @@
             this.lblTotalUsersTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalUsersTitle.Font = new System.Drawing.Font("Ebrima", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalUsersTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTotalUsersTitle.Location = new System.Drawing.Point(13, 169);
-            this.lblTotalUsersTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalUsersTitle.Location = new System.Drawing.Point(20, 260);
             this.lblTotalUsersTitle.Name = "lblTotalUsersTitle";
-            this.lblTotalUsersTitle.Size = new System.Drawing.Size(196, 45);
+            this.lblTotalUsersTitle.Size = new System.Drawing.Size(292, 65);
             this.lblTotalUsersTitle.TabIndex = 8;
             this.lblTotalUsersTitle.Text = "Total Users:";
             // 
@@ -224,10 +217,9 @@
             this.lblTotalAssetsTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalAssetsTitle.Font = new System.Drawing.Font("Ebrima", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalAssetsTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTotalAssetsTitle.Location = new System.Drawing.Point(13, 283);
-            this.lblTotalAssetsTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalAssetsTitle.Location = new System.Drawing.Point(20, 435);
             this.lblTotalAssetsTitle.Name = "lblTotalAssetsTitle";
-            this.lblTotalAssetsTitle.Size = new System.Drawing.Size(209, 45);
+            this.lblTotalAssetsTitle.Size = new System.Drawing.Size(312, 65);
             this.lblTotalAssetsTitle.TabIndex = 9;
             this.lblTotalAssetsTitle.Text = "Total Assets:";
             // 
@@ -237,10 +229,9 @@
             this.lblDashboardIntro.BackColor = System.Drawing.Color.Transparent;
             this.lblDashboardIntro.Font = new System.Drawing.Font("Ebrima", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDashboardIntro.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDashboardIntro.Location = new System.Drawing.Point(17, 75);
-            this.lblDashboardIntro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDashboardIntro.Location = new System.Drawing.Point(26, 115);
             this.lblDashboardIntro.Name = "lblDashboardIntro";
-            this.lblDashboardIntro.Size = new System.Drawing.Size(601, 95);
+            this.lblDashboardIntro.Size = new System.Drawing.Size(848, 140);
             this.lblDashboardIntro.TabIndex = 11;
             this.lblDashboardIntro.Text = resources.GetString("lblDashboardIntro.Text");
             // 
@@ -250,10 +241,9 @@
             this.lblTotalUsersData.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalUsersData.Font = new System.Drawing.Font("Ebrima", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalUsersData.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTotalUsersData.Location = new System.Drawing.Point(275, 169);
-            this.lblTotalUsersData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalUsersData.Location = new System.Drawing.Point(412, 260);
             this.lblTotalUsersData.Name = "lblTotalUsersData";
-            this.lblTotalUsersData.Size = new System.Drawing.Size(301, 45);
+            this.lblTotalUsersData.Size = new System.Drawing.Size(446, 65);
             this.lblTotalUsersData.TabIndex = 12;
             this.lblTotalUsersData.Text = "323 Managed Users";
             // 
@@ -263,20 +253,19 @@
             this.lblTotalAssetsData.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalAssetsData.Font = new System.Drawing.Font("Ebrima", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalAssetsData.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTotalAssetsData.Location = new System.Drawing.Point(275, 283);
-            this.lblTotalAssetsData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalAssetsData.Location = new System.Drawing.Point(412, 435);
             this.lblTotalAssetsData.Name = "lblTotalAssetsData";
-            this.lblTotalAssetsData.Size = new System.Drawing.Size(314, 45);
+            this.lblTotalAssetsData.Size = new System.Drawing.Size(463, 65);
             this.lblTotalAssetsData.TabIndex = 13;
             this.lblTotalAssetsData.Text = "450 Managed Assets";
             // 
             // frmDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CIS_3309_Term_Project.Properties.Resources.BlueGradientBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(985, 695);
+            this.ClientSize = new System.Drawing.Size(1478, 1069);
             this.Controls.Add(this.lblTotalAssetsData);
             this.Controls.Add(this.lblTotalUsersData);
             this.Controls.Add(this.lblDashboardIntro);
@@ -292,10 +281,10 @@
             this.Controls.Add(this.miHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.miHome;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmDashboard";
             this.ShowIcon = false;
             this.Text = "Asset Manager System - Dashboard";
+            this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.miHome.ResumeLayout(false);
             this.miHome.PerformLayout();
             this.ResumeLayout(false);

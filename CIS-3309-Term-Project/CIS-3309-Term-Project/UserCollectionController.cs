@@ -6,16 +6,17 @@ using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CIS_3309_Term_Project
 {
-    internal class UserCollectionController
+    public class UserCollectionController
     {
         OleDbConnection myConnection;
         OleDbDataAdapter myDataAdapter;
         DataSet myDataSet;
         private UserCollection userCollection = new UserCollection();
-        internal UserCollectionController()
+        public UserCollectionController()
         {
             myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Asset.accdb;");
         }
@@ -24,11 +25,21 @@ namespace CIS_3309_Term_Project
         //returns dataset info so we don't have to rewrite this on every sql involved method
         private DataSet UserRunQuery(string strSQL)
         {
+            // This works for select statements
             myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
             myDataSet = new DataSet("UserTable");
             myDataAdapter.Fill(myDataSet, "UserTable");
 
             return myDataSet;
+        }
+        private void UserExecuteQuery(String strSQL)
+        {
+            // This works for Update, Insert and Delete statements
+            OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
+
+            myConnection.Open();
+            myCommand.ExecuteNonQuery();
+            myConnection.Close();
         }
         public bool AddUser()
         {
@@ -97,12 +108,18 @@ namespace CIS_3309_Term_Project
         }
         public User ValidateUser(String username, String password)
         {
+            foreach (User user in userCollection.Users)
+            {
+                if (user.Username.Equals(username) && user.Password.Equals(password))
+                {
+                    return user;
+                }
+            }
             return null;
         }
         public int GetTotalUsers()
         {
-            // Place holder code
-            return 0;
+            return userCollection.Users.Count();
         }
         public List<User> LoadUsersByDept()
         {

@@ -12,6 +12,8 @@ namespace CIS_3309_Term_Project
 {
     public partial class frmLoginCreate : Form
     {
+        private UserCollectionController userController = new UserCollectionController();
+        private List<User> currentUsers = new List<User>();
         public frmLoginCreate()
         {
             InitializeComponent();
@@ -26,10 +28,21 @@ namespace CIS_3309_Term_Project
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            // Add login logic here I think we should load the collection of users and then search the collection
-            // for a matching password and username and then it can launch the form for now it just does it auto
-            Form frm = new frmDashboard();
-            frm.ShowDialog();
+            User currentUser = userController.ValidateUser(txtUser.Text, txtPassword.Text);
+            if (currentUser != null)
+            {
+                Form frm = new frmDashboard(currentUser);
+                frm.ShowDialog();
+            } else
+            {
+                MessageBox.Show("Incorrect Username or Password", "Login Error");
+            }
+        }
+
+        private void frmLoginCreate_Load(object sender, EventArgs e)
+        {
+            // Adds all the current users to memory
+            currentUsers = userController.LoadUsers();
         }
     }
 }

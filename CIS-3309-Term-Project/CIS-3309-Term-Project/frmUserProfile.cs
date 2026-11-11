@@ -12,8 +12,10 @@ namespace CIS_3309_Term_Project
 {
     public partial class frmUserProfile : Form
     {
-        public frmUserProfile()
+        private User currentUser;
+        public frmUserProfile(User user)
         {
+            currentUser = user;
             InitializeComponent();
         }
 
@@ -24,6 +26,26 @@ namespace CIS_3309_Term_Project
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void frmUserProfile_Load(object sender, EventArgs e)
+        {
+            if (currentUser.ProfilePicture.Length > 0)
+            {
+                pbxProfile.Load(currentUser.ProfilePicture);
+            }
+            txtUsername.Text = currentUser.Username;
+            txtPassword.Text = currentUser.Password;
+            txtFirst.Text = currentUser.FirstName;
+            txtLast.Text = currentUser.LastName;
+            txtCity.Text = currentUser.City;
+            txtAddress.Text = currentUser.Address;
+            txtPhoneNumber.Text = currentUser.PhoneNumber;
+            txtState.Text = currentUser.State;
+            txtUrl.Text = currentUser.ProfilePicture;
+            cbxDept.SelectedItem = currentUser.UserDepartment.ToString();
+            txtUrl.Text = currentUser.ProfilePicture;
 
         }
     }

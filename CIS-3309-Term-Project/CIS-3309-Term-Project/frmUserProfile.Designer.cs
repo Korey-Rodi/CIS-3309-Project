@@ -373,7 +373,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmUserProfile";
             this.ShowIcon = false;
-            this.Text = "Asset Manager System - User";
+            this.Text = "Asset Manager System - Profile";
+            this.Load += new System.EventHandler(this.frmUserProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMyAssets)).EndInit();
             this.ResumeLayout(false);
