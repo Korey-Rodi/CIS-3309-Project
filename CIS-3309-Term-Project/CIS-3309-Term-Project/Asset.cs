@@ -9,7 +9,7 @@ namespace CIS_3309_Term_Project
 {
     internal class Asset
     {
-        public string AssetID { get; set; }
+        public int AssetID { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public DateTime Date { get; set; }
@@ -26,9 +26,10 @@ namespace CIS_3309_Term_Project
         public String Ram {get; set;}
         public String OS {get; set;}
         public String Storage {get; set;}
+        public int AssignedUserId { get; set; }// 0 = unassigned
 
-        public Asset(String assetID,String make, String Model, DateTime date, State assetState, String location, String assetImage,
-            String cpu, String ram, String os, String storage)
+        public Asset(int assetID,String make, String Model, DateTime date, State assetState, String location, String assetImage,
+            String cpu, String ram, String os, String storage, int assignedUserId)
         {
             this.AssetID = assetID;
             this.Make = make;
@@ -41,6 +42,7 @@ namespace CIS_3309_Term_Project
             this.Ram = ram;
             this.OS = os;
             this.Storage = storage;
+            this.AssignedUserId = assignedUserId;
         }
 
     }

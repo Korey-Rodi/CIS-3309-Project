@@ -22,11 +22,17 @@ namespace CIS_3309_Term_Project
             Form frm = new frmUserProfile();
             frm.ShowDialog();
         }
-
+        //asset form
         private void viewAssetsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Form frm = new frmAsset();
-            //frm.ShowDialog();
+            Form frm = new frmAsset();
+            frm.ShowDialog();
+        }
+        //user form 
+        private void viewUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmUser();
+            frm.ShowDialog();
         }
     }
 }

@@ -60,9 +60,10 @@
             // 
             this.pbxProfile.BackColor = System.Drawing.Color.Transparent;
             this.pbxProfile.Image = global::CIS_3309_Term_Project.Properties.Resources.ProfileIcon;
-            this.pbxProfile.Location = new System.Drawing.Point(571, 23);
+            this.pbxProfile.Location = new System.Drawing.Point(381, 15);
+            this.pbxProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbxProfile.Name = "pbxProfile";
-            this.pbxProfile.Size = new System.Drawing.Size(278, 212);
+            this.pbxProfile.Size = new System.Drawing.Size(185, 138);
             this.pbxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxProfile.TabIndex = 1;
             this.pbxProfile.TabStop = false;
@@ -78,9 +79,10 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsername.Location = new System.Drawing.Point(467, 251);
+            this.lblUsername.Location = new System.Drawing.Point(311, 163);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(87, 20);
+            this.lblUsername.Size = new System.Drawing.Size(58, 13);
             this.lblUsername.TabIndex = 3;
             this.lblUsername.Text = "Username:";
             // 
@@ -89,9 +91,10 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPassword.Location = new System.Drawing.Point(467, 294);
+            this.lblPassword.Location = new System.Drawing.Point(311, 191);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(82, 20);
+            this.lblPassword.Size = new System.Drawing.Size(56, 13);
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Password:";
             // 
@@ -100,9 +103,10 @@
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
             this.lblFirstName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblFirstName.Location = new System.Drawing.Point(459, 342);
+            this.lblFirstName.Location = new System.Drawing.Point(306, 222);
+            this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(90, 20);
+            this.lblFirstName.Size = new System.Drawing.Size(60, 13);
             this.lblFirstName.TabIndex = 5;
             this.lblFirstName.Text = "First Name:";
             // 
@@ -111,9 +115,10 @@
             this.lblProfileImage.AutoSize = true;
             this.lblProfileImage.BackColor = System.Drawing.Color.Transparent;
             this.lblProfileImage.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblProfileImage.Location = new System.Drawing.Point(399, 658);
+            this.lblProfileImage.Location = new System.Drawing.Point(266, 428);
+            this.lblProfileImage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblProfileImage.Name = "lblProfileImage";
-            this.lblProfileImage.Size = new System.Drawing.Size(155, 20);
+            this.lblProfileImage.Size = new System.Drawing.Size(103, 13);
             this.lblProfileImage.TabIndex = 5;
             this.lblProfileImage.Text = "Image Url (Optional):";
             // 
@@ -122,9 +127,10 @@
             this.lblLastName.AutoSize = true;
             this.lblLastName.BackColor = System.Drawing.Color.Transparent;
             this.lblLastName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblLastName.Location = new System.Drawing.Point(464, 384);
+            this.lblLastName.Location = new System.Drawing.Point(309, 250);
+            this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(90, 20);
+            this.lblLastName.Size = new System.Drawing.Size(61, 13);
             this.lblLastName.TabIndex = 6;
             this.lblLastName.Text = "Last Name:";
             // 
@@ -138,9 +144,10 @@
             "Claims",
             "Finance",
             "Facility"});
-            this.cbxDept.Location = new System.Drawing.Point(591, 609);
+            this.cbxDept.Location = new System.Drawing.Point(394, 396);
+            this.cbxDept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbxDept.Name = "cbxDept";
-            this.cbxDept.Size = new System.Drawing.Size(257, 28);
+            this.cbxDept.Size = new System.Drawing.Size(173, 21);
             this.cbxDept.TabIndex = 7;
             // 
             // lblDept
@@ -148,45 +155,51 @@
             this.lblDept.AutoSize = true;
             this.lblDept.BackColor = System.Drawing.Color.Transparent;
             this.lblDept.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDept.Location = new System.Drawing.Point(456, 609);
+            this.lblDept.Location = new System.Drawing.Point(304, 396);
+            this.lblDept.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDept.Name = "lblDept";
-            this.lblDept.Size = new System.Drawing.Size(98, 20);
+            this.lblDept.Size = new System.Drawing.Size(65, 13);
             this.lblDept.TabIndex = 8;
             this.lblDept.Text = "Department:";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(592, 251);
+            this.txtUsername.Location = new System.Drawing.Point(395, 163);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(257, 26);
+            this.txtUsername.Size = new System.Drawing.Size(173, 20);
             this.txtUsername.TabIndex = 9;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(592, 294);
+            this.txtPassword.Location = new System.Drawing.Point(395, 191);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(257, 26);
+            this.txtPassword.Size = new System.Drawing.Size(173, 20);
             this.txtPassword.TabIndex = 10;
             // 
             // txtFirst
             // 
-            this.txtFirst.Location = new System.Drawing.Point(591, 339);
+            this.txtFirst.Location = new System.Drawing.Point(394, 220);
+            this.txtFirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFirst.Name = "txtFirst";
-            this.txtFirst.Size = new System.Drawing.Size(257, 26);
+            this.txtFirst.Size = new System.Drawing.Size(173, 20);
             this.txtFirst.TabIndex = 11;
             // 
             // txtLast
             // 
-            this.txtLast.Location = new System.Drawing.Point(591, 384);
+            this.txtLast.Location = new System.Drawing.Point(394, 250);
+            this.txtLast.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLast.Name = "txtLast";
-            this.txtLast.Size = new System.Drawing.Size(257, 26);
+            this.txtLast.Size = new System.Drawing.Size(173, 20);
             this.txtLast.TabIndex = 12;
             // 
             // txtUrl
             // 
-            this.txtUrl.Location = new System.Drawing.Point(592, 658);
+            this.txtUrl.Location = new System.Drawing.Point(395, 428);
+            this.txtUrl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUrl.Name = "txtUrl";
-            this.txtUrl.Size = new System.Drawing.Size(257, 26);
+            this.txtUrl.Size = new System.Drawing.Size(173, 20);
             this.txtUrl.TabIndex = 13;
             // 
             // chkLinkDevice
@@ -194,9 +207,10 @@
             this.chkLinkDevice.AutoSize = true;
             this.chkLinkDevice.BackColor = System.Drawing.Color.Transparent;
             this.chkLinkDevice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.chkLinkDevice.Location = new System.Drawing.Point(645, 709);
+            this.chkLinkDevice.Location = new System.Drawing.Point(430, 461);
+            this.chkLinkDevice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chkLinkDevice.Name = "chkLinkDevice";
-            this.chkLinkDevice.Size = new System.Drawing.Size(140, 24);
+            this.chkLinkDevice.Size = new System.Drawing.Size(99, 17);
             this.chkLinkDevice.TabIndex = 14;
             this.chkLinkDevice.Text = "Link my Device";
             this.chkLinkDevice.UseVisualStyleBackColor = false;
@@ -204,9 +218,10 @@
             // btnCreate
             // 
             this.btnCreate.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(591, 775);
+            this.btnCreate.Location = new System.Drawing.Point(394, 504);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(258, 42);
+            this.btnCreate.Size = new System.Drawing.Size(172, 27);
             this.btnCreate.TabIndex = 15;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
@@ -216,9 +231,10 @@
             this.lblPhoneNumber.AutoSize = true;
             this.lblPhoneNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblPhoneNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(430, 427);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(287, 278);
+            this.lblPhoneNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(119, 20);
+            this.lblPhoneNumber.Size = new System.Drawing.Size(81, 13);
             this.lblPhoneNumber.TabIndex = 17;
             this.lblPhoneNumber.Text = "Phone Number:";
             // 
@@ -227,9 +243,10 @@
             this.lblAddress.AutoSize = true;
             this.lblAddress.BackColor = System.Drawing.Color.Transparent;
             this.lblAddress.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAddress.Location = new System.Drawing.Point(477, 471);
+            this.lblAddress.Location = new System.Drawing.Point(318, 306);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(72, 20);
+            this.lblAddress.Size = new System.Drawing.Size(48, 13);
             this.lblAddress.TabIndex = 18;
             this.lblAddress.Text = "Address:";
             // 
@@ -238,9 +255,10 @@
             this.lblState.AutoSize = true;
             this.lblState.BackColor = System.Drawing.Color.Transparent;
             this.lblState.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblState.Location = new System.Drawing.Point(497, 563);
+            this.lblState.Location = new System.Drawing.Point(331, 366);
+            this.lblState.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(52, 20);
+            this.lblState.Size = new System.Drawing.Size(35, 13);
             this.lblState.TabIndex = 19;
             this.lblState.Text = "State:";
             // 
@@ -249,47 +267,52 @@
             this.lblCity.AutoSize = true;
             this.lblCity.BackColor = System.Drawing.Color.Transparent;
             this.lblCity.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCity.Location = new System.Drawing.Point(514, 518);
+            this.lblCity.Location = new System.Drawing.Point(343, 337);
+            this.lblCity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCity.Name = "lblCity";
-            this.lblCity.Size = new System.Drawing.Size(35, 20);
+            this.lblCity.Size = new System.Drawing.Size(24, 13);
             this.lblCity.TabIndex = 20;
             this.lblCity.Text = "City";
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(592, 427);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(395, 278);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(257, 26);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(173, 20);
             this.txtPhoneNumber.TabIndex = 21;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(592, 471);
+            this.txtAddress.Location = new System.Drawing.Point(395, 306);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(257, 26);
+            this.txtAddress.Size = new System.Drawing.Size(173, 20);
             this.txtAddress.TabIndex = 22;
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(591, 518);
+            this.txtCity.Location = new System.Drawing.Point(394, 337);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(257, 26);
+            this.txtCity.Size = new System.Drawing.Size(173, 20);
             this.txtCity.TabIndex = 23;
             // 
             // txtState
             // 
-            this.txtState.Location = new System.Drawing.Point(592, 563);
+            this.txtState.Location = new System.Drawing.Point(395, 366);
+            this.txtState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtState.Name = "txtState";
-            this.txtState.Size = new System.Drawing.Size(257, 26);
+            this.txtState.Size = new System.Drawing.Size(173, 20);
             this.txtState.TabIndex = 24;
             // 
             // frmCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CIS_3309_Term_Project.Properties.Resources.BlueGradientBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1478, 1069);
+            this.ClientSize = new System.Drawing.Size(985, 695);
             this.Controls.Add(this.txtState);
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtAddress);
@@ -314,6 +337,7 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.pbxProfile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCreate";
             this.ShowIcon = false;
             this.Text = "Asset Manager System - Create User";

@@ -8,7 +8,7 @@ namespace CIS_3309_Term_Project
 {
     internal class User
     {
-        public String UserID {  get; set; }
+        public int UserID {  get; set; }
         public String Username { get; set; }
         public String Password { get; set; }
         public String FirstName { get; set; }
@@ -26,7 +26,7 @@ namespace CIS_3309_Term_Project
         public Department UserDepartment {get; set;}
         public String ProfilePicture { get; set; }
 
-        public User(String userId, String username, String password, String firstName, String lastName, 
+        public User(int userId, String username, String password, String firstName, String lastName, 
         String phoneNumber,String address, String city, String state,Department userDepartment, String profilePictureUrl)
         {
             this.UserID = userId;

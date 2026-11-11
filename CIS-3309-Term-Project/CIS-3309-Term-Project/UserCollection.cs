@@ -9,5 +9,12 @@ namespace CIS_3309_Term_Project
     internal class UserCollection
     {
         public List<User> Users;
+
+        public UserCollection()
+        {
+            this.Users = new List<User>();
+        }
+
+
     }
 }
