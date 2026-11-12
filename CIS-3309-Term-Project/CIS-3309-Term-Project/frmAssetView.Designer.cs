@@ -53,11 +53,13 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.lblDisplay = new System.Windows.Forms.Label();
+            this.txtLocation = new System.Windows.Forms.TextBox();
+            this.lblLocation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtStorage
             // 
-            this.txtStorage.Location = new System.Drawing.Point(429, 473);
+            this.txtStorage.Location = new System.Drawing.Point(429, 517);
             this.txtStorage.Margin = new System.Windows.Forms.Padding(2);
             this.txtStorage.Name = "txtStorage";
             this.txtStorage.Size = new System.Drawing.Size(173, 20);
@@ -68,11 +70,10 @@
             this.cboState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboState.FormattingEnabled = true;
             this.cboState.Items.AddRange(new object[] {
-            "IT",
-            "HR",
-            "Claims",
-            "Finance",
-            "Facility"});
+            "Retired",
+            "Broken",
+            "In_Use",
+            "In_Stock"});
             this.cboState.Location = new System.Drawing.Point(429, 240);
             this.cboState.Margin = new System.Windows.Forms.Padding(2);
             this.cboState.Name = "cboState";
@@ -101,7 +102,7 @@
             // 
             // txtRam
             // 
-            this.txtRam.Location = new System.Drawing.Point(429, 407);
+            this.txtRam.Location = new System.Drawing.Point(429, 451);
             this.txtRam.Margin = new System.Windows.Forms.Padding(2);
             this.txtRam.Name = "txtRam";
             this.txtRam.Size = new System.Drawing.Size(173, 20);
@@ -109,7 +110,7 @@
             // 
             // txtCPU
             // 
-            this.txtCPU.Location = new System.Drawing.Point(429, 373);
+            this.txtCPU.Location = new System.Drawing.Point(429, 417);
             this.txtCPU.Margin = new System.Windows.Forms.Padding(2);
             this.txtCPU.Name = "txtCPU";
             this.txtCPU.Size = new System.Drawing.Size(173, 20);
@@ -120,7 +121,7 @@
             this.lblRAM.AutoSize = true;
             this.lblRAM.BackColor = System.Drawing.Color.Transparent;
             this.lblRAM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRAM.Location = new System.Drawing.Point(356, 410);
+            this.lblRAM.Location = new System.Drawing.Point(356, 454);
             this.lblRAM.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRAM.Name = "lblRAM";
             this.lblRAM.Size = new System.Drawing.Size(34, 13);
@@ -144,7 +145,7 @@
             this.lblCPU.AutoSize = true;
             this.lblCPU.BackColor = System.Drawing.Color.Transparent;
             this.lblCPU.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCPU.Location = new System.Drawing.Point(356, 380);
+            this.lblCPU.Location = new System.Drawing.Point(356, 424);
             this.lblCPU.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(32, 13);
@@ -154,7 +155,7 @@
             // btnCloseViewAsset
             // 
             this.btnCloseViewAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseViewAsset.Location = new System.Drawing.Point(380, 589);
+            this.btnCloseViewAsset.Location = new System.Drawing.Point(380, 633);
             this.btnCloseViewAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnCloseViewAsset.Name = "btnCloseViewAsset";
             this.btnCloseViewAsset.Size = new System.Drawing.Size(173, 33);
@@ -167,7 +168,7 @@
             this.chkAssetAutofill.AutoSize = true;
             this.chkAssetAutofill.BackColor = System.Drawing.Color.Transparent;
             this.chkAssetAutofill.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.chkAssetAutofill.Location = new System.Drawing.Point(401, 342);
+            this.chkAssetAutofill.Location = new System.Drawing.Point(398, 385);
             this.chkAssetAutofill.Margin = new System.Windows.Forms.Padding(2);
             this.chkAssetAutofill.Name = "chkAssetAutofill";
             this.chkAssetAutofill.Size = new System.Drawing.Size(180, 17);
@@ -177,7 +178,7 @@
             // 
             // txtPictureAsset
             // 
-            this.txtPictureAsset.Location = new System.Drawing.Point(429, 307);
+            this.txtPictureAsset.Location = new System.Drawing.Point(429, 336);
             this.txtPictureAsset.Margin = new System.Windows.Forms.Padding(2);
             this.txtPictureAsset.Name = "txtPictureAsset";
             this.txtPictureAsset.Size = new System.Drawing.Size(173, 20);
@@ -185,7 +186,7 @@
             // 
             // txtOS
             // 
-            this.txtOS.Location = new System.Drawing.Point(429, 440);
+            this.txtOS.Location = new System.Drawing.Point(429, 484);
             this.txtOS.Margin = new System.Windows.Forms.Padding(2);
             this.txtOS.Name = "txtOS";
             this.txtOS.Size = new System.Drawing.Size(173, 20);
@@ -220,7 +221,7 @@
             this.lblStorage.AutoSize = true;
             this.lblStorage.BackColor = System.Drawing.Color.Transparent;
             this.lblStorage.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblStorage.Location = new System.Drawing.Point(356, 476);
+            this.lblStorage.Location = new System.Drawing.Point(356, 520);
             this.lblStorage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStorage.Name = "lblStorage";
             this.lblStorage.Size = new System.Drawing.Size(47, 13);
@@ -232,7 +233,7 @@
             this.lblOS.AutoSize = true;
             this.lblOS.BackColor = System.Drawing.Color.Transparent;
             this.lblOS.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblOS.Location = new System.Drawing.Point(356, 443);
+            this.lblOS.Location = new System.Drawing.Point(356, 487);
             this.lblOS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOS.Name = "lblOS";
             this.lblOS.Size = new System.Drawing.Size(25, 13);
@@ -244,7 +245,7 @@
             this.lblPictureAsset.AutoSize = true;
             this.lblPictureAsset.BackColor = System.Drawing.Color.Transparent;
             this.lblPictureAsset.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPictureAsset.Location = new System.Drawing.Point(270, 310);
+            this.lblPictureAsset.Location = new System.Drawing.Point(270, 339);
             this.lblPictureAsset.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPictureAsset.Name = "lblPictureAsset";
             this.lblPictureAsset.Size = new System.Drawing.Size(141, 13);
@@ -290,7 +291,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Ebrima", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(487, 521);
+            this.btnDelete.Location = new System.Drawing.Point(487, 565);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(125, 33);
@@ -301,7 +302,7 @@
             // btnSaveChanges
             // 
             this.btnSaveChanges.Font = new System.Drawing.Font("Ebrima", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveChanges.Location = new System.Drawing.Point(312, 521);
+            this.btnSaveChanges.Location = new System.Drawing.Point(312, 565);
             this.btnSaveChanges.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(125, 33);
@@ -321,12 +322,34 @@
             this.lblDisplay.TabIndex = 76;
             this.lblDisplay.Text = "Make changes to the asset or delete it";
             // 
+            // txtLocation
+            // 
+            this.txtLocation.Location = new System.Drawing.Point(429, 303);
+            this.txtLocation.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(173, 20);
+            this.txtLocation.TabIndex = 78;
+            // 
+            // lblLocation
+            // 
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.BackColor = System.Drawing.Color.Transparent;
+            this.lblLocation.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblLocation.Location = new System.Drawing.Point(356, 306);
+            this.lblLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(51, 13);
+            this.lblLocation.TabIndex = 77;
+            this.lblLocation.Text = "Location:";
+            // 
             // frmAssetView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(989, 699);
+            this.Controls.Add(this.txtLocation);
+            this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSaveChanges);
@@ -386,5 +409,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSaveChanges;
         private System.Windows.Forms.Label lblDisplay;
+        private System.Windows.Forms.TextBox txtLocation;
+        private System.Windows.Forms.Label lblLocation;
     }
 }

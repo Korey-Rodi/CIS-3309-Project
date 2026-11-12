@@ -35,13 +35,13 @@
             this.lblCPU = new System.Windows.Forms.Label();
             this.btnCreateAsset = new System.Windows.Forms.Button();
             this.chkAssetAutofill = new System.Windows.Forms.CheckBox();
-            this.txtPictureAsset = new System.Windows.Forms.TextBox();
+            this.txtLocation = new System.Windows.Forms.TextBox();
             this.txtDataLastStateChange = new System.Windows.Forms.TextBox();
             this.txtMake = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.lblStorage = new System.Windows.Forms.Label();
             this.lblOS = new System.Windows.Forms.Label();
-            this.lblPictureAsset = new System.Windows.Forms.Label();
+            this.lblLocation = new System.Windows.Forms.Label();
             this.lblDataLastStateChange = new System.Windows.Forms.Label();
             this.lblMake = new System.Windows.Forms.Label();
             this.lblModel = new System.Windows.Forms.Label();
@@ -51,11 +51,14 @@
             this.txtOS = new System.Windows.Forms.TextBox();
             this.txtStorage = new System.Windows.Forms.TextBox();
             this.lblDisplay = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtRam
             // 
-            this.txtRam.Location = new System.Drawing.Point(415, 400);
+            this.txtRam.Location = new System.Drawing.Point(415, 435);
             this.txtRam.Margin = new System.Windows.Forms.Padding(2);
             this.txtRam.Name = "txtRam";
             this.txtRam.Size = new System.Drawing.Size(173, 20);
@@ -63,7 +66,7 @@
             // 
             // txtCPU
             // 
-            this.txtCPU.Location = new System.Drawing.Point(415, 366);
+            this.txtCPU.Location = new System.Drawing.Point(415, 401);
             this.txtCPU.Margin = new System.Windows.Forms.Padding(2);
             this.txtCPU.Name = "txtCPU";
             this.txtCPU.Size = new System.Drawing.Size(173, 20);
@@ -74,7 +77,7 @@
             this.lblRAM.AutoSize = true;
             this.lblRAM.BackColor = System.Drawing.Color.Transparent;
             this.lblRAM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRAM.Location = new System.Drawing.Point(342, 403);
+            this.lblRAM.Location = new System.Drawing.Point(342, 438);
             this.lblRAM.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRAM.Name = "lblRAM";
             this.lblRAM.Size = new System.Drawing.Size(34, 13);
@@ -98,7 +101,7 @@
             this.lblCPU.AutoSize = true;
             this.lblCPU.BackColor = System.Drawing.Color.Transparent;
             this.lblCPU.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCPU.Location = new System.Drawing.Point(342, 373);
+            this.lblCPU.Location = new System.Drawing.Point(342, 408);
             this.lblCPU.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(32, 13);
@@ -108,7 +111,7 @@
             // btnCreateAsset
             // 
             this.btnCreateAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAsset.Location = new System.Drawing.Point(415, 562);
+            this.btnCreateAsset.Location = new System.Drawing.Point(330, 593);
             this.btnCreateAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreateAsset.Name = "btnCreateAsset";
             this.btnCreateAsset.Size = new System.Drawing.Size(173, 33);
@@ -121,7 +124,7 @@
             this.chkAssetAutofill.AutoSize = true;
             this.chkAssetAutofill.BackColor = System.Drawing.Color.Transparent;
             this.chkAssetAutofill.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.chkAssetAutofill.Location = new System.Drawing.Point(387, 335);
+            this.chkAssetAutofill.Location = new System.Drawing.Point(387, 370);
             this.chkAssetAutofill.Margin = new System.Windows.Forms.Padding(2);
             this.chkAssetAutofill.Name = "chkAssetAutofill";
             this.chkAssetAutofill.Size = new System.Drawing.Size(180, 17);
@@ -129,13 +132,13 @@
             this.chkAssetAutofill.Text = "Autofill with my computer\'s specs";
             this.chkAssetAutofill.UseVisualStyleBackColor = false;
             // 
-            // txtPictureAsset
+            // txtLocation
             // 
-            this.txtPictureAsset.Location = new System.Drawing.Point(415, 300);
-            this.txtPictureAsset.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPictureAsset.Name = "txtPictureAsset";
-            this.txtPictureAsset.Size = new System.Drawing.Size(173, 20);
-            this.txtPictureAsset.TabIndex = 37;
+            this.txtLocation.Location = new System.Drawing.Point(415, 300);
+            this.txtLocation.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(173, 20);
+            this.txtLocation.TabIndex = 37;
             // 
             // txtDataLastStateChange
             // 
@@ -166,7 +169,7 @@
             this.lblStorage.AutoSize = true;
             this.lblStorage.BackColor = System.Drawing.Color.Transparent;
             this.lblStorage.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblStorage.Location = new System.Drawing.Point(342, 469);
+            this.lblStorage.Location = new System.Drawing.Point(342, 504);
             this.lblStorage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStorage.Name = "lblStorage";
             this.lblStorage.Size = new System.Drawing.Size(47, 13);
@@ -178,24 +181,24 @@
             this.lblOS.AutoSize = true;
             this.lblOS.BackColor = System.Drawing.Color.Transparent;
             this.lblOS.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblOS.Location = new System.Drawing.Point(342, 436);
+            this.lblOS.Location = new System.Drawing.Point(342, 471);
             this.lblOS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOS.Name = "lblOS";
             this.lblOS.Size = new System.Drawing.Size(25, 13);
             this.lblOS.TabIndex = 30;
             this.lblOS.Text = "OS:";
             // 
-            // lblPictureAsset
+            // lblLocation
             // 
-            this.lblPictureAsset.AutoSize = true;
-            this.lblPictureAsset.BackColor = System.Drawing.Color.Transparent;
-            this.lblPictureAsset.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPictureAsset.Location = new System.Drawing.Point(256, 303);
-            this.lblPictureAsset.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPictureAsset.Name = "lblPictureAsset";
-            this.lblPictureAsset.Size = new System.Drawing.Size(141, 13);
-            this.lblPictureAsset.TabIndex = 29;
-            this.lblPictureAsset.Text = "Asset Image URL (Optional):";
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.BackColor = System.Drawing.Color.Transparent;
+            this.lblLocation.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblLocation.Location = new System.Drawing.Point(342, 303);
+            this.lblLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(51, 13);
+            this.lblLocation.TabIndex = 29;
+            this.lblLocation.Text = "Location:";
             // 
             // lblDataLastStateChange
             // 
@@ -258,11 +261,10 @@
             this.cboState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboState.FormattingEnabled = true;
             this.cboState.Items.AddRange(new object[] {
-            "IT",
-            "HR",
-            "Claims",
-            "Finance",
-            "Facility"});
+            "Retired",
+            "Broken",
+            "In_Use",
+            "In_Stock"});
             this.cboState.Location = new System.Drawing.Point(415, 233);
             this.cboState.Margin = new System.Windows.Forms.Padding(2);
             this.cboState.Name = "cboState";
@@ -271,7 +273,7 @@
             // 
             // txtOS
             // 
-            this.txtOS.Location = new System.Drawing.Point(415, 433);
+            this.txtOS.Location = new System.Drawing.Point(415, 468);
             this.txtOS.Margin = new System.Windows.Forms.Padding(2);
             this.txtOS.Name = "txtOS";
             this.txtOS.Size = new System.Drawing.Size(173, 20);
@@ -279,7 +281,7 @@
             // 
             // txtStorage
             // 
-            this.txtStorage.Location = new System.Drawing.Point(415, 466);
+            this.txtStorage.Location = new System.Drawing.Point(415, 501);
             this.txtStorage.Margin = new System.Windows.Forms.Padding(2);
             this.txtStorage.Name = "txtStorage";
             this.txtStorage.Size = new System.Drawing.Size(173, 20);
@@ -297,12 +299,46 @@
             this.lblDisplay.TabIndex = 76;
             this.lblDisplay.Text = "Input device information and hit create!";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(415, 334);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(173, 20);
+            this.textBox1.TabIndex = 78;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(256, 337);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 13);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Asset Image URL (Optional):";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(507, 593);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(173, 33);
+            this.btnCancel.TabIndex = 79;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
             // frmCreateAsset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(989, 699);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblDisplay);
             this.Controls.Add(this.txtStorage);
             this.Controls.Add(this.cboState);
@@ -315,14 +351,14 @@
             this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.btnCreateAsset);
             this.Controls.Add(this.chkAssetAutofill);
-            this.Controls.Add(this.txtPictureAsset);
+            this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.txtOS);
             this.Controls.Add(this.txtDataLastStateChange);
             this.Controls.Add(this.txtMake);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.lblStorage);
             this.Controls.Add(this.lblOS);
-            this.Controls.Add(this.lblPictureAsset);
+            this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.lblDataLastStateChange);
             this.Controls.Add(this.lblMake);
             this.Controls.Add(this.lblModel);
@@ -341,13 +377,13 @@
         private System.Windows.Forms.Label lblCPU;
         private System.Windows.Forms.Button btnCreateAsset;
         private System.Windows.Forms.CheckBox chkAssetAutofill;
-        private System.Windows.Forms.TextBox txtPictureAsset;
+        private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.TextBox txtDataLastStateChange;
         private System.Windows.Forms.TextBox txtMake;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label lblStorage;
         private System.Windows.Forms.Label lblOS;
-        private System.Windows.Forms.Label lblPictureAsset;
+        private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.Label lblDataLastStateChange;
         private System.Windows.Forms.Label lblMake;
         private System.Windows.Forms.Label lblModel;
@@ -357,5 +393,8 @@
         private System.Windows.Forms.TextBox txtOS;
         private System.Windows.Forms.TextBox txtStorage;
         private System.Windows.Forms.Label lblDisplay;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
