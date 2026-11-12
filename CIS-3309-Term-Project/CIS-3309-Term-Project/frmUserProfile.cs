@@ -13,16 +13,32 @@ namespace CIS_3309_Term_Project
     public partial class frmUserProfile : Form
     {
         private User currentUser;
-        private AssetCollectionController assetCollection;
-        public frmUserProfile(User user)
+        private AssetCollectionController AssetCollection;
+        private UserCollectionController UserCollection = new UserCollectionController();
+        public frmUserProfile(User user, AssetCollectionController assetCollection)
         {
+            AssetCollection = assetCollection;
             currentUser = user;
             InitializeComponent();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            //User cannot be deleted if they have assets assigned to them
+            List<Asset> assets = AssetCollection.LoadMyDevices(currentUser);
+            if (assets.Count > 0)
+            {
+                MessageBox.Show("You Cannot Delete Account with Assets Assigned", "Database Error");
+            } else
+            {
+                if (UserCollection.DeleteUser(currentUser))
+                {
+                    MessageBox.Show("Please log out out Asset Management System", "Account Deleted");
+                } else
+                {
+                    MessageBox.Show("Unable to delete account", "Account Deletion Error");
+                }
+            }
         }
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
@@ -47,7 +63,8 @@ namespace CIS_3309_Term_Project
             txtUrl.Text = currentUser.ProfilePicture;
             cbxDept.SelectedItem = currentUser.UserDepartment.ToString();
             txtUrl.Text = currentUser.ProfilePicture;
-            // Call the method to fill in the devices associated with the users
+            List<Asset> assets = AssetCollection.LoadMyDevices(currentUser);
+            dgvMyAssets.DataSource = assets;
 
         }
     }

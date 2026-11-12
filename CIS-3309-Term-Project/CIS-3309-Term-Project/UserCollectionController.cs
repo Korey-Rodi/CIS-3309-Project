@@ -36,17 +36,21 @@ namespace CIS_3309_Term_Project
         {
             // This works for Update, Insert and Delete statements
             OleDbCommand myCommand = new OleDbCommand(strSQL, myConnection);
-
             myConnection.Open();
             myCommand.ExecuteNonQuery();
             myConnection.Close();
         }
-        public bool AddUser()
+        public bool AddUser(User user)
         {
+            UserExecuteQuery("INSERT INTO Users (Username, UserPassword, FirstName, LastName,Department,ProfilePic, PhoneNumber, Address, City, State) VALUES ('"
+    + user.Username + "', '" + user.Password + "', '" + user.FirstName + "', '" + user.LastName + "', '" + user.UserDepartment.ToString() + "', '" + user.ProfilePicture + "', '" +
+    user.PhoneNumber + "', '" + user.Address + "', '" + user.City + "', '" + user.State + "');");
             return true;
         }
-        public bool DeleteUser()
+        public bool DeleteUser(User user)
         {
+            String id = user.UserID.ToString();
+            UserExecuteQuery("DELETE FROM Users WHERE UserID =" + id + ";");
             return true;
         }
         public bool EditUser()
@@ -121,7 +125,7 @@ namespace CIS_3309_Term_Project
         {
             return userCollection.Users.Count();
         }
-        public List<User> LoadUsersByDept()
+        public Dictionary<String,int> LoadUsersByDept()
         {
             return null;
         }
@@ -138,7 +142,15 @@ namespace CIS_3309_Term_Project
                 return results;
             }
         }
-        public class SearchByName : ISearch
+        public class SearchByFirstName : ISearch
+        {
+            public List<User> Search(String search)
+            {
+                List<User> results = new List<User>();
+                return results;
+            }
+        }
+        public class SearchByLastName : ISearch
         {
             public List<User> Search(String search)
             {

@@ -62,9 +62,12 @@
             // 
             // pbxProfile
             // 
+            this.pbxProfile.BackColor = System.Drawing.Color.Transparent;
+            this.pbxProfile.Image = global::CIS_3309_Term_Project.Properties.Resources.ProfileIcon;
             this.pbxProfile.Location = new System.Drawing.Point(250, 137);
             this.pbxProfile.Name = "pbxProfile";
             this.pbxProfile.Size = new System.Drawing.Size(264, 214);
+            this.pbxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxProfile.TabIndex = 0;
             this.pbxProfile.TabStop = false;
             // 

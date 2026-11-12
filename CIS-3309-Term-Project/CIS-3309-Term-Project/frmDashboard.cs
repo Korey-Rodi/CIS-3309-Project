@@ -25,7 +25,7 @@ namespace CIS_3309_Term_Project
 
         private void viewProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new frmUserProfile(currentUser);
+            Form frm = new frmUserProfile(currentUser, assetCollection);
             frm.ShowDialog();
         }
         //asset form
@@ -45,8 +45,8 @@ namespace CIS_3309_Term_Project
         {
             userCollection.LoadUsers();
             assetCollection.LoadAssets();
-            lblTotalUsersData.Text = userCollection.GetTotalUsers().ToString();
-            lblTotalAssetsData.Text = assetCollection.GetAssetCount().ToString();
+            lblTotalUsersData.Text = userCollection.GetTotalUsers().ToString() + " Managed Users";
+            lblTotalAssetsData.Text = assetCollection.GetAssetCount().ToString() + " Managed Assets";
         }
 
         private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
