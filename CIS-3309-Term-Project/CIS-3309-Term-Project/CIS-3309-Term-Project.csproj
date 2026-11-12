@@ -105,17 +105,35 @@
     <Compile Include="frmAsset.Designer.cs">
       <DependentUpon>frmAsset.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAssetView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssetView.Designer.cs">
+      <DependentUpon>frmAssetView.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCreate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCreate.Designer.cs">
       <DependentUpon>frmCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCreateAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateAsset.Designer.cs">
+      <DependentUpon>frmCreateAsset.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLinkDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLinkDevice.Designer.cs">
+      <DependentUpon>frmLinkDevice.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLoginCreate.cs">
       <SubType>Form</SubType>
@@ -144,11 +162,20 @@
     <EmbeddedResource Include="frmAsset.resx">
       <DependentUpon>frmAsset.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAssetView.resx">
+      <DependentUpon>frmAssetView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCreate.resx">
       <DependentUpon>frmCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateAsset.resx">
+      <DependentUpon>frmCreateAsset.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLinkDevice.resx">
+      <DependentUpon>frmLinkDevice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoginCreate.resx">
       <DependentUpon>frmLoginCreate.cs</DependentUpon>
