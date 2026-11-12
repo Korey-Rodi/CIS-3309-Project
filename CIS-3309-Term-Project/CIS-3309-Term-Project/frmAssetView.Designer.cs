@@ -317,9 +317,9 @@
             this.lblDisplay.Location = new System.Drawing.Point(390, 85);
             this.lblDisplay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(191, 13);
+            this.lblDisplay.Size = new System.Drawing.Size(188, 13);
             this.lblDisplay.TabIndex = 76;
-            this.lblDisplay.Text = "Input device information and hit create!";
+            this.lblDisplay.Text = "Make changes to the asset or delete it";
             // 
             // frmAssetView
             // 
