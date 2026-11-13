@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|c:\\users\\rodik\\documents\\github\\cis-3309-project\\cis-3309-term-project\\cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\usercollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\usercollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|c:\\users\\rodik\\documents\\github\\cis-3309-project\\cis-3309-term-project\\cis-3309-term-project\\assetcollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\assetcollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -19,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\usercollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\usercollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\frmuserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\frmuserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\assetcollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\assetcollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\frmlogincreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,42 +86,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmCreate.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmCreate.cs",
-              "RelativeDocumentMoniker": "CIS-3309-Term-Project\\frmCreate.cs",
-              "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmCreate.cs [Design]",
-              "RelativeToolTip": "CIS-3309-Term-Project\\frmCreate.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "frmUserProfile.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmUserProfile.cs",
+              "RelativeDocumentMoniker": "CIS-3309-Term-Project\\frmUserProfile.cs",
+              "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmUserProfile.cs [Design]",
+              "RelativeToolTip": "CIS-3309-Term-Project\\frmUserProfile.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T22:44:52.716Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-10T22:49:29.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\User.cs",
-              "RelativeDocumentMoniker": "CIS-3309-Term-Project\\User.cs",
-              "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\User.cs",
-              "RelativeToolTip": "CIS-3309-Term-Project\\User.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBMAAAADAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AssetCollectionController.cs",
+              "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\AssetCollectionController.cs",
+              "RelativeDocumentMoniker": "CIS-3309-Term-Project\\AssetCollectionController.cs",
+              "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\AssetCollectionController.cs",
+              "RelativeToolTip": "CIS-3309-Term-Project\\AssetCollectionController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwvwsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T04:16:32.387Z",
+              "WhenOpened": "2026-11-10T22:47:49.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "UserCollectionController.cs",
               "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\UserCollectionController.cs",
               "RelativeDocumentMoniker": "CIS-3309-Term-Project\\UserCollectionController.cs",
               "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\UserCollectionController.cs",
               "RelativeToolTip": "CIS-3309-Term-Project\\UserCollectionController.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAuwJYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAiwKAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-08T20:00:17.818Z",
               "EditorCaption": ""
@@ -129,30 +128,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmUserProfile.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmUserProfile.cs",
-              "RelativeDocumentMoniker": "CIS-3309-Term-Project\\frmUserProfile.cs",
-              "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmUserProfile.cs [Design]",
-              "RelativeToolTip": "CIS-3309-Term-Project\\frmUserProfile.cs [Design]",
+              "Title": "frmCreate.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmCreate.cs",
+              "RelativeDocumentMoniker": "CIS-3309-Term-Project\\frmCreate.cs",
+              "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmCreate.cs [Design]*",
+              "RelativeToolTip": "CIS-3309-Term-Project\\frmCreate.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T22:49:29.572Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-10T22:44:52.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\User.cs",
+              "RelativeDocumentMoniker": "CIS-3309-Term-Project\\User.cs",
+              "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\User.cs",
+              "RelativeToolTip": "CIS-3309-Term-Project\\User.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T04:16:32.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmLoginCreate.cs [Design]",
               "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmLoginCreate.cs",
               "RelativeDocumentMoniker": "CIS-3309-Term-Project\\frmLoginCreate.cs",
               "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmLoginCreate.cs [Design]",
               "RelativeToolTip": "CIS-3309-Term-Project\\frmLoginCreate.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T22:51:09.618Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-10T22:51:09.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "frmCreate.cs",
               "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmCreate.cs",
               "RelativeDocumentMoniker": "CIS-3309-Term-Project\\frmCreate.cs",
@@ -164,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "frmUserProfile.cs",
               "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmUserProfile.cs",
               "RelativeDocumentMoniker": "CIS-3309-Term-Project\\frmUserProfile.cs",
@@ -172,21 +181,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\frmUserProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T23:58:21.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AssetCollectionController.cs",
-              "DocumentMoniker": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\AssetCollectionController.cs",
-              "RelativeDocumentMoniker": "CIS-3309-Term-Project\\AssetCollectionController.cs",
-              "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\AssetCollectionController.cs",
-              "RelativeToolTip": "CIS-3309-Term-Project\\AssetCollectionController.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAYwJkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T22:47:49.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-11T23:58:21.933Z"
             },
             {
               "$type": "Document",
@@ -198,8 +193,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\frmLoginCreate.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T04:01:16.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-11T04:01:16.382Z"
             },
             {
               "$type": "Document",
@@ -211,8 +205,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\frmDashboard.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T22:52:45.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T22:52:45.165Z"
             },
             {
               "$type": "Document",
@@ -223,8 +216,7 @@
               "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmDashboard.cs [Design]",
               "RelativeToolTip": "CIS-3309-Term-Project\\frmDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:19:22.314Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-08T20:19:22.314Z"
             },
             {
               "$type": "Document",
@@ -236,8 +228,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\frmUser.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T17:17:49.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-11T17:17:49.096Z"
             },
             {
               "$type": "Document",
@@ -248,8 +239,7 @@
               "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmUser.cs [Design]",
               "RelativeToolTip": "CIS-3309-Term-Project\\frmUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T04:52:56.407Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-11T04:52:56.407Z"
             },
             {
               "$type": "Document",
@@ -260,8 +250,7 @@
               "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmAsset.cs [Design]",
               "RelativeToolTip": "CIS-3309-Term-Project\\frmAsset.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T04:53:46.274Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-11-11T04:53:46.274Z"
             },
             {
               "$type": "Document",
@@ -273,8 +262,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\Asset.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:16:09.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-08T20:16:09.832Z"
             },
             {
               "$type": "Document",
@@ -286,8 +274,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\UserCollection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:12:00.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-08T20:12:00.521Z"
             },
             {
               "$type": "Document",
@@ -299,8 +286,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:12:06.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-08T20:12:06.123Z"
             },
             {
               "$type": "Document",
@@ -312,8 +298,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\AssetController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:17:01.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-08T20:17:01.39Z"
             },
             {
               "$type": "Document",
@@ -325,8 +310,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\AssetCollection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:16:11.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-08T20:16:11.108Z"
             }
           ]
         }

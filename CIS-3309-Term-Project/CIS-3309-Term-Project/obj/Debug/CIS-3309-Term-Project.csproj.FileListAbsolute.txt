@@ -120,3 +120,5 @@ C:\Users\tvac\Documents\3309Repo\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309
 C:\Users\tvac\Documents\3309Repo\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309.3592F5B7.Up2Date
 C:\Users\tvac\Documents\3309Repo\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.exe
 C:\Users\tvac\Documents\3309Repo\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS-3309-Term-Project.pdb
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmAssetView.resources
+C:\Users\rodik\Documents\GitHub\CIS-3309-Project\CIS-3309-Term-Project\CIS-3309-Term-Project\obj\Debug\CIS_3309_Term_Project.frmCreateAsset.resources

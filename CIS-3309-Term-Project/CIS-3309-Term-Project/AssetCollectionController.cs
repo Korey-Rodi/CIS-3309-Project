@@ -201,7 +201,7 @@ namespace CIS_3309_Term_Project
                 List<Asset> results = new List<Asset>();
                 foreach(Asset asset in assetCollection.Assets)
                 {
-                    if(asset.AssetID == search)
+                    if(asset.AssetID.ToString() == search)
                     {
                         results.Add(asset);
                     }

@@ -158,7 +158,7 @@ namespace CIS_3309_Term_Project
                 List<User> results = new List<User>();
                 foreach(User user in UserCollection.Users)
                 {
-                    if(user.UserID == search)
+                    if(user.UserID.ToString() == search)
                     {
                         results.Add(user);
                     }
