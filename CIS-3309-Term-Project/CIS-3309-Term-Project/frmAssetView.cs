@@ -16,5 +16,10 @@ namespace CIS_3309_Term_Project
         {
             InitializeComponent();
         }
+
+        private void btnCloseViewAsset_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

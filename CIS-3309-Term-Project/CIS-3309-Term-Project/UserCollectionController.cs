@@ -45,6 +45,7 @@ namespace CIS_3309_Term_Project
             UserExecuteQuery("INSERT INTO Users (Username, UserPassword, FirstName, LastName,Department,ProfilePic, PhoneNumber, Address, City, State) VALUES ('"
     + user.Username + "', '" + user.Password + "', '" + user.FirstName + "', '" + user.LastName + "', '" + user.UserDepartment.ToString() + "', '" + user.ProfilePicture + "', '" +
     user.PhoneNumber + "', '" + user.Address + "', '" + user.City + "', '" + user.State + "');");
+            LoadUsers(); //have to call this because userID isn't created until its autoassigned in db, prob a better solution for this
             return true;
         }
         public bool DeleteUser(User user)
