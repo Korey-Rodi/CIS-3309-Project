@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|c:\\users\\rodik\\documents\\github\\cis-3309-project\\cis-3309-term-project\\cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -23,11 +23,11 @@
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\usercollectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|c:\\users\\rodik\\documents\\github\\cis-3309-project\\cis-3309-term-project\\cis-3309-term-project\\frmuserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\frmuserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\frmuserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|c:\\users\\rodik\\documents\\github\\cis-3309-project\\cis-3309-term-project\\cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\frmcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|c:\\users\\rodik\\documents\\github\\cis-3309-project\\cis-3309-term-project\\cis-3309-term-project\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\cis-3309-term-project\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3A2173FE-C24E-466E-BA28-95C5CD24B3B9}|CIS-3309-Term-Project\\CIS-3309-Term-Project.csproj|solutionrelative:cis-3309-term-project\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -160,8 +160,7 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\frmCreate.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwCMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T23:06:55.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-11T23:06:55.417Z"
             },
             {
               "$type": "Document",
@@ -237,7 +236,8 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\frmUser.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T17:17:49.096Z"
+              "WhenOpened": "2026-11-11T17:17:49.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -248,7 +248,8 @@
               "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmUser.cs [Design]",
               "RelativeToolTip": "CIS-3309-Term-Project\\frmUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T04:52:56.407Z"
+              "WhenOpened": "2026-11-11T04:52:56.407Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -259,7 +260,8 @@
               "ToolTip": "C:\\Users\\rodik\\Documents\\GitHub\\CIS-3309-Project\\CIS-3309-Term-Project\\CIS-3309-Term-Project\\frmAsset.cs [Design]",
               "RelativeToolTip": "CIS-3309-Term-Project\\frmAsset.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T04:53:46.274Z"
+              "WhenOpened": "2026-11-11T04:53:46.274Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -271,7 +273,8 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\Asset.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:16:09.832Z"
+              "WhenOpened": "2026-11-08T20:16:09.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -283,7 +286,8 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\UserCollection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:12:00.521Z"
+              "WhenOpened": "2026-11-08T20:12:00.521Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -295,7 +299,8 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:12:06.123Z"
+              "WhenOpened": "2026-11-08T20:12:06.123Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -307,7 +312,8 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\AssetController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:17:01.39Z"
+              "WhenOpened": "2026-11-08T20:17:01.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -319,7 +325,8 @@
               "RelativeToolTip": "CIS-3309-Term-Project\\AssetCollection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-08T20:16:11.108Z"
+              "WhenOpened": "2026-11-08T20:16:11.108Z",
+              "EditorCaption": ""
             }
           ]
         }
