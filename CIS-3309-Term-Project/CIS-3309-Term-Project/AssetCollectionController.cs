@@ -118,12 +118,6 @@ namespace CIS_3309_Term_Project
             }
             return assetCollection.Assets;
         }
-        public List<Asset> LoadStock()
-        {
-            // Load every Asset
-            // This is redundant
-            return null;
-        }
         public List<Asset> LoadInUse()
         {
             List<Asset> assets = new List<Asset>();
@@ -185,6 +179,13 @@ namespace CIS_3309_Term_Project
             public List<Asset> Search(String search)
             {
                 List<Asset> results = new List<Asset>();
+                foreach(Asset asset in assetCollection.Assets)
+                {
+                    if(asset.AssetID == search)
+                    {
+                        results.Add(asset);
+                    }
+                }
                 return results;
             }
         }
@@ -193,6 +194,13 @@ namespace CIS_3309_Term_Project
             public List<Asset> Search(String search)
             {
                 List<Asset> results = new List<Asset>();
+                foreach(Asset asset in assetCollection.Assets)
+                {
+                    if(asset.Make == search)
+                    {
+                        results.Add(asset);
+                    }
+                }
                 return results;
             }
         }
@@ -201,6 +209,13 @@ namespace CIS_3309_Term_Project
             public List<Asset> Search(String search)
             {
                 List<Asset> results = new List<Asset>();
+                foreach(Asset asset in assetCollection.Assets)
+                {
+                    if(asset.Model == search)
+                    {
+                        results.Add(asset);
+                    }
+                }
                 return results;
             }
         }

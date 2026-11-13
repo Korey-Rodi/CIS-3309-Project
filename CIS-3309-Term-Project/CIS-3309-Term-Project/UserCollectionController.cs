@@ -140,6 +140,13 @@ namespace CIS_3309_Term_Project
             public List<User> Search(String search)
             {
                 List<User> results = new List<User>();
+                foreach(User user in UserCollection.Users)
+                {
+                    if(user.UserID == search)
+                    {
+                        results.Add(user);
+                    }
+                }
                 return results;
             }
         }
@@ -148,6 +155,13 @@ namespace CIS_3309_Term_Project
             public List<User> Search(String search)
             {
                 List<User> results = new List<User>();
+                foreach(User user in UserCollection.Users)
+                {
+                    if(user.FirstName == search)
+                    {
+                        results.Add(user);
+                    }
+                }
                 return results;
             }
         }
@@ -156,6 +170,13 @@ namespace CIS_3309_Term_Project
             public List<User> Search(String search)
             {
                 List<User> results = new List<User>();
+                foreach(User user in UserCollection.Users)
+                {
+                    if(user.LastName == search)
+                    {
+                        results.Add(user);
+                    }
+                }
                 return results;
             }
         }
@@ -164,6 +185,13 @@ namespace CIS_3309_Term_Project
             public List<User> Search(String search)
             {
                 List<User> results = new List<User>();
+                foreach(User user in UserCollection.Users)
+                {
+                    if(user.Username == search)
+                    {
+                        results.Add(user);
+                    }
+                }
                 return results;
             }
         }
