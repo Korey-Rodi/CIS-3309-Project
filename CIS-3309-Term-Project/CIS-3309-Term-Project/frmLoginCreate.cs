@@ -23,7 +23,7 @@ namespace CIS_3309_Term_Project
         {
             Form frm = new frmCreate();
             frm.ShowDialog();
-
+            currentUsers = userController.LoadUsers();// ensures new accounts are put in memory
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace CIS_3309_Term_Project
 
         private void frmLoginCreate_Load(object sender, EventArgs e)
         {
-            // Adds all the current users to memory
+            // adds all the current users to memory
             currentUsers = userController.LoadUsers();
         }
     }

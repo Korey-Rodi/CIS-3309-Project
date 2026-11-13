@@ -35,6 +35,7 @@
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
+            this.lblMock = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfileIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,10 +46,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbxProfileIcon.BackColor = System.Drawing.Color.Transparent;
             this.pbxProfileIcon.Image = global::CIS_3309_Term_Project.Properties.Resources.ProfileIcon;
-            this.pbxProfileIcon.Location = new System.Drawing.Point(615, 183);
-            this.pbxProfileIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxProfileIcon.Location = new System.Drawing.Point(410, 119);
             this.pbxProfileIcon.Name = "pbxProfileIcon";
-            this.pbxProfileIcon.Size = new System.Drawing.Size(264, 227);
+            this.pbxProfileIcon.Size = new System.Drawing.Size(176, 148);
             this.pbxProfileIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxProfileIcon.TabIndex = 0;
             this.pbxProfileIcon.TabStop = false;
@@ -56,29 +56,28 @@
             // txtUser
             // 
             this.txtUser.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(518, 474);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUser.Location = new System.Drawing.Point(345, 308);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(440, 40);
+            this.txtUser.Size = new System.Drawing.Size(295, 29);
             this.txtUser.TabIndex = 3;
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(518, 560);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Location = new System.Drawing.Point(345, 364);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(440, 40);
+            this.txtPassword.Size = new System.Drawing.Size(295, 29);
             this.txtPassword.TabIndex = 4;
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLogin.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(366, 694);
+            this.btnLogin.Location = new System.Drawing.Point(244, 451);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(385, 52);
+            this.btnLogin.Size = new System.Drawing.Size(257, 34);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -87,9 +86,10 @@
             // btnCreateAccount
             // 
             this.btnCreateAccount.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAccount.Location = new System.Drawing.Point(757, 694);
+            this.btnCreateAccount.Location = new System.Drawing.Point(505, 451);
+            this.btnCreateAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCreateAccount.Name = "btnCreateAccount";
-            this.btnCreateAccount.Size = new System.Drawing.Size(385, 52);
+            this.btnCreateAccount.Size = new System.Drawing.Size(257, 34);
             this.btnCreateAccount.TabIndex = 6;
             this.btnCreateAccount.Text = "Sign Up";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
@@ -100,9 +100,10 @@
             this.lblUserName.AutoSize = true;
             this.lblUserName.BackColor = System.Drawing.Color.Transparent;
             this.lblUserName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUserName.Location = new System.Drawing.Point(690, 440);
+            this.lblUserName.Location = new System.Drawing.Point(460, 286);
+            this.lblUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(87, 20);
+            this.lblUserName.Size = new System.Drawing.Size(58, 13);
             this.lblUserName.TabIndex = 7;
             this.lblUserName.Text = "Username:";
             // 
@@ -111,20 +112,35 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPassword.Location = new System.Drawing.Point(695, 537);
+            this.lblPassword.Location = new System.Drawing.Point(463, 349);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(82, 20);
+            this.lblPassword.Size = new System.Drawing.Size(56, 13);
             this.lblPassword.TabIndex = 8;
             this.lblPassword.Text = "Password:";
             // 
+            // lblMock
+            // 
+            this.lblMock.AutoSize = true;
+            this.lblMock.BackColor = System.Drawing.Color.Transparent;
+            this.lblMock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMock.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblMock.Location = new System.Drawing.Point(163, 328);
+            this.lblMock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMock.Name = "lblMock";
+            this.lblMock.Size = new System.Drawing.Size(110, 48);
+            this.lblMock.TabIndex = 9;
+            this.lblMock.Text = "Made easy login:\r\nUsername: a\r\nPassword: a";
+            // 
             // frmLoginCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::CIS_3309_Term_Project.Properties.Resources.BlueGradientBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1478, 1069);
+            this.ClientSize = new System.Drawing.Size(985, 695);
+            this.Controls.Add(this.lblMock);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.btnCreateAccount);
@@ -133,7 +149,6 @@
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.pbxProfileIcon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLoginCreate";
             this.ShowIcon = false;
             this.Text = "Asset Manager System -  Logon";
@@ -153,6 +168,7 @@
         private System.Windows.Forms.Button btnCreateAccount;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Label lblMock;
     }
 }
 

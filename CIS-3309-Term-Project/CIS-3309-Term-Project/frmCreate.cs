@@ -21,12 +21,6 @@ namespace CIS_3309_Term_Project
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            if (chkLinkDevice.Checked)
-            {
-                // Here is where your link device logic and form laucnh can go perhaps?
-                // You may need to rewrite this depending on your implementation
-                return;
-            }
             // User ID sets to 0 and is properly assigned when added to database
             int userId = 0;
             User newUser = new User(userId, txtUsername.Text, txtPassword.Text, txtFirst.Text,
@@ -34,8 +28,24 @@ namespace CIS_3309_Term_Project
             if (userCollection.AddUser(newUser))
             {
                 MessageBox.Show("User account Created", "Account Created");
+            
+                //creates the user first if info is value
+                if (chkLinkDevice.Checked)
+                {
+                    int createdUserId = userCollection.ValidateUser(txtUsername.Text, txtPassword.Text).UserID;
+
+                    Form frm = new frmCreateAsset();
+                    frm.Tag = createdUserId;
+                    frm.ShowDialog();
+                }
+                this.Close();
             }
             
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

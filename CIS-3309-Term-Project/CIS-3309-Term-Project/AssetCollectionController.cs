@@ -36,8 +36,19 @@ namespace CIS_3309_Term_Project
             myCommand.ExecuteNonQuery();
             myConnection.Close();
         }
-        public bool AddAsset()
+        public bool AddAsset(Asset asset)
         {
+            //C# int unassigned = 0, while db does "NULL" which inserts it as blank.
+            String userAssignedIdValue = "NULL";
+            if (asset.AssignedUserId != 0)
+            {
+                userAssignedIdValue = asset.AssignedUserId.ToString();
+            }
+
+            UserExecuteQuery("INSERT INTO Assets (Make, Model, DateLastStateChange, State, Location, PictureAsset, CPU, RAM, OS, Storage, AssignedUserID) VALUES ('"
+            + asset.Make + "', '" + asset.Model + "', '" + asset.Date.ToString("yyyy-MM-dd") + "', '" + asset.AssetState.ToString() + "', '" + asset.Location + "', '" + asset.AssetImage + "', '" +
+            asset.CPU + "', '" + asset.Ram + "', '" + asset.OS + "', '" + asset.Storage + "', " + userAssignedIdValue + ");");
+            LoadAssets();
             return true;
         }
         public bool DeleteAsset()
@@ -60,7 +71,7 @@ namespace CIS_3309_Term_Project
                 int assetId = int.Parse(record["AssetID"].ToString());
 
                 DateTime date = DateTime.Parse(record["DateLastStateChange"].ToString());
-                
+
                 //handling the possibilities for the enum
                 Asset.State assetState;
                 if (record["State"].ToString() == "Retired")
@@ -107,18 +118,13 @@ namespace CIS_3309_Term_Project
             }
             return assetCollection.Assets;
         }
-        public List<Asset> LoadStock()
-        {
-            // Load every Asset
-            // This is redundant
-            return null;
-        }
         public List<Asset> LoadInUse()
         {
             List<Asset> assets = new List<Asset>();
             foreach (Asset asset in assetCollection.Assets)
             {
-                if (asset.AssetState.Equals(Asset.State.In_Use.ToString())){
+                if (asset.AssetState.Equals(Asset.State.In_Use.ToString()))
+                {
                     assets.Add(asset);
                 }
             }
@@ -141,11 +147,31 @@ namespace CIS_3309_Term_Project
         }
         public List<Asset> LoadRecentAsset()
         {
+            DateTime today = DateTime.Today;
+            DateTime future = today.AddDays(-14);
+            List<Asset> assets = new List<Asset>();
+            foreach(Asset asset in assetCollection.Assets)
+            {
+                // I do no not want to continue this function until I know for sure how
+                // you are handling the format of these types
+                // Do I need to convert and such
+            }
             return null;
         }
-        public List<Asset> GetAssetsByState()
+        public Dictionary<String, int> GetAssetsByState()
         {
-            return null;
+            Dictionary<String,int> AssetsByState = new Dictionary<string, int>();
+            foreach(Asset asset in assetCollection.Assets)
+            {
+                if (!AssetsByState.ContainsKey(asset.AssetState.ToString()))
+                {
+                    AssetsByState.Add(asset.AssetState.ToString(),1);
+                } else
+                {
+                    AssetsByState[asset.AssetState.ToString()]++;
+                }
+            }
+            return AssetsByState;
         }
         public int GetAssetCount()
         {
@@ -156,7 +182,7 @@ namespace CIS_3309_Term_Project
             List<Asset> assets = new List<Asset>();
             foreach (Asset asset in assetCollection.Assets)
             {
-                if(asset.AssignedUserId == currentUser.UserID)
+                if (asset.AssignedUserId == currentUser.UserID)
                 {
                     assets.Add(asset);
                 }
@@ -173,6 +199,13 @@ namespace CIS_3309_Term_Project
             public List<Asset> Search(String search)
             {
                 List<Asset> results = new List<Asset>();
+                foreach(Asset asset in assetCollection.Assets)
+                {
+                    if(asset.AssetID == search)
+                    {
+                        results.Add(asset);
+                    }
+                }
                 return results;
             }
         }
@@ -181,6 +214,13 @@ namespace CIS_3309_Term_Project
             public List<Asset> Search(String search)
             {
                 List<Asset> results = new List<Asset>();
+                foreach(Asset asset in assetCollection.Assets)
+                {
+                    if(asset.Make == search)
+                    {
+                        results.Add(asset);
+                    }
+                }
                 return results;
             }
         }
@@ -189,6 +229,13 @@ namespace CIS_3309_Term_Project
             public List<Asset> Search(String search)
             {
                 List<Asset> results = new List<Asset>();
+                foreach(Asset asset in assetCollection.Assets)
+                {
+                    if(asset.Model == search)
+                    {
+                        results.Add(asset);
+                    }
+                }
                 return results;
             }
         }

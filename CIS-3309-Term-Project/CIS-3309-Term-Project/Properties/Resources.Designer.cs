@@ -73,6 +73,16 @@ namespace CIS_3309_Term_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap computerSymbol {
+            get {
+                object obj = ResourceManager.GetObject("computerSymbol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ProfileIcon {
             get {
                 object obj = ResourceManager.GetObject("ProfileIcon", resourceCulture);

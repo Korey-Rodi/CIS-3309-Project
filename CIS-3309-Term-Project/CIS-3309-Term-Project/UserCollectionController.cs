@@ -45,6 +45,7 @@ namespace CIS_3309_Term_Project
             UserExecuteQuery("INSERT INTO Users (Username, UserPassword, FirstName, LastName,Department,ProfilePic, PhoneNumber, Address, City, State) VALUES ('"
     + user.Username + "', '" + user.Password + "', '" + user.FirstName + "', '" + user.LastName + "', '" + user.UserDepartment.ToString() + "', '" + user.ProfilePicture + "', '" +
     user.PhoneNumber + "', '" + user.Address + "', '" + user.City + "', '" + user.State + "');");
+            LoadUsers(); //have to call this because userID isn't created until its autoassigned in db, prob a better solution for this
             return true;
         }
         public bool DeleteUser(User user)
@@ -53,8 +54,13 @@ namespace CIS_3309_Term_Project
             UserExecuteQuery("DELETE FROM Users WHERE UserID =" + id + ";");
             return true;
         }
-        public bool EditUser()
+        public bool EditUser(User user)
         {
+            String id = user.UserID.ToString();
+            UserExecuteQuery("UPDATE Users SET " + "Username = '" + user.Username + "', " + "UserPassword = '" + user.Password + "', " + "FirstName = '" + user.FirstName + "', " +
+        "LastName = '" + user.LastName + "', " + "Department = '" + user.UserDepartment.ToString() + "', " + "ProfilePic = '" + user.ProfilePicture + "', " +
+        "PhoneNumber = '" + user.PhoneNumber + "', " + "Address = '" + user.Address + "', " + "City = '" + user.City + "', " +
+        "State = '" + user.State + "' " + "WHERE UserID = " + id + ";");
             return true;
         }
         public List<User> LoadUsers()
@@ -127,7 +133,18 @@ namespace CIS_3309_Term_Project
         }
         public Dictionary<String,int> LoadUsersByDept()
         {
-            return null;
+            Dictionary<String,int> UsersByDept = new Dictionary<string, int>();
+            foreach(User user in userCollection.Users)
+            {
+                if (!UsersByDept.ContainsKey(user.UserDepartment.ToString()))
+                {
+                    UsersByDept.Add(user.UserDepartment.ToString(),1);
+                } else
+                {
+                    UsersByDept[user.UserDepartment.ToString()]++;
+                }
+            }
+            return UsersByDept;
         }
         // User Search Interface
         public interface ISearch
@@ -139,6 +156,13 @@ namespace CIS_3309_Term_Project
             public List<User> Search(String search)
             {
                 List<User> results = new List<User>();
+                foreach(User user in UserCollection.Users)
+                {
+                    if(user.UserID == search)
+                    {
+                        results.Add(user);
+                    }
+                }
                 return results;
             }
         }
@@ -147,6 +171,13 @@ namespace CIS_3309_Term_Project
             public List<User> Search(String search)
             {
                 List<User> results = new List<User>();
+                foreach(User user in UserCollection.Users)
+                {
+                    if(user.FirstName == search)
+                    {
+                        results.Add(user);
+                    }
+                }
                 return results;
             }
         }
@@ -155,6 +186,13 @@ namespace CIS_3309_Term_Project
             public List<User> Search(String search)
             {
                 List<User> results = new List<User>();
+                foreach(User user in UserCollection.Users)
+                {
+                    if(user.LastName == search)
+                    {
+                        results.Add(user);
+                    }
+                }
                 return results;
             }
         }
@@ -163,6 +201,13 @@ namespace CIS_3309_Term_Project
             public List<User> Search(String search)
             {
                 List<User> results = new List<User>();
+                foreach(User user in UserCollection.Users)
+                {
+                    if(user.Username == search)
+                    {
+                        results.Add(user);
+                    }
+                }
                 return results;
             }
         }

@@ -37,5 +37,17 @@ namespace CIS_3309_Term_Project
         {
 
         }
+
+        private void btnCreateAsset_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmCreateAsset();
+            frm.ShowDialog();
+        }
+
+        private void btnViewAsset_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmAssetView();
+            frm.ShowDialog();
+        }
     }
 }
