@@ -54,8 +54,13 @@ namespace CIS_3309_Term_Project
             UserExecuteQuery("DELETE FROM Users WHERE UserID =" + id + ";");
             return true;
         }
-        public bool EditUser()
+        public bool EditUser(User user)
         {
+            String id = user.UserID.ToString();
+            UserExecuteQuery("UPDATE Users SET " + "Username = '" + user.Username + "', " + "UserPassword = '" + user.Password + "', " + "FirstName = '" + user.FirstName + "', " +
+        "LastName = '" + user.LastName + "', " + "Department = '" + user.UserDepartment.ToString() + "', " + "ProfilePic = '" + user.ProfilePicture + "', " +
+        "PhoneNumber = '" + user.PhoneNumber + "', " + "Address = '" + user.Address + "', " + "City = '" + user.City + "', " +
+        "State = '" + user.State + "' " + "WHERE UserID = " + id + ";");
             return true;
         }
         public List<User> LoadUsers()
@@ -128,7 +133,18 @@ namespace CIS_3309_Term_Project
         }
         public Dictionary<String,int> LoadUsersByDept()
         {
-            return null;
+            Dictionary<String,int> UsersByDept = new Dictionary<string, int>();
+            foreach(User user in userCollection.Users)
+            {
+                if (!UsersByDept.ContainsKey(user.UserDepartment.ToString()))
+                {
+                    UsersByDept.Add(user.UserDepartment.ToString(),1);
+                } else
+                {
+                    UsersByDept[user.UserDepartment.ToString()]++;
+                }
+            }
+            return UsersByDept;
         }
         // User Search Interface
         public interface ISearch

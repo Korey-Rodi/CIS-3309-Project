@@ -147,11 +147,31 @@ namespace CIS_3309_Term_Project
         }
         public List<Asset> LoadRecentAsset()
         {
+            DateTime today = DateTime.Today;
+            DateTime future = today.AddDays(-14);
+            List<Asset> assets = new List<Asset>();
+            foreach(Asset asset in assetCollection.Assets)
+            {
+                // I do no not want to continue this function until I know for sure how
+                // you are handling the format of these types
+                // Do I need to convert and such
+            }
             return null;
         }
-        public List<Asset> GetAssetsByState()
+        public Dictionary<String, int> GetAssetsByState()
         {
-            return null;
+            Dictionary<String,int> AssetsByState = new Dictionary<string, int>();
+            foreach(Asset asset in assetCollection.Assets)
+            {
+                if (!AssetsByState.ContainsKey(asset.AssetState.ToString()))
+                {
+                    AssetsByState.Add(asset.AssetState.ToString(),1);
+                } else
+                {
+                    AssetsByState[asset.AssetState.ToString()]++;
+                }
+            }
+            return AssetsByState;
         }
         public int GetAssetCount()
         {
