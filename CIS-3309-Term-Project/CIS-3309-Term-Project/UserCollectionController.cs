@@ -147,6 +147,7 @@ namespace CIS_3309_Term_Project
             return UsersByDept;
         }
         // User Search Interface
+        /*
         public interface ISearch
         {
             List<User> Search(String search);
@@ -211,5 +212,6 @@ namespace CIS_3309_Term_Project
                 return results;
             }
         }
+        */
     }
 }

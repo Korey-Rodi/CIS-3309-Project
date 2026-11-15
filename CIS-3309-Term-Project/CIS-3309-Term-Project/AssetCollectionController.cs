@@ -194,6 +194,7 @@ namespace CIS_3309_Term_Project
         {
             List<Asset> Search(String search);
         }
+        /*
         public class SearchByID : ISearch
         {
             public List<Asset> Search(String search)
@@ -239,5 +240,6 @@ namespace CIS_3309_Term_Project
                 return results;
             }
         }
+        */
     }
 }
