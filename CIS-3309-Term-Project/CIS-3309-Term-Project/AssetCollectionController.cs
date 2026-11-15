@@ -51,12 +51,29 @@ namespace CIS_3309_Term_Project
             LoadAssets();
             return true;
         }
-        public bool DeleteAsset()
+        public bool DeleteAsset(Asset asset)
         {
+            String assetId = asset.AssetID.ToString();
+            UserExecuteQuery("DELETE FROM Assets WHERE AssetID = " + assetId + ";");
+            LoadAssets();
             return true;
         }
-        public bool EditAsset()
+        public bool EditAsset(Asset asset)
         {
+            String id = asset.AssetID.ToString();
+
+            //C# int unassigned = 0, while db does "NULL" which inserts it as blank.
+            String userAssignedIdValue = "NULL";
+            if (asset.AssignedUserId != 0)
+            {
+                userAssignedIdValue = asset.AssignedUserId.ToString();
+            }
+
+            UserExecuteQuery("UPDATE Assets SET " + "Make = '" + asset.Make + "', " + "Model = '" + asset.Model + "', " + "DateLastStateChange = '" + asset.Date.ToString("yyyy-MM-dd") + "', " +
+            "State = '" + asset.AssetState.ToString() + "', " + "Location = '" + asset.Location + "', " + "PictureAsset = '" + asset.AssetImage + "', " + "CPU = '" + asset.CPU + "', " +
+            "RAM = '" + asset.Ram + "', " + "OS = '" + asset.OS + "', " + "Storage = '" + asset.Storage + "', " +
+            "AssignedUserID = " + userAssignedIdValue + " " + "WHERE AssetID = " + id + ";");
+            LoadAssets();
             return true;
         }
         public List<Asset> LoadAssets()

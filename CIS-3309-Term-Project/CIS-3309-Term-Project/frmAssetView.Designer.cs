@@ -39,9 +39,9 @@
             this.lblCPU = new System.Windows.Forms.Label();
             this.btnCloseViewAsset = new System.Windows.Forms.Button();
             this.chkAssetAutofill = new System.Windows.Forms.CheckBox();
-            this.txtPictureAsset = new System.Windows.Forms.TextBox();
+            this.txtAssetImage = new System.Windows.Forms.TextBox();
             this.txtOS = new System.Windows.Forms.TextBox();
-            this.txtDataLastStateChange = new System.Windows.Forms.TextBox();
+            this.txtDateLastStateChange = new System.Windows.Forms.TextBox();
             this.txtMake = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.lblStorage = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.lblLocation = new System.Windows.Forms.Label();
             this.pbxProfile = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAssetId = new System.Windows.Forms.TextBox();
             this.lblAssetId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +92,7 @@
             this.txtAssignedUserID.Location = new System.Drawing.Point(415, 371);
             this.txtAssignedUserID.Margin = new System.Windows.Forms.Padding(2);
             this.txtAssignedUserID.Name = "txtAssignedUserID";
+            this.txtAssignedUserID.ReadOnly = true;
             this.txtAssignedUserID.Size = new System.Drawing.Size(173, 22);
             this.txtAssignedUserID.TabIndex = 71;
             // 
@@ -190,14 +191,14 @@
             this.chkAssetAutofill.Text = "Autofill with my computer\'s specs";
             this.chkAssetAutofill.UseVisualStyleBackColor = false;
             // 
-            // txtPictureAsset
+            // txtAssetImage
             // 
-            this.txtPictureAsset.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPictureAsset.Location = new System.Drawing.Point(415, 433);
-            this.txtPictureAsset.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPictureAsset.Name = "txtPictureAsset";
-            this.txtPictureAsset.Size = new System.Drawing.Size(173, 22);
-            this.txtPictureAsset.TabIndex = 62;
+            this.txtAssetImage.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAssetImage.Location = new System.Drawing.Point(415, 433);
+            this.txtAssetImage.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAssetImage.Name = "txtAssetImage";
+            this.txtAssetImage.Size = new System.Drawing.Size(173, 22);
+            this.txtAssetImage.TabIndex = 62;
             // 
             // txtOS
             // 
@@ -208,14 +209,15 @@
             this.txtOS.Size = new System.Drawing.Size(173, 22);
             this.txtOS.TabIndex = 61;
             // 
-            // txtDataLastStateChange
+            // txtDateLastStateChange
             // 
-            this.txtDataLastStateChange.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataLastStateChange.Location = new System.Drawing.Point(415, 304);
-            this.txtDataLastStateChange.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDataLastStateChange.Name = "txtDataLastStateChange";
-            this.txtDataLastStateChange.Size = new System.Drawing.Size(173, 22);
-            this.txtDataLastStateChange.TabIndex = 60;
+            this.txtDateLastStateChange.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateLastStateChange.Location = new System.Drawing.Point(415, 304);
+            this.txtDateLastStateChange.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDateLastStateChange.Name = "txtDateLastStateChange";
+            this.txtDateLastStateChange.ReadOnly = true;
+            this.txtDateLastStateChange.Size = new System.Drawing.Size(173, 22);
+            this.txtDateLastStateChange.TabIndex = 60;
             // 
             // txtMake
             // 
@@ -334,6 +336,7 @@
             this.btnSaveChanges.TabIndex = 74;
             this.btnSaveChanges.Text = "Save Changes";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // lblDisplay
             // 
@@ -382,14 +385,15 @@
             this.pbxProfile.TabIndex = 79;
             this.pbxProfile.TabStop = false;
             // 
-            // textBox2
+            // txtAssetId
             // 
-            this.textBox2.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(415, 208);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 22);
-            this.textBox2.TabIndex = 84;
+            this.txtAssetId.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAssetId.Location = new System.Drawing.Point(415, 208);
+            this.txtAssetId.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAssetId.Name = "txtAssetId";
+            this.txtAssetId.ReadOnly = true;
+            this.txtAssetId.Size = new System.Drawing.Size(173, 22);
+            this.txtAssetId.TabIndex = 84;
             // 
             // lblAssetId
             // 
@@ -410,7 +414,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(989, 699);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtAssetId);
             this.Controls.Add(this.lblAssetId);
             this.Controls.Add(this.pbxProfile);
             this.Controls.Add(this.txtLocation);
@@ -429,9 +433,9 @@
             this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.btnCloseViewAsset);
             this.Controls.Add(this.chkAssetAutofill);
-            this.Controls.Add(this.txtPictureAsset);
+            this.Controls.Add(this.txtAssetImage);
             this.Controls.Add(this.txtOS);
-            this.Controls.Add(this.txtDataLastStateChange);
+            this.Controls.Add(this.txtDateLastStateChange);
             this.Controls.Add(this.txtMake);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.lblStorage);
@@ -443,6 +447,7 @@
             this.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmAssetView";
             this.Text = "Asset Manager System - Asset View";
+            this.Load += new System.EventHandler(this.frmAssetView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -462,9 +467,9 @@
         private System.Windows.Forms.Label lblCPU;
         private System.Windows.Forms.Button btnCloseViewAsset;
         private System.Windows.Forms.CheckBox chkAssetAutofill;
-        private System.Windows.Forms.TextBox txtPictureAsset;
+        private System.Windows.Forms.TextBox txtAssetImage;
         private System.Windows.Forms.TextBox txtOS;
-        private System.Windows.Forms.TextBox txtDataLastStateChange;
+        private System.Windows.Forms.TextBox txtDateLastStateChange;
         private System.Windows.Forms.TextBox txtMake;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label lblStorage;
@@ -479,7 +484,7 @@
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.PictureBox pbxProfile;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAssetId;
         private System.Windows.Forms.Label lblAssetId;
     }
 }
