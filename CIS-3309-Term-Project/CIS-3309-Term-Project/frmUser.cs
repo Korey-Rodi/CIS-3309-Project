@@ -53,5 +53,10 @@ namespace CIS_3309_Term_Project
             frm.ShowDialog();
             dgvUser.DataSource = myUserController.LoadUsers(); 
         }
+
+        private void btnLoadUsers_Click(object sender, EventArgs e)
+        {
+            dgvUser.DataSource = myUserController.LoadUsers();
+        }
     }
 }

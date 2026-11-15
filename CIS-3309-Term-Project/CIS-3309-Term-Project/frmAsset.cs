@@ -14,7 +14,7 @@ namespace CIS_3309_Term_Project
     public partial class frmAsset : Form
     {
         AssetCollectionController myAssetController;
-        BindingSource myBindingSource;
+        //BindingSource myBindingSource;
 
 
         public frmAsset()

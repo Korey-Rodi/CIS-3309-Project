@@ -53,6 +53,7 @@
             this.dgvAsset.BackgroundColor = System.Drawing.Color.Gray;
             this.dgvAsset.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAsset.Location = new System.Drawing.Point(12, 115);
+            this.dgvAsset.MultiSelect = false;
             this.dgvAsset.Name = "dgvAsset";
             this.dgvAsset.ReadOnly = true;
             this.dgvAsset.RowHeadersWidth = 62;

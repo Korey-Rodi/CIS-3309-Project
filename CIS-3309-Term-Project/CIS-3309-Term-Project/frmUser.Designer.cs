@@ -46,11 +46,16 @@
             // 
             // dgvUser
             // 
+            this.dgvUser.AllowUserToAddRows = false;
+            this.dgvUser.AllowUserToDeleteRows = false;
             this.dgvUser.BackgroundColor = System.Drawing.Color.Gray;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUser.Location = new System.Drawing.Point(14, 115);
+            this.dgvUser.MultiSelect = false;
             this.dgvUser.Name = "dgvUser";
+            this.dgvUser.ReadOnly = true;
             this.dgvUser.RowHeadersWidth = 62;
+            this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUser.Size = new System.Drawing.Size(948, 501);
             this.dgvUser.TabIndex = 0;
             // 
@@ -90,6 +95,7 @@
             this.btnLoadUsers.TabIndex = 111;
             this.btnLoadUsers.Text = "Load All";
             this.btnLoadUsers.UseVisualStyleBackColor = true;
+            this.btnLoadUsers.Click += new System.EventHandler(this.btnLoadUsers_Click);
             // 
             // lblName
             // 
