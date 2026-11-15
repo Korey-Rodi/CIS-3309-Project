@@ -88,5 +88,31 @@ namespace CIS_3309_Term_Project
             txtStorage.Text = currentAsset.Storage;
             cboState.SelectedItem = currentAsset.AssetState.ToString();
         }
+
+        private void lblState_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure?", "Delete Asset", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    myAssetController.DeleteAsset(currentAsset);
+                    MessageBox.Show("Asset deleted.", "Delete Asset");
+                    this.Close();
+                }
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }

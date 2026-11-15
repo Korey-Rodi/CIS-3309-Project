@@ -34,5 +34,24 @@ namespace CIS_3309_Term_Project
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnCreateUser_Click(object sender, EventArgs e)
+        {
+            Form frm = new frmCreate();
+            frm.ShowDialog();
+            dgvUser.DataSource = myUserController.LoadUsers();
+        }
+
+        private void btnViewUser_Click(object sender, EventArgs e)
+        {
+            User selectedUser = (User)dgvUser.CurrentRow.DataBoundItem;
+
+            AssetCollectionController myAssetController = new AssetCollectionController();
+            myAssetController.LoadAssets();
+
+            Form frm = new frmUserProfile(selectedUser, myAssetController);
+            frm.ShowDialog();
+            dgvUser.DataSource = myUserController.LoadUsers(); 
+        }
     }
 }

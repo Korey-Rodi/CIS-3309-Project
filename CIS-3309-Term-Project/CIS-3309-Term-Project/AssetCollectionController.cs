@@ -140,7 +140,7 @@ namespace CIS_3309_Term_Project
             List<Asset> assets = new List<Asset>();
             foreach (Asset asset in assetCollection.Assets)
             {
-                if (asset.AssetState.Equals(Asset.State.In_Use.ToString()))
+                if (asset.AssetState == Asset.State.In_Use)
                 {
                     assets.Add(asset);
                 }
@@ -153,7 +153,7 @@ namespace CIS_3309_Term_Project
             List<Asset> assets = new List<Asset>();
             foreach (Asset asset in assetCollection.Assets)
             {
-                if (asset.AssetState.Equals(Asset.State.In_Stock.ToString()))
+                if (asset.AssetState == Asset.State.In_Stock)
                 {
                     assets.Add(asset);
                 }
@@ -165,15 +165,17 @@ namespace CIS_3309_Term_Project
         public List<Asset> LoadRecentAsset()
         {
             DateTime today = DateTime.Today;
-            DateTime future = today.AddDays(-14);
+            DateTime cutoff = today.AddDays(-14);
             List<Asset> assets = new List<Asset>();
             foreach(Asset asset in assetCollection.Assets)
             {
-                // I do no not want to continue this function until I know for sure how
-                // you are handling the format of these types
-                // Do I need to convert and such
+                //assets whose state changed in the last 14 days
+                if (asset.Date >= cutoff)
+                {
+                    assets.Add(asset);
+                }
             }
-            return null;
+            return assets;
         }
         public Dictionary<String, int> GetAssetsByState()
         {

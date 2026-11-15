@@ -76,5 +76,20 @@ namespace CIS_3309_Term_Project
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnLoadInUse_Click(object sender, EventArgs e)
+        {
+            dgvAsset.DataSource = myAssetController.LoadInUse();
+        }
+
+        private void btnInStock_Click(object sender, EventArgs e)
+        {
+            dgvAsset.DataSource = myAssetController.LoadAvailable();
+        }
+
+        private void btnLoadAssets_Click(object sender, EventArgs e)
+        {
+            dgvAsset.DataSource = myAssetController.LoadAssets();
+        }
     }
 }

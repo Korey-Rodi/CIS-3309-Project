@@ -80,7 +80,7 @@
             "Broken",
             "In_Use",
             "In_Stock"});
-            this.cboState.Location = new System.Drawing.Point(415, 337);
+            this.cboState.Location = new System.Drawing.Point(414, 368);
             this.cboState.Margin = new System.Windows.Forms.Padding(2);
             this.cboState.Name = "cboState";
             this.cboState.Size = new System.Drawing.Size(173, 21);
@@ -89,7 +89,7 @@
             // txtAssignedUserID
             // 
             this.txtAssignedUserID.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAssignedUserID.Location = new System.Drawing.Point(415, 371);
+            this.txtAssignedUserID.Location = new System.Drawing.Point(414, 239);
             this.txtAssignedUserID.Margin = new System.Windows.Forms.Padding(2);
             this.txtAssignedUserID.Name = "txtAssignedUserID";
             this.txtAssignedUserID.ReadOnly = true;
@@ -102,7 +102,7 @@
             this.lblAssignedUserID.BackColor = System.Drawing.Color.Transparent;
             this.lblAssignedUserID.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssignedUserID.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAssignedUserID.Location = new System.Drawing.Point(308, 374);
+            this.lblAssignedUserID.Location = new System.Drawing.Point(307, 242);
             this.lblAssignedUserID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssignedUserID.Name = "lblAssignedUserID";
             this.lblAssignedUserID.Size = new System.Drawing.Size(90, 13);
@@ -146,12 +146,13 @@
             this.lblState.BackColor = System.Drawing.Color.Transparent;
             this.lblState.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblState.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblState.Location = new System.Drawing.Point(342, 340);
+            this.lblState.Location = new System.Drawing.Point(341, 371);
             this.lblState.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(35, 13);
             this.lblState.TabIndex = 66;
             this.lblState.Text = "State:";
+            this.lblState.Click += new System.EventHandler(this.lblState_Click);
             // 
             // lblCPU
             // 
@@ -212,7 +213,7 @@
             // txtDateLastStateChange
             // 
             this.txtDateLastStateChange.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDateLastStateChange.Location = new System.Drawing.Point(415, 304);
+            this.txtDateLastStateChange.Location = new System.Drawing.Point(414, 270);
             this.txtDateLastStateChange.Margin = new System.Windows.Forms.Padding(2);
             this.txtDateLastStateChange.Name = "txtDateLastStateChange";
             this.txtDateLastStateChange.ReadOnly = true;
@@ -222,7 +223,7 @@
             // txtMake
             // 
             this.txtMake.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMake.Location = new System.Drawing.Point(415, 270);
+            this.txtMake.Location = new System.Drawing.Point(415, 334);
             this.txtMake.Margin = new System.Windows.Forms.Padding(2);
             this.txtMake.Name = "txtMake";
             this.txtMake.Size = new System.Drawing.Size(173, 22);
@@ -231,7 +232,7 @@
             // txtModel
             // 
             this.txtModel.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModel.Location = new System.Drawing.Point(415, 237);
+            this.txtModel.Location = new System.Drawing.Point(415, 301);
             this.txtModel.Margin = new System.Windows.Forms.Padding(2);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(173, 22);
@@ -282,7 +283,7 @@
             this.lblDataLastStateChange.BackColor = System.Drawing.Color.Transparent;
             this.lblDataLastStateChange.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDataLastStateChange.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDataLastStateChange.Location = new System.Drawing.Point(258, 307);
+            this.lblDataLastStateChange.Location = new System.Drawing.Point(257, 273);
             this.lblDataLastStateChange.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDataLastStateChange.Name = "lblDataLastStateChange";
             this.lblDataLastStateChange.Size = new System.Drawing.Size(140, 13);
@@ -295,7 +296,7 @@
             this.lblMake.BackColor = System.Drawing.Color.Transparent;
             this.lblMake.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMake.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblMake.Location = new System.Drawing.Point(340, 273);
+            this.lblMake.Location = new System.Drawing.Point(342, 340);
             this.lblMake.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMake.Name = "lblMake";
             this.lblMake.Size = new System.Drawing.Size(36, 13);
@@ -308,7 +309,7 @@
             this.lblModel.BackColor = System.Drawing.Color.Transparent;
             this.lblModel.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblModel.Location = new System.Drawing.Point(340, 244);
+            this.lblModel.Location = new System.Drawing.Point(342, 304);
             this.lblModel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModel.Name = "lblModel";
             this.lblModel.Size = new System.Drawing.Size(40, 13);
@@ -325,6 +326,7 @@
             this.btnDelete.TabIndex = 75;
             this.btnDelete.Text = "Delete Asset";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSaveChanges
             // 
