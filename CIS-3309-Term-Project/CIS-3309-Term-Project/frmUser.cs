@@ -66,6 +66,13 @@ namespace CIS_3309_Term_Project
                 if (MessageBox.Show("Are you sure?", "Delete Asset", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     User selectedAsset = (User)dgvUser.CurrentRow.DataBoundItem;
+                    AssetCollectionController myAssetController = new AssetCollectionController();
+                    myAssetController.LoadAssets();
+                    if (myAssetController.LoadMyDevices(selectedAsset).Count > 0)
+                    {
+                        MessageBox.Show("You Cannot Delete Account with Assets Assigned", "Database Error");
+                        return;
+                    }
                     myUserController.DeleteUser(selectedAsset);
                     dgvUser.DataSource = myUserController.LoadUsers();
                 }
