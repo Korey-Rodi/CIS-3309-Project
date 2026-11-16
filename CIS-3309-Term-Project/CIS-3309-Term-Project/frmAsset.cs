@@ -14,23 +14,26 @@ namespace CIS_3309_Term_Project
     public partial class frmAsset : Form
     {
         AssetCollectionController myAssetController;
+        //BindingSource myBindingSource;
+
+
         public frmAsset()
         {
             InitializeComponent();
         }
         private void frmAsset_Load(object sender, EventArgs e)
         {
+
             try
             {
-                //creating obj to connect to access database
                 myAssetController = new AssetCollectionController();
-                //links the loaded assets method to the grid
                 dgvAsset.DataSource = myAssetController.LoadAssets();
             }
             catch (OleDbException ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+
         }
 
         private void dgvAsset_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -46,8 +49,47 @@ namespace CIS_3309_Term_Project
 
         private void btnViewAsset_Click(object sender, EventArgs e)
         {
-            Form frm = new frmAssetView();
+            Asset selectedAsset = (Asset)dgvAsset.CurrentRow.DataBoundItem;//gets whole object back
+            frmAssetView frm = new frmAssetView();
+            frm.currentAsset = selectedAsset;
             frm.ShowDialog();
+            dgvAsset.DataSource = myAssetController.LoadAssets(); // has torefresh after edits
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure?", "Delete Asset", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Asset selectedAsset = (Asset)dgvAsset.CurrentRow.DataBoundItem;
+                    myAssetController.DeleteAsset(selectedAsset);
+                    dgvAsset.DataSource = myAssetController.LoadAssets();
+                }
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void btnLoadInUse_Click(object sender, EventArgs e)
+        {
+            dgvAsset.DataSource = myAssetController.LoadInUse();
+        }
+
+        private void btnInStock_Click(object sender, EventArgs e)
+        {
+            dgvAsset.DataSource = myAssetController.LoadAvailable();
+        }
+
+        private void btnLoadAssets_Click(object sender, EventArgs e)
+        {
+            dgvAsset.DataSource = myAssetController.LoadAssets();
         }
     }
 }

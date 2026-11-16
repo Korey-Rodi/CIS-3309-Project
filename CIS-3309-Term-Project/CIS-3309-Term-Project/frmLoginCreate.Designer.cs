@@ -35,7 +35,6 @@
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.lblMock = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfileIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +74,7 @@
             this.btnLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLogin.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(244, 451);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(257, 34);
             this.btnLogin.TabIndex = 5;
@@ -87,7 +86,7 @@
             // 
             this.btnCreateAccount.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateAccount.Location = new System.Drawing.Point(505, 451);
-            this.btnCreateAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCreateAccount.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreateAccount.Name = "btnCreateAccount";
             this.btnCreateAccount.Size = new System.Drawing.Size(257, 34);
             this.btnCreateAccount.TabIndex = 6;
@@ -119,19 +118,6 @@
             this.lblPassword.TabIndex = 8;
             this.lblPassword.Text = "Password:";
             // 
-            // lblMock
-            // 
-            this.lblMock.AutoSize = true;
-            this.lblMock.BackColor = System.Drawing.Color.Transparent;
-            this.lblMock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMock.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblMock.Location = new System.Drawing.Point(163, 328);
-            this.lblMock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblMock.Name = "lblMock";
-            this.lblMock.Size = new System.Drawing.Size(110, 48);
-            this.lblMock.TabIndex = 9;
-            this.lblMock.Text = "Made easy login:\r\nUsername: a\r\nPassword: a";
-            // 
             // frmLoginCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,7 +126,6 @@
             this.BackgroundImage = global::CIS_3309_Term_Project.Properties.Resources.BlueGradientBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(985, 695);
-            this.Controls.Add(this.lblMock);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.btnCreateAccount);
@@ -168,7 +153,6 @@
         private System.Windows.Forms.Button btnCreateAccount;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label lblMock;
     }
 }
 

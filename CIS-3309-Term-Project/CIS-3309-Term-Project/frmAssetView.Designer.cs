@@ -30,7 +30,6 @@
         {
             this.txtStorage = new System.Windows.Forms.TextBox();
             this.cboState = new System.Windows.Forms.ComboBox();
-            this.txtAssignedUserID = new System.Windows.Forms.TextBox();
             this.lblAssignedUserID = new System.Windows.Forms.Label();
             this.txtRam = new System.Windows.Forms.TextBox();
             this.txtCPU = new System.Windows.Forms.TextBox();
@@ -39,9 +38,9 @@
             this.lblCPU = new System.Windows.Forms.Label();
             this.btnCloseViewAsset = new System.Windows.Forms.Button();
             this.chkAssetAutofill = new System.Windows.Forms.CheckBox();
-            this.txtPictureAsset = new System.Windows.Forms.TextBox();
+            this.txtAssetImage = new System.Windows.Forms.TextBox();
             this.txtOS = new System.Windows.Forms.TextBox();
-            this.txtDataLastStateChange = new System.Windows.Forms.TextBox();
+            this.txtDateLastStateChange = new System.Windows.Forms.TextBox();
             this.txtMake = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
             this.lblStorage = new System.Windows.Forms.Label();
@@ -56,15 +55,17 @@
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.lblLocation = new System.Windows.Forms.Label();
             this.pbxProfile = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAssetId = new System.Windows.Forms.TextBox();
             this.lblAssetId = new System.Windows.Forms.Label();
+            this.txtAssignedUserID = new System.Windows.Forms.TextBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // txtStorage
             // 
             this.txtStorage.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStorage.Location = new System.Drawing.Point(428, 597);
+            this.txtStorage.Location = new System.Drawing.Point(413, 619);
             this.txtStorage.Margin = new System.Windows.Forms.Padding(2);
             this.txtStorage.Name = "txtStorage";
             this.txtStorage.Size = new System.Drawing.Size(173, 22);
@@ -80,20 +81,11 @@
             "Broken",
             "In_Use",
             "In_Stock"});
-            this.cboState.Location = new System.Drawing.Point(428, 344);
+            this.cboState.Location = new System.Drawing.Point(412, 397);
             this.cboState.Margin = new System.Windows.Forms.Padding(2);
             this.cboState.Name = "cboState";
             this.cboState.Size = new System.Drawing.Size(173, 21);
             this.cboState.TabIndex = 72;
-            // 
-            // txtAssignedUserID
-            // 
-            this.txtAssignedUserID.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAssignedUserID.Location = new System.Drawing.Point(428, 378);
-            this.txtAssignedUserID.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAssignedUserID.Name = "txtAssignedUserID";
-            this.txtAssignedUserID.Size = new System.Drawing.Size(173, 22);
-            this.txtAssignedUserID.TabIndex = 71;
             // 
             // lblAssignedUserID
             // 
@@ -101,7 +93,7 @@
             this.lblAssignedUserID.BackColor = System.Drawing.Color.Transparent;
             this.lblAssignedUserID.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssignedUserID.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAssignedUserID.Location = new System.Drawing.Point(321, 381);
+            this.lblAssignedUserID.Location = new System.Drawing.Point(305, 271);
             this.lblAssignedUserID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssignedUserID.Name = "lblAssignedUserID";
             this.lblAssignedUserID.Size = new System.Drawing.Size(90, 13);
@@ -111,7 +103,7 @@
             // txtRam
             // 
             this.txtRam.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRam.Location = new System.Drawing.Point(428, 531);
+            this.txtRam.Location = new System.Drawing.Point(413, 553);
             this.txtRam.Margin = new System.Windows.Forms.Padding(2);
             this.txtRam.Name = "txtRam";
             this.txtRam.Size = new System.Drawing.Size(173, 22);
@@ -120,7 +112,7 @@
             // txtCPU
             // 
             this.txtCPU.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPU.Location = new System.Drawing.Point(428, 497);
+            this.txtCPU.Location = new System.Drawing.Point(413, 519);
             this.txtCPU.Margin = new System.Windows.Forms.Padding(2);
             this.txtCPU.Name = "txtCPU";
             this.txtCPU.Size = new System.Drawing.Size(173, 22);
@@ -132,7 +124,7 @@
             this.lblRAM.BackColor = System.Drawing.Color.Transparent;
             this.lblRAM.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRAM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRAM.Location = new System.Drawing.Point(355, 534);
+            this.lblRAM.Location = new System.Drawing.Point(340, 556);
             this.lblRAM.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRAM.Name = "lblRAM";
             this.lblRAM.Size = new System.Drawing.Size(33, 13);
@@ -145,12 +137,13 @@
             this.lblState.BackColor = System.Drawing.Color.Transparent;
             this.lblState.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblState.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblState.Location = new System.Drawing.Point(355, 347);
+            this.lblState.Location = new System.Drawing.Point(339, 400);
             this.lblState.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(35, 13);
             this.lblState.TabIndex = 66;
             this.lblState.Text = "State:";
+            this.lblState.Click += new System.EventHandler(this.lblState_Click);
             // 
             // lblCPU
             // 
@@ -158,7 +151,7 @@
             this.lblCPU.BackColor = System.Drawing.Color.Transparent;
             this.lblCPU.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPU.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCPU.Location = new System.Drawing.Point(355, 504);
+            this.lblCPU.Location = new System.Drawing.Point(340, 526);
             this.lblCPU.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCPU.Name = "lblCPU";
             this.lblCPU.Size = new System.Drawing.Size(30, 13);
@@ -168,7 +161,7 @@
             // btnCloseViewAsset
             // 
             this.btnCloseViewAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseViewAsset.Location = new System.Drawing.Point(574, 645);
+            this.btnCloseViewAsset.Location = new System.Drawing.Point(559, 657);
             this.btnCloseViewAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnCloseViewAsset.Name = "btnCloseViewAsset";
             this.btnCloseViewAsset.Size = new System.Drawing.Size(125, 33);
@@ -182,7 +175,7 @@
             this.chkAssetAutofill.AutoSize = true;
             this.chkAssetAutofill.BackColor = System.Drawing.Color.Transparent;
             this.chkAssetAutofill.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.chkAssetAutofill.Location = new System.Drawing.Point(428, 469);
+            this.chkAssetAutofill.Location = new System.Drawing.Point(413, 491);
             this.chkAssetAutofill.Margin = new System.Windows.Forms.Padding(2);
             this.chkAssetAutofill.Name = "chkAssetAutofill";
             this.chkAssetAutofill.Size = new System.Drawing.Size(189, 17);
@@ -190,37 +183,39 @@
             this.chkAssetAutofill.Text = "Autofill with my computer\'s specs";
             this.chkAssetAutofill.UseVisualStyleBackColor = false;
             // 
-            // txtPictureAsset
+            // txtAssetImage
             // 
-            this.txtPictureAsset.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPictureAsset.Location = new System.Drawing.Point(428, 440);
-            this.txtPictureAsset.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPictureAsset.Name = "txtPictureAsset";
-            this.txtPictureAsset.Size = new System.Drawing.Size(173, 22);
-            this.txtPictureAsset.TabIndex = 62;
+            this.txtAssetImage.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAssetImage.Location = new System.Drawing.Point(413, 462);
+            this.txtAssetImage.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAssetImage.Name = "txtAssetImage";
+            this.txtAssetImage.Size = new System.Drawing.Size(173, 22);
+            this.txtAssetImage.TabIndex = 62;
+            this.txtAssetImage.TextChanged += new System.EventHandler(this.txtAssetImage_TextChanged);
             // 
             // txtOS
             // 
             this.txtOS.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOS.Location = new System.Drawing.Point(428, 564);
+            this.txtOS.Location = new System.Drawing.Point(413, 586);
             this.txtOS.Margin = new System.Windows.Forms.Padding(2);
             this.txtOS.Name = "txtOS";
             this.txtOS.Size = new System.Drawing.Size(173, 22);
             this.txtOS.TabIndex = 61;
             // 
-            // txtDataLastStateChange
+            // txtDateLastStateChange
             // 
-            this.txtDataLastStateChange.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataLastStateChange.Location = new System.Drawing.Point(428, 311);
-            this.txtDataLastStateChange.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDataLastStateChange.Name = "txtDataLastStateChange";
-            this.txtDataLastStateChange.Size = new System.Drawing.Size(173, 22);
-            this.txtDataLastStateChange.TabIndex = 60;
+            this.txtDateLastStateChange.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateLastStateChange.Location = new System.Drawing.Point(412, 299);
+            this.txtDateLastStateChange.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDateLastStateChange.Name = "txtDateLastStateChange";
+            this.txtDateLastStateChange.ReadOnly = true;
+            this.txtDateLastStateChange.Size = new System.Drawing.Size(173, 22);
+            this.txtDateLastStateChange.TabIndex = 60;
             // 
             // txtMake
             // 
             this.txtMake.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMake.Location = new System.Drawing.Point(428, 277);
+            this.txtMake.Location = new System.Drawing.Point(413, 363);
             this.txtMake.Margin = new System.Windows.Forms.Padding(2);
             this.txtMake.Name = "txtMake";
             this.txtMake.Size = new System.Drawing.Size(173, 22);
@@ -229,7 +224,7 @@
             // txtModel
             // 
             this.txtModel.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModel.Location = new System.Drawing.Point(428, 244);
+            this.txtModel.Location = new System.Drawing.Point(413, 330);
             this.txtModel.Margin = new System.Windows.Forms.Padding(2);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(173, 22);
@@ -241,7 +236,7 @@
             this.lblStorage.BackColor = System.Drawing.Color.Transparent;
             this.lblStorage.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStorage.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblStorage.Location = new System.Drawing.Point(355, 600);
+            this.lblStorage.Location = new System.Drawing.Point(340, 622);
             this.lblStorage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStorage.Name = "lblStorage";
             this.lblStorage.Size = new System.Drawing.Size(47, 13);
@@ -254,7 +249,7 @@
             this.lblOS.BackColor = System.Drawing.Color.Transparent;
             this.lblOS.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOS.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblOS.Location = new System.Drawing.Point(355, 567);
+            this.lblOS.Location = new System.Drawing.Point(340, 589);
             this.lblOS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOS.Name = "lblOS";
             this.lblOS.Size = new System.Drawing.Size(23, 13);
@@ -267,7 +262,7 @@
             this.lblPictureAsset.BackColor = System.Drawing.Color.Transparent;
             this.lblPictureAsset.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPictureAsset.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPictureAsset.Location = new System.Drawing.Point(269, 443);
+            this.lblPictureAsset.Location = new System.Drawing.Point(254, 465);
             this.lblPictureAsset.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPictureAsset.Name = "lblPictureAsset";
             this.lblPictureAsset.Size = new System.Drawing.Size(143, 13);
@@ -280,7 +275,7 @@
             this.lblDataLastStateChange.BackColor = System.Drawing.Color.Transparent;
             this.lblDataLastStateChange.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDataLastStateChange.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDataLastStateChange.Location = new System.Drawing.Point(271, 314);
+            this.lblDataLastStateChange.Location = new System.Drawing.Point(255, 302);
             this.lblDataLastStateChange.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDataLastStateChange.Name = "lblDataLastStateChange";
             this.lblDataLastStateChange.Size = new System.Drawing.Size(140, 13);
@@ -293,7 +288,7 @@
             this.lblMake.BackColor = System.Drawing.Color.Transparent;
             this.lblMake.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMake.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblMake.Location = new System.Drawing.Point(353, 280);
+            this.lblMake.Location = new System.Drawing.Point(340, 369);
             this.lblMake.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMake.Name = "lblMake";
             this.lblMake.Size = new System.Drawing.Size(36, 13);
@@ -306,7 +301,7 @@
             this.lblModel.BackColor = System.Drawing.Color.Transparent;
             this.lblModel.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblModel.Location = new System.Drawing.Point(353, 251);
+            this.lblModel.Location = new System.Drawing.Point(340, 333);
             this.lblModel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModel.Name = "lblModel";
             this.lblModel.Size = new System.Drawing.Size(40, 13);
@@ -316,24 +311,26 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(428, 645);
+            this.btnDelete.Location = new System.Drawing.Point(413, 657);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(125, 33);
             this.btnDelete.TabIndex = 75;
             this.btnDelete.Text = "Delete Asset";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSaveChanges
             // 
             this.btnSaveChanges.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveChanges.Location = new System.Drawing.Point(285, 645);
+            this.btnSaveChanges.Location = new System.Drawing.Point(270, 657);
             this.btnSaveChanges.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(125, 33);
             this.btnSaveChanges.TabIndex = 74;
             this.btnSaveChanges.Text = "Save Changes";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // lblDisplay
             // 
@@ -341,17 +338,19 @@
             this.lblDisplay.BackColor = System.Drawing.Color.Transparent;
             this.lblDisplay.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDisplay.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDisplay.Location = new System.Drawing.Point(363, 29);
+            this.lblDisplay.Location = new System.Drawing.Point(307, 31);
             this.lblDisplay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(297, 21);
+            this.lblDisplay.Size = new System.Drawing.Size(377, 42);
             this.lblDisplay.TabIndex = 76;
-            this.lblDisplay.Text = "Make changes to the asset or delete it";
+            this.lblDisplay.Text = "Make changes to the asset or delete it\r\nAssign the asset to a user by typing the " +
+    "User\'s ID";
+            this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtLocation
             // 
             this.txtLocation.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocation.Location = new System.Drawing.Point(428, 407);
+            this.txtLocation.Location = new System.Drawing.Point(413, 429);
             this.txtLocation.Margin = new System.Windows.Forms.Padding(2);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Size = new System.Drawing.Size(173, 22);
@@ -363,7 +362,7 @@
             this.lblLocation.BackColor = System.Drawing.Color.Transparent;
             this.lblLocation.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocation.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblLocation.Location = new System.Drawing.Point(355, 416);
+            this.lblLocation.Location = new System.Drawing.Point(340, 438);
             this.lblLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLocation.Name = "lblLocation";
             this.lblLocation.Size = new System.Drawing.Size(50, 13);
@@ -374,22 +373,24 @@
             // 
             this.pbxProfile.BackColor = System.Drawing.Color.Transparent;
             this.pbxProfile.Image = global::CIS_3309_Term_Project.Properties.Resources.computerSymbol;
-            this.pbxProfile.Location = new System.Drawing.Point(425, 66);
+            this.pbxProfile.Location = new System.Drawing.Point(410, 84);
             this.pbxProfile.Margin = new System.Windows.Forms.Padding(2);
             this.pbxProfile.Name = "pbxProfile";
             this.pbxProfile.Size = new System.Drawing.Size(176, 139);
             this.pbxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxProfile.TabIndex = 79;
             this.pbxProfile.TabStop = false;
+            this.pbxProfile.Validated += new System.EventHandler(this.pbxProfile_Validated);
             // 
-            // textBox2
+            // txtAssetId
             // 
-            this.textBox2.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(428, 215);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 22);
-            this.textBox2.TabIndex = 84;
+            this.txtAssetId.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAssetId.Location = new System.Drawing.Point(413, 237);
+            this.txtAssetId.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAssetId.Name = "txtAssetId";
+            this.txtAssetId.ReadOnly = true;
+            this.txtAssetId.Size = new System.Drawing.Size(173, 22);
+            this.txtAssetId.TabIndex = 84;
             // 
             // lblAssetId
             // 
@@ -397,12 +398,34 @@
             this.lblAssetId.BackColor = System.Drawing.Color.Transparent;
             this.lblAssetId.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssetId.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAssetId.Location = new System.Drawing.Point(353, 224);
+            this.lblAssetId.Location = new System.Drawing.Point(338, 246);
             this.lblAssetId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssetId.Name = "lblAssetId";
             this.lblAssetId.Size = new System.Drawing.Size(50, 13);
             this.lblAssetId.TabIndex = 83;
             this.lblAssetId.Text = "Asset ID:";
+            // 
+            // txtAssignedUserID
+            // 
+            this.txtAssignedUserID.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAssignedUserID.Location = new System.Drawing.Point(413, 268);
+            this.txtAssignedUserID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAssignedUserID.Name = "txtAssignedUserID";
+            this.txtAssignedUserID.Size = new System.Drawing.Size(173, 22);
+            this.txtAssignedUserID.TabIndex = 85;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Ebrima", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblTitle.Location = new System.Drawing.Point(421, -1);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(137, 32);
+            this.lblTitle.TabIndex = 101;
+            this.lblTitle.Text = "Asset View";
             // 
             // frmAssetView
             // 
@@ -410,7 +433,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(989, 699);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.txtAssignedUserID);
+            this.Controls.Add(this.txtAssetId);
             this.Controls.Add(this.lblAssetId);
             this.Controls.Add(this.pbxProfile);
             this.Controls.Add(this.txtLocation);
@@ -420,7 +445,6 @@
             this.Controls.Add(this.btnSaveChanges);
             this.Controls.Add(this.txtStorage);
             this.Controls.Add(this.cboState);
-            this.Controls.Add(this.txtAssignedUserID);
             this.Controls.Add(this.lblAssignedUserID);
             this.Controls.Add(this.txtRam);
             this.Controls.Add(this.txtCPU);
@@ -429,9 +453,9 @@
             this.Controls.Add(this.lblCPU);
             this.Controls.Add(this.btnCloseViewAsset);
             this.Controls.Add(this.chkAssetAutofill);
-            this.Controls.Add(this.txtPictureAsset);
+            this.Controls.Add(this.txtAssetImage);
             this.Controls.Add(this.txtOS);
-            this.Controls.Add(this.txtDataLastStateChange);
+            this.Controls.Add(this.txtDateLastStateChange);
             this.Controls.Add(this.txtMake);
             this.Controls.Add(this.txtModel);
             this.Controls.Add(this.lblStorage);
@@ -443,6 +467,7 @@
             this.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmAssetView";
             this.Text = "Asset Manager System - Asset View";
+            this.Load += new System.EventHandler(this.frmAssetView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -453,7 +478,6 @@
 
         private System.Windows.Forms.TextBox txtStorage;
         private System.Windows.Forms.ComboBox cboState;
-        private System.Windows.Forms.TextBox txtAssignedUserID;
         private System.Windows.Forms.Label lblAssignedUserID;
         private System.Windows.Forms.TextBox txtRam;
         private System.Windows.Forms.TextBox txtCPU;
@@ -462,9 +486,9 @@
         private System.Windows.Forms.Label lblCPU;
         private System.Windows.Forms.Button btnCloseViewAsset;
         private System.Windows.Forms.CheckBox chkAssetAutofill;
-        private System.Windows.Forms.TextBox txtPictureAsset;
+        private System.Windows.Forms.TextBox txtAssetImage;
         private System.Windows.Forms.TextBox txtOS;
-        private System.Windows.Forms.TextBox txtDataLastStateChange;
+        private System.Windows.Forms.TextBox txtDateLastStateChange;
         private System.Windows.Forms.TextBox txtMake;
         private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.Label lblStorage;
@@ -479,7 +503,9 @@
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.PictureBox pbxProfile;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAssetId;
         private System.Windows.Forms.Label lblAssetId;
+        private System.Windows.Forms.TextBox txtAssignedUserID;
+        private System.Windows.Forms.Label lblTitle;
     }
 }

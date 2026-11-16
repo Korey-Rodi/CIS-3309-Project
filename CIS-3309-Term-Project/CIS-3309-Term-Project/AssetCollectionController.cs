@@ -51,12 +51,29 @@ namespace CIS_3309_Term_Project
             LoadAssets();
             return true;
         }
-        public bool DeleteAsset()
+        public bool DeleteAsset(Asset asset)
         {
+            String assetId = asset.AssetID.ToString();
+            UserExecuteQuery("DELETE FROM Assets WHERE AssetID = " + assetId + ";");
+            LoadAssets();
             return true;
         }
-        public bool EditAsset()
+        public bool EditAsset(Asset asset)
         {
+            String id = asset.AssetID.ToString();
+
+            //C# int unassigned = 0, while db does "NULL" which inserts it as blank.
+            String userAssignedIdValue = "NULL";
+            if (asset.AssignedUserId != 0)
+            {
+                userAssignedIdValue = asset.AssignedUserId.ToString();
+            }
+
+            UserExecuteQuery("UPDATE Assets SET " + "Make = '" + asset.Make + "', " + "Model = '" + asset.Model + "', " + "DateLastStateChange = '" + asset.Date.ToString("yyyy-MM-dd") + "', " +
+            "State = '" + asset.AssetState.ToString() + "', " + "Location = '" + asset.Location + "', " + "PictureAsset = '" + asset.AssetImage + "', " + "CPU = '" + asset.CPU + "', " +
+            "RAM = '" + asset.Ram + "', " + "OS = '" + asset.OS + "', " + "Storage = '" + asset.Storage + "', " +
+            "AssignedUserID = " + userAssignedIdValue + " " + "WHERE AssetID = " + id + ";");
+            LoadAssets();
             return true;
         }
         public List<Asset> LoadAssets()
@@ -123,7 +140,7 @@ namespace CIS_3309_Term_Project
             List<Asset> assets = new List<Asset>();
             foreach (Asset asset in assetCollection.Assets)
             {
-                if (asset.AssetState.Equals(Asset.State.In_Use.ToString()))
+                if (asset.AssetState == Asset.State.In_Use)
                 {
                     assets.Add(asset);
                 }
@@ -136,7 +153,7 @@ namespace CIS_3309_Term_Project
             List<Asset> assets = new List<Asset>();
             foreach (Asset asset in assetCollection.Assets)
             {
-                if (asset.AssetState.Equals(Asset.State.In_Stock.ToString()))
+                if (asset.AssetState == Asset.State.In_Stock)
                 {
                     assets.Add(asset);
                 }
@@ -148,15 +165,17 @@ namespace CIS_3309_Term_Project
         public List<Asset> LoadRecentAsset()
         {
             DateTime today = DateTime.Today;
-            DateTime future = today.AddDays(-14);
+            DateTime cutoff = today.AddDays(-14);
             List<Asset> assets = new List<Asset>();
             foreach(Asset asset in assetCollection.Assets)
             {
-                // I do no not want to continue this function until I know for sure how
-                // you are handling the format of these types
-                // Do I need to convert and such
+                //assets whose state changed in the last 14 days
+                if (asset.Date >= cutoff)
+                {
+                    assets.Add(asset);
+                }
             }
-            return null;
+            return assets;
         }
         public Dictionary<String, int> GetAssetsByState()
         {
@@ -194,6 +213,7 @@ namespace CIS_3309_Term_Project
         {
             List<Asset> Search(String search);
         }
+        /*
         public class SearchByID : ISearch
         {
             public List<Asset> Search(String search)
@@ -239,5 +259,6 @@ namespace CIS_3309_Term_Project
                 return results;
             }
         }
+        */
     }
 }

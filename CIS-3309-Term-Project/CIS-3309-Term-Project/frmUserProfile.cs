@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -43,7 +44,32 @@ namespace CIS_3309_Term_Project
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
+            try
+            {
+                //copy controls to user
+                currentUser.Username = txtUsername.Text;
+                currentUser.Password = txtPassword.Text;
+                currentUser.FirstName = txtFirst.Text;
+                currentUser.LastName = txtLast.Text;
+                currentUser.PhoneNumber = txtPhoneNumber.Text;
+                currentUser.Address = txtAddress.Text;
+                currentUser.City = txtCity.Text;
+                currentUser.State = txtState.Text;
+                currentUser.ProfilePicture = txtUrl.Text;
+                currentUser.UserDepartment = (User.Department)cbxDept.SelectedIndex;
 
+                UserCollection.EditUser(currentUser);
+                MessageBox.Show("Profile saved.", "Save Profile");
+                this.Close();
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void frmUserProfile_Load(object sender, EventArgs e)
@@ -66,6 +92,18 @@ namespace CIS_3309_Term_Project
             List<Asset> assets = AssetCollection.LoadMyDevices(currentUser);
             dgvMyAssets.DataSource = assets;
 
+        }
+
+        private void btnViewSelectedAsset_Click(object sender, EventArgs e)
+        {
+            Asset selectedAsset = (Asset)dgvMyAssets.CurrentRow.DataBoundItem; //gets whole object back
+            frmAssetView frm = new frmAssetView();
+            frm.currentAsset = selectedAsset;
+            frm.ShowDialog();
+
+            //refresh after edits/delete
+            AssetCollection.LoadAssets();
+            dgvMyAssets.DataSource = AssetCollection.LoadMyDevices(currentUser);
         }
     }
 }

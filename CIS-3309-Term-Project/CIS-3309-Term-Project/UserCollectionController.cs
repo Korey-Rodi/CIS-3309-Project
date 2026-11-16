@@ -20,7 +20,7 @@ namespace CIS_3309_Term_Project
         {
             myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=Asset.accdb;");
         }
-        private UserCollection Users;
+        //private UserCollection Users;
 
         //returns dataset info so we don't have to rewrite this on every sql involved method
         private DataSet UserRunQuery(string strSQL)
@@ -147,6 +147,7 @@ namespace CIS_3309_Term_Project
             return UsersByDept;
         }
         // User Search Interface
+        /*
         public interface ISearch
         {
             List<User> Search(String search);
@@ -211,5 +212,6 @@ namespace CIS_3309_Term_Project
                 return results;
             }
         }
+        */
     }
 }

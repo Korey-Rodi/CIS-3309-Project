@@ -28,6 +28,7 @@ namespace CIS_3309_Term_Project
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            userController.LoadUsers(); // refresh so edits/deletes/new users are in memory
             User currentUser = userController.ValidateUser(txtUser.Text, txtPassword.Text);
             if (currentUser != null)
             {
