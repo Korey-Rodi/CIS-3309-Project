@@ -91,5 +91,11 @@ namespace CIS_3309_Term_Project
         {
             dgvAsset.DataSource = myAssetController.LoadAssets();
         }
+
+        private void btnRecent_Click(object sender, EventArgs e)
+        {
+            dgvAsset.DataSource = myAssetController.LoadRecentAsset();
+
+        }
     }
 }

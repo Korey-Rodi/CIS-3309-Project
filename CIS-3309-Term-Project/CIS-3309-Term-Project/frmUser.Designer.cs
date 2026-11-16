@@ -41,6 +41,7 @@
             this.btnCreateUser = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,25 +51,25 @@
             this.dgvUser.AllowUserToDeleteRows = false;
             this.dgvUser.BackgroundColor = System.Drawing.Color.Gray;
             this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUser.Location = new System.Drawing.Point(14, 115);
+            this.dgvUser.Location = new System.Drawing.Point(21, 177);
+            this.dgvUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvUser.MultiSelect = false;
             this.dgvUser.Name = "dgvUser";
             this.dgvUser.ReadOnly = true;
             this.dgvUser.RowHeadersWidth = 62;
             this.dgvUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUser.Size = new System.Drawing.Size(948, 501);
+            this.dgvUser.Size = new System.Drawing.Size(1422, 771);
             this.dgvUser.TabIndex = 0;
             // 
             // lblNewForms
             // 
             this.lblNewForms.AutoSize = true;
             this.lblNewForms.BackColor = System.Drawing.Color.Transparent;
-            this.lblNewForms.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewForms.Font = new System.Drawing.Font("Ebrima", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewForms.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNewForms.Location = new System.Drawing.Point(22, 640);
-            this.lblNewForms.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNewForms.Location = new System.Drawing.Point(17, 1000);
             this.lblNewForms.Name = "lblNewForms";
-            this.lblNewForms.Size = new System.Drawing.Size(272, 26);
+            this.lblNewForms.Size = new System.Drawing.Size(360, 42);
             this.lblNewForms.TabIndex = 115;
             this.lblNewForms.Text = "Add a new user to the systems by hitting \"Create\"\r\nView a user\'s info by selectin" +
     "g it and hitting \"View\"";
@@ -79,19 +80,19 @@
             this.lblNotice.BackColor = System.Drawing.Color.Transparent;
             this.lblNotice.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNotice.Location = new System.Drawing.Point(503, 50);
-            this.lblNotice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNotice.Location = new System.Drawing.Point(754, 77);
             this.lblNotice.Name = "lblNotice";
-            this.lblNotice.Size = new System.Drawing.Size(239, 17);
+            this.lblNotice.Size = new System.Drawing.Size(369, 28);
             this.lblNotice.TabIndex = 114;
             this.lblNotice.Text = "Search by each category within users:";
             // 
             // btnLoadUsers
             // 
             this.btnLoadUsers.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadUsers.Location = new System.Drawing.Point(14, 66);
+            this.btnLoadUsers.Location = new System.Drawing.Point(21, 102);
+            this.btnLoadUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLoadUsers.Name = "btnLoadUsers";
-            this.btnLoadUsers.Size = new System.Drawing.Size(123, 33);
+            this.btnLoadUsers.Size = new System.Drawing.Size(184, 51);
             this.btnLoadUsers.TabIndex = 111;
             this.btnLoadUsers.Text = "Load All";
             this.btnLoadUsers.UseVisualStyleBackColor = true;
@@ -103,10 +104,9 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblName.Location = new System.Drawing.Point(593, 79);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Location = new System.Drawing.Point(890, 122);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(43, 17);
+            this.lblName.Size = new System.Drawing.Size(64, 28);
             this.lblName.TabIndex = 110;
             this.lblName.Text = "Value:";
             // 
@@ -116,37 +116,35 @@
             this.lblCategory.BackColor = System.Drawing.Color.Transparent;
             this.lblCategory.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategory.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCategory.Location = new System.Drawing.Point(381, 79);
-            this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategory.Location = new System.Drawing.Point(572, 122);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(64, 17);
+            this.lblCategory.Size = new System.Drawing.Size(96, 28);
             this.lblCategory.TabIndex = 109;
             this.lblCategory.Text = "Category:";
             // 
             // cboSearchAsset
             // 
             this.cboSearchAsset.FormattingEnabled = true;
-            this.cboSearchAsset.Location = new System.Drawing.Point(450, 75);
+            this.cboSearchAsset.Location = new System.Drawing.Point(675, 115);
+            this.cboSearchAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboSearchAsset.Name = "cboSearchAsset";
-            this.cboSearchAsset.Size = new System.Drawing.Size(132, 21);
+            this.cboSearchAsset.Size = new System.Drawing.Size(196, 28);
             this.cboSearchAsset.TabIndex = 108;
             // 
             // txtSearchAsset
             // 
             this.txtSearchAsset.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchAsset.Location = new System.Drawing.Point(660, 74);
-            this.txtSearchAsset.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearchAsset.Location = new System.Drawing.Point(990, 114);
             this.txtSearchAsset.Name = "txtSearchAsset";
-            this.txtSearchAsset.Size = new System.Drawing.Size(132, 22);
+            this.txtSearchAsset.Size = new System.Drawing.Size(196, 30);
             this.txtSearchAsset.TabIndex = 107;
             // 
             // btnSearchAsset
             // 
             this.btnSearchAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchAsset.Location = new System.Drawing.Point(837, 66);
-            this.btnSearchAsset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearchAsset.Location = new System.Drawing.Point(1256, 102);
             this.btnSearchAsset.Name = "btnSearchAsset";
-            this.btnSearchAsset.Size = new System.Drawing.Size(125, 33);
+            this.btnSearchAsset.Size = new System.Drawing.Size(188, 51);
             this.btnSearchAsset.TabIndex = 106;
             this.btnSearchAsset.Text = "Search";
             this.btnSearchAsset.UseVisualStyleBackColor = true;
@@ -154,9 +152,10 @@
             // btnViewUser
             // 
             this.btnViewUser.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewUser.Location = new System.Drawing.Point(496, 622);
+            this.btnViewUser.Location = new System.Drawing.Point(603, 987);
+            this.btnViewUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewUser.Name = "btnViewUser";
-            this.btnViewUser.Size = new System.Drawing.Size(174, 65);
+            this.btnViewUser.Size = new System.Drawing.Size(189, 71);
             this.btnViewUser.TabIndex = 104;
             this.btnViewUser.Text = "View";
             this.btnViewUser.UseVisualStyleBackColor = true;
@@ -165,9 +164,10 @@
             // btnCreateUser
             // 
             this.btnCreateUser.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateUser.Location = new System.Drawing.Point(316, 622);
+            this.btnCreateUser.Location = new System.Drawing.Point(406, 987);
+            this.btnCreateUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCreateUser.Name = "btnCreateUser";
-            this.btnCreateUser.Size = new System.Drawing.Size(174, 65);
+            this.btnCreateUser.Size = new System.Drawing.Size(189, 71);
             this.btnCreateUser.TabIndex = 103;
             this.btnCreateUser.Text = "Create";
             this.btnCreateUser.UseVisualStyleBackColor = true;
@@ -179,20 +179,32 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Ebrima", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTitle.Location = new System.Drawing.Point(420, 9);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Location = new System.Drawing.Point(630, 14);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(138, 32);
+            this.lblTitle.Size = new System.Drawing.Size(203, 48);
             this.lblTitle.TabIndex = 116;
             this.lblTitle.Text = "Users View";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(800, 987);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(189, 71);
+            this.btnDelete.TabIndex = 117;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // frmUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(988, 697);
+            this.ClientSize = new System.Drawing.Size(1482, 1072);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblNewForms);
             this.Controls.Add(this.lblNotice);
@@ -206,6 +218,7 @@
             this.Controls.Add(this.btnCreateUser);
             this.Controls.Add(this.dgvUser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmUser";
             this.ShowIcon = false;
             this.Text = "Asset Management System - Users";
@@ -231,5 +244,6 @@
         private System.Windows.Forms.Button btnCreateUser;
         private System.Windows.Forms.Label lblTitle;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

@@ -43,6 +43,8 @@
             this.lblNewForms = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnRecent = new System.Windows.Forms.Button();
+            this.btnCheck = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,22 +54,24 @@
             this.dgvAsset.AllowUserToDeleteRows = false;
             this.dgvAsset.BackgroundColor = System.Drawing.Color.Gray;
             this.dgvAsset.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAsset.Location = new System.Drawing.Point(12, 115);
+            this.dgvAsset.Location = new System.Drawing.Point(18, 177);
+            this.dgvAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvAsset.MultiSelect = false;
             this.dgvAsset.Name = "dgvAsset";
             this.dgvAsset.ReadOnly = true;
             this.dgvAsset.RowHeadersWidth = 62;
             this.dgvAsset.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAsset.Size = new System.Drawing.Size(964, 508);
+            this.dgvAsset.Size = new System.Drawing.Size(1446, 782);
             this.dgvAsset.TabIndex = 0;
             this.dgvAsset.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAsset_CellContentClick);
             // 
             // btnCreateAsset
             // 
             this.btnCreateAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAsset.Location = new System.Drawing.Point(284, 636);
+            this.btnCreateAsset.Location = new System.Drawing.Point(426, 978);
+            this.btnCreateAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCreateAsset.Name = "btnCreateAsset";
-            this.btnCreateAsset.Size = new System.Drawing.Size(138, 49);
+            this.btnCreateAsset.Size = new System.Drawing.Size(207, 75);
             this.btnCreateAsset.TabIndex = 1;
             this.btnCreateAsset.Text = "Create";
             this.btnCreateAsset.UseVisualStyleBackColor = true;
@@ -76,9 +80,10 @@
             // btnViewAsset
             // 
             this.btnViewAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAsset.Location = new System.Drawing.Point(428, 636);
+            this.btnViewAsset.Location = new System.Drawing.Point(642, 978);
+            this.btnViewAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewAsset.Name = "btnViewAsset";
-            this.btnViewAsset.Size = new System.Drawing.Size(138, 49);
+            this.btnViewAsset.Size = new System.Drawing.Size(207, 75);
             this.btnViewAsset.TabIndex = 2;
             this.btnViewAsset.Text = "View";
             this.btnViewAsset.UseVisualStyleBackColor = true;
@@ -90,10 +95,9 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblName.Location = new System.Drawing.Point(646, 84);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Location = new System.Drawing.Point(989, 129);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(43, 17);
+            this.lblName.Size = new System.Drawing.Size(64, 28);
             this.lblName.TabIndex = 96;
             this.lblName.Text = "Value:";
             // 
@@ -103,37 +107,35 @@
             this.lblCategory.BackColor = System.Drawing.Color.Transparent;
             this.lblCategory.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategory.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCategory.Location = new System.Drawing.Point(438, 84);
-            this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategory.Location = new System.Drawing.Point(713, 126);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(64, 17);
+            this.lblCategory.Size = new System.Drawing.Size(96, 28);
             this.lblCategory.TabIndex = 95;
             this.lblCategory.Text = "Category:";
             // 
             // cboSearchAsset
             // 
             this.cboSearchAsset.FormattingEnabled = true;
-            this.cboSearchAsset.Location = new System.Drawing.Point(519, 84);
+            this.cboSearchAsset.Location = new System.Drawing.Point(816, 130);
+            this.cboSearchAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboSearchAsset.Name = "cboSearchAsset";
-            this.cboSearchAsset.Size = new System.Drawing.Size(112, 21);
+            this.cboSearchAsset.Size = new System.Drawing.Size(166, 28);
             this.cboSearchAsset.TabIndex = 94;
             // 
             // txtSearchAsset
             // 
             this.txtSearchAsset.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchAsset.Location = new System.Drawing.Point(706, 83);
-            this.txtSearchAsset.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearchAsset.Location = new System.Drawing.Point(1059, 128);
             this.txtSearchAsset.Name = "txtSearchAsset";
-            this.txtSearchAsset.Size = new System.Drawing.Size(125, 22);
+            this.txtSearchAsset.Size = new System.Drawing.Size(186, 30);
             this.txtSearchAsset.TabIndex = 93;
             // 
             // btnSearchAsset
             // 
             this.btnSearchAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchAsset.Location = new System.Drawing.Point(848, 77);
-            this.btnSearchAsset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearchAsset.Location = new System.Drawing.Point(1272, 118);
             this.btnSearchAsset.Name = "btnSearchAsset";
-            this.btnSearchAsset.Size = new System.Drawing.Size(128, 31);
+            this.btnSearchAsset.Size = new System.Drawing.Size(192, 48);
             this.btnSearchAsset.TabIndex = 92;
             this.btnSearchAsset.Text = "Search";
             this.btnSearchAsset.UseVisualStyleBackColor = true;
@@ -141,9 +143,10 @@
             // btnLoadAssets
             // 
             this.btnLoadAssets.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadAssets.Location = new System.Drawing.Point(12, 77);
+            this.btnLoadAssets.Location = new System.Drawing.Point(18, 118);
+            this.btnLoadAssets.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLoadAssets.Name = "btnLoadAssets";
-            this.btnLoadAssets.Size = new System.Drawing.Size(118, 31);
+            this.btnLoadAssets.Size = new System.Drawing.Size(165, 48);
             this.btnLoadAssets.TabIndex = 97;
             this.btnLoadAssets.Text = "Load All";
             this.btnLoadAssets.UseVisualStyleBackColor = true;
@@ -152,9 +155,10 @@
             // btnLoadInUse
             // 
             this.btnLoadInUse.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadInUse.Location = new System.Drawing.Point(136, 77);
+            this.btnLoadInUse.Location = new System.Drawing.Point(191, 118);
+            this.btnLoadInUse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLoadInUse.Name = "btnLoadInUse";
-            this.btnLoadInUse.Size = new System.Drawing.Size(118, 31);
+            this.btnLoadInUse.Size = new System.Drawing.Size(165, 48);
             this.btnLoadInUse.TabIndex = 98;
             this.btnLoadInUse.Text = "In Use";
             this.btnLoadInUse.UseVisualStyleBackColor = true;
@@ -163,9 +167,10 @@
             // btnInStock
             // 
             this.btnInStock.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInStock.Location = new System.Drawing.Point(259, 77);
+            this.btnInStock.Location = new System.Drawing.Point(364, 118);
+            this.btnInStock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnInStock.Name = "btnInStock";
-            this.btnInStock.Size = new System.Drawing.Size(118, 31);
+            this.btnInStock.Size = new System.Drawing.Size(165, 48);
             this.btnInStock.TabIndex = 99;
             this.btnInStock.Text = "In Stock";
             this.btnInStock.UseVisualStyleBackColor = true;
@@ -177,10 +182,9 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Ebrima", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTitle.Location = new System.Drawing.Point(418, 9);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Location = new System.Drawing.Point(627, 14);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(148, 32);
+            this.lblTitle.Size = new System.Drawing.Size(218, 48);
             this.lblTitle.TabIndex = 100;
             this.lblTitle.Text = "Assets View";
             // 
@@ -190,10 +194,9 @@
             this.lblNewForms.BackColor = System.Drawing.Color.Transparent;
             this.lblNewForms.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewForms.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNewForms.Location = new System.Drawing.Point(13, 646);
-            this.lblNewForms.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNewForms.Location = new System.Drawing.Point(20, 994);
             this.lblNewForms.Name = "lblNewForms";
-            this.lblNewForms.Size = new System.Drawing.Size(266, 39);
+            this.lblNewForms.Size = new System.Drawing.Size(412, 69);
             this.lblNewForms.TabIndex = 102;
             this.lblNewForms.Text = "Add a new asset to the systems by hitting \"Create\"\r\nView an asset\'s info by selec" +
     "ting it and hitting \"View\"\r\nDelete an asset by selecting and hitting \"Delete\"\r\n";
@@ -204,31 +207,56 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(544, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(816, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 17);
+            this.label1.Size = new System.Drawing.Size(377, 28);
             this.label1.TabIndex = 115;
             this.label1.Text = "Search by each category within assets:";
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(573, 636);
+            this.btnDelete.Location = new System.Drawing.Point(860, 978);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(138, 49);
+            this.btnDelete.Size = new System.Drawing.Size(207, 75);
             this.btnDelete.TabIndex = 116;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnRecent
+            // 
+            this.btnRecent.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecent.Location = new System.Drawing.Point(537, 118);
+            this.btnRecent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRecent.Name = "btnRecent";
+            this.btnRecent.Size = new System.Drawing.Size(165, 48);
+            this.btnRecent.TabIndex = 117;
+            this.btnRecent.Text = "Load Recent";
+            this.btnRecent.UseVisualStyleBackColor = true;
+            this.btnRecent.Click += new System.EventHandler(this.btnRecent_Click);
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheck.Location = new System.Drawing.Point(1219, 978);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(207, 75);
+            this.btnCheck.TabIndex = 118;
+            this.btnCheck.Text = "Check In\r\nCheck Out";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            // 
             // frmAsset
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(988, 697);
+            this.ClientSize = new System.Drawing.Size(1482, 1072);
+            this.Controls.Add(this.btnCheck);
+            this.Controls.Add(this.btnRecent);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNewForms);
@@ -245,6 +273,7 @@
             this.Controls.Add(this.btnCreateAsset);
             this.Controls.Add(this.dgvAsset);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAsset";
             this.ShowIcon = false;
             this.Text = "Asset Manager System - Assets";
@@ -272,5 +301,7 @@
         private System.Windows.Forms.Label lblNewForms;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnRecent;
+        private System.Windows.Forms.Button btnCheck;
     }
 }

@@ -58,5 +58,26 @@ namespace CIS_3309_Term_Project
         {
             dgvUser.DataSource = myUserController.LoadUsers();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure?", "Delete Asset", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    User selectedAsset = (User)dgvUser.CurrentRow.DataBoundItem;
+                    myUserController.DeleteUser(selectedAsset);
+                    dgvUser.DataSource = myUserController.LoadUsers();
+                }
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }
