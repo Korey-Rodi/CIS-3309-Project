@@ -61,6 +61,7 @@ namespace CIS_3309_Term_Project
         "LastName = '" + user.LastName + "', " + "Department = '" + user.UserDepartment.ToString() + "', " + "ProfilePic = '" + user.ProfilePicture + "', " +
         "PhoneNumber = '" + user.PhoneNumber + "', " + "Address = '" + user.Address + "', " + "City = '" + user.City + "', " +
         "State = '" + user.State + "' " + "WHERE UserID = " + id + ";");
+            LoadUsers();
             return true;
         }
         public List<User> LoadUsers()
@@ -92,7 +93,10 @@ namespace CIS_3309_Term_Project
                 {
                     userDepartment = User.Department.Facility;
                 }
-                else 
+                else if((record["Department"].ToString() == "IT"))
+                {
+                    userDepartment = User.Department.IT;
+                } else
                 {
                     userDepartment = User.Department.IT;
                 }
@@ -147,17 +151,17 @@ namespace CIS_3309_Term_Project
             return UsersByDept;
         }
         // User Search Interface
-        /*
         public interface ISearch
         {
-            List<User> Search(String search);
+
+            List<User> Search(String search, UserCollection userCollection);
         }
         public class SearchByID : ISearch
         {
-            public List<User> Search(String search)
+            public List<User> Search(String search, UserCollection userCollection)
             {
                 List<User> results = new List<User>();
-                foreach(User user in UserCollection.Users)
+                foreach(User user in userCollection.Users)
                 {
                     if(user.UserID.ToString() == search)
                     {
@@ -169,10 +173,10 @@ namespace CIS_3309_Term_Project
         }
         public class SearchByFirstName : ISearch
         {
-            public List<User> Search(String search)
+            public List<User> Search(String search, UserCollection userCollection)
             {
                 List<User> results = new List<User>();
-                foreach(User user in UserCollection.Users)
+                foreach(User user in userCollection.Users)
                 {
                     if(user.FirstName == search)
                     {
@@ -184,10 +188,11 @@ namespace CIS_3309_Term_Project
         }
         public class SearchByLastName : ISearch
         {
-            public List<User> Search(String search)
+            private UserCollection userCollection;
+            public List<User> Search(String search, UserCollection userCollection)
             {
                 List<User> results = new List<User>();
-                foreach(User user in UserCollection.Users)
+                foreach(User user in userCollection.Users)
                 {
                     if(user.LastName == search)
                     {
@@ -199,10 +204,11 @@ namespace CIS_3309_Term_Project
         }
         public class SearchByUsername : ISearch
         {
-            public List<User> Search(String search)
+            private UserCollection userCollection;
+            public List<User> Search(String search, UserCollection userCollection)
             {
                 List<User> results = new List<User>();
-                foreach(User user in UserCollection.Users)
+                foreach(User user in userCollection.Users)
                 {
                     if(user.Username == search)
                     {
@@ -212,6 +218,5 @@ namespace CIS_3309_Term_Project
                 return results;
             }
         }
-        */
     }
 }

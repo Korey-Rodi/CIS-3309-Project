@@ -76,6 +76,21 @@ namespace CIS_3309_Term_Project
             LoadAssets();
             return true;
         }
+        public bool CheckInAsset(Asset asset)
+        {
+            int AssetID = asset.AssetID;
+            // We need to pass the user and set assign the assigned user to the this asset
+            UserExecuteQuery("UPDATE Assets SET State = 'In_Stock', AssignedUserID =  NULL " + "WHERE AssetID = " + AssetID + ";");
+            return true;
+        }
+        public bool CheckOutAsset(Asset asset, User user)
+        {
+            int AssetID = asset.AssetID;
+            int UserID = user.UserID;
+            // We need to pass the user and set assign the assigned user to the this asset
+            UserExecuteQuery("UPDATE Assets SET State = 'In_Use', AssignedUserID = " + UserID + " WHERE AssetID = " + AssetID + ";");
+            return true;
+        }
         public List<Asset> LoadAssets()
         {
             myDataSet = AssetRunQuery("SELECT * FROM Assets ORDER BY AssetID");
@@ -211,12 +226,12 @@ namespace CIS_3309_Term_Project
         // Asset Search Interface
         public interface ISearch
         {
-            List<Asset> Search(String search);
+            List<Asset> Search(String search, AssetCollection assetCollection);
         }
-        /*
         public class SearchByID : ISearch
         {
-            public List<Asset> Search(String search)
+            private AssetCollection assetCollection = new AssetCollection();
+            public List<Asset> Search(String search,AssetCollection assetCollection)
             {
                 List<Asset> results = new List<Asset>();
                 foreach(Asset asset in assetCollection.Assets)
@@ -231,7 +246,7 @@ namespace CIS_3309_Term_Project
         }
         public class SearchByMake : ISearch
         {
-            public List<Asset> Search(String search)
+            public List<Asset> Search(String search, AssetCollection assetCollection)
             {
                 List<Asset> results = new List<Asset>();
                 foreach(Asset asset in assetCollection.Assets)
@@ -246,7 +261,7 @@ namespace CIS_3309_Term_Project
         }
         public class SearchByModel : ISearch
         {
-            public List<Asset> Search(String search)
+            public List<Asset> Search(String search, AssetCollection assetCollection)
             {
                 List<Asset> results = new List<Asset>();
                 foreach(Asset asset in assetCollection.Assets)
@@ -259,6 +274,5 @@ namespace CIS_3309_Term_Project
                 return results;
             }
         }
-        */
     }
 }

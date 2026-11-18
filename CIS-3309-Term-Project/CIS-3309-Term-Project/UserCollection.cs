@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CIS_3309_Term_Project
 {
-    internal class UserCollection
+    public class UserCollection
     {
         public List<User> Users;
 
