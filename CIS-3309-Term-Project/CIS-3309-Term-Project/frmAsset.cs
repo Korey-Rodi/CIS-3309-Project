@@ -14,6 +14,8 @@ namespace CIS_3309_Term_Project
     public partial class frmAsset : Form
     {
         AssetCollectionController myAssetController;
+        AssetCollection assetCollection;
+        // Bring the current user from the dashboard form
         //BindingSource myBindingSource;
 
 
@@ -28,6 +30,7 @@ namespace CIS_3309_Term_Project
             {
                 myAssetController = new AssetCollectionController();
                 dgvAsset.DataSource = myAssetController.LoadAssets();
+                // Add assets to a form as well; there also might be an easier way to do this with data source
             }
             catch (OleDbException ex)
             {
@@ -54,6 +57,9 @@ namespace CIS_3309_Term_Project
             frm.currentAsset = selectedAsset;
             frm.ShowDialog();
             dgvAsset.DataSource = myAssetController.LoadAssets(); // has torefresh after edits
+
+            // See if this actually works on the call for the searches blah blah blah
+            //assetCollection.Assets;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

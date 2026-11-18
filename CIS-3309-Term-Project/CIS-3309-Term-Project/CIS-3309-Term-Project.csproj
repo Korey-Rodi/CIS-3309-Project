@@ -93,7 +93,6 @@
     <Compile Include="Asset.cs" />
     <Compile Include="AssetCollection.cs" />
     <Compile Include="AssetCollectionController.cs" />
-    <Compile Include="AssetController.cs" />
     <Compile Include="AssetDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,7 +151,6 @@
     <Compile Include="User.cs" />
     <Compile Include="UserCollection.cs" />
     <Compile Include="UserCollectionController.cs" />
-    <Compile Include="UserController.cs" />
     <EmbeddedResource Include="frmAsset.resx">
       <DependentUpon>frmAsset.cs</DependentUpon>
     </EmbeddedResource>

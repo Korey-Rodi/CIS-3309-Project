@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUser));
             this.dgvUser = new System.Windows.Forms.DataGridView();
             this.lblNewForms = new System.Windows.Forms.Label();
             this.lblNotice = new System.Windows.Forms.Label();
@@ -202,8 +203,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1482, 1072);
+            this.ClientSize = new System.Drawing.Size(1478, 1069);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblNewForms);

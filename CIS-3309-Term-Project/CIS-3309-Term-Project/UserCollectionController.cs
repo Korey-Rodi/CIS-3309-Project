@@ -188,7 +188,6 @@ namespace CIS_3309_Term_Project
         }
         public class SearchByLastName : ISearch
         {
-            private UserCollection userCollection;
             public List<User> Search(String search, UserCollection userCollection)
             {
                 List<User> results = new List<User>();
@@ -204,7 +203,6 @@ namespace CIS_3309_Term_Project
         }
         public class SearchByUsername : ISearch
         {
-            private UserCollection userCollection;
             public List<User> Search(String search, UserCollection userCollection)
             {
                 List<User> results = new List<User>();

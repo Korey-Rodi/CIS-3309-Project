@@ -44,7 +44,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRecent = new System.Windows.Forms.Button();
-            this.btnCheck = new System.Windows.Forms.Button();
+            this.btnCheckIn = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,21 +55,21 @@
             this.dgvAsset.AllowUserToDeleteRows = false;
             this.dgvAsset.BackgroundColor = System.Drawing.Color.Gray;
             this.dgvAsset.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAsset.Location = new System.Drawing.Point(18, 177);
+            this.dgvAsset.Location = new System.Drawing.Point(41, 204);
             this.dgvAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvAsset.MultiSelect = false;
             this.dgvAsset.Name = "dgvAsset";
             this.dgvAsset.ReadOnly = true;
             this.dgvAsset.RowHeadersWidth = 62;
             this.dgvAsset.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAsset.Size = new System.Drawing.Size(1446, 782);
+            this.dgvAsset.Size = new System.Drawing.Size(1377, 702);
             this.dgvAsset.TabIndex = 0;
             this.dgvAsset.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAsset_CellContentClick);
             // 
             // btnCreateAsset
             // 
             this.btnCreateAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAsset.Location = new System.Drawing.Point(426, 978);
+            this.btnCreateAsset.Location = new System.Drawing.Point(427, 916);
             this.btnCreateAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCreateAsset.Name = "btnCreateAsset";
             this.btnCreateAsset.Size = new System.Drawing.Size(207, 75);
@@ -80,7 +81,7 @@
             // btnViewAsset
             // 
             this.btnViewAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAsset.Location = new System.Drawing.Point(642, 978);
+            this.btnViewAsset.Location = new System.Drawing.Point(645, 916);
             this.btnViewAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnViewAsset.Name = "btnViewAsset";
             this.btnViewAsset.Size = new System.Drawing.Size(207, 75);
@@ -116,6 +117,10 @@
             // cboSearchAsset
             // 
             this.cboSearchAsset.FormattingEnabled = true;
+            this.cboSearchAsset.Items.AddRange(new object[] {
+            "AssetID",
+            "Make",
+            "Mode"});
             this.cboSearchAsset.Location = new System.Drawing.Point(816, 130);
             this.cboSearchAsset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboSearchAsset.Name = "cboSearchAsset";
@@ -143,7 +148,7 @@
             // btnLoadAssets
             // 
             this.btnLoadAssets.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadAssets.Location = new System.Drawing.Point(18, 118);
+            this.btnLoadAssets.Location = new System.Drawing.Point(18, 83);
             this.btnLoadAssets.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLoadAssets.Name = "btnLoadAssets";
             this.btnLoadAssets.Size = new System.Drawing.Size(165, 48);
@@ -155,7 +160,7 @@
             // btnLoadInUse
             // 
             this.btnLoadInUse.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadInUse.Location = new System.Drawing.Point(191, 118);
+            this.btnLoadInUse.Location = new System.Drawing.Point(191, 83);
             this.btnLoadInUse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLoadInUse.Name = "btnLoadInUse";
             this.btnLoadInUse.Size = new System.Drawing.Size(165, 48);
@@ -194,7 +199,7 @@
             this.lblNewForms.BackColor = System.Drawing.Color.Transparent;
             this.lblNewForms.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewForms.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNewForms.Location = new System.Drawing.Point(20, 994);
+            this.lblNewForms.Location = new System.Drawing.Point(14, 916);
             this.lblNewForms.Name = "lblNewForms";
             this.lblNewForms.Size = new System.Drawing.Size(412, 69);
             this.lblNewForms.TabIndex = 102;
@@ -216,7 +221,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(860, 978);
+            this.btnDelete.Location = new System.Drawing.Point(860, 916);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(207, 75);
@@ -237,25 +242,38 @@
             this.btnRecent.UseVisualStyleBackColor = true;
             this.btnRecent.Click += new System.EventHandler(this.btnRecent_Click);
             // 
-            // btnCheck
+            // btnCheckIn
             // 
-            this.btnCheck.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(1219, 978);
-            this.btnCheck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(207, 75);
-            this.btnCheck.TabIndex = 118;
-            this.btnCheck.Text = "Check In\r\nCheck Out";
-            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheckIn.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckIn.Location = new System.Drawing.Point(1075, 916);
+            this.btnCheckIn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCheckIn.Name = "btnCheckIn";
+            this.btnCheckIn.Size = new System.Drawing.Size(180, 75);
+            this.btnCheckIn.TabIndex = 118;
+            this.btnCheckIn.Text = "Check In\r\n";
+            this.btnCheckIn.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.Location = new System.Drawing.Point(1257, 916);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(161, 75);
+            this.btnCheckOut.TabIndex = 119;
+            this.btnCheckOut.Text = "Check Out";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
             // 
             // frmAsset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = global::CIS_3309_Term_Project.Properties.Resources.BlueGradientBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1482, 1072);
-            this.Controls.Add(this.btnCheck);
+            this.ClientSize = new System.Drawing.Size(1478, 1069);
+            this.Controls.Add(this.btnCheckOut);
+            this.Controls.Add(this.btnCheckIn);
             this.Controls.Add(this.btnRecent);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label1);
@@ -302,6 +320,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnRecent;
-        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Button btnCheckIn;
+        private System.Windows.Forms.Button btnCheckOut;
     }
 }

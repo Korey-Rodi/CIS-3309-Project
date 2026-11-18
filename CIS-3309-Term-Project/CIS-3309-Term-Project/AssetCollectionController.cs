@@ -79,7 +79,6 @@ namespace CIS_3309_Term_Project
         public bool CheckInAsset(Asset asset)
         {
             int AssetID = asset.AssetID;
-            // We need to pass the user and set assign the assigned user to the this asset
             UserExecuteQuery("UPDATE Assets SET State = 'In_Stock', AssignedUserID =  NULL " + "WHERE AssetID = " + AssetID + ";");
             return true;
         }
