@@ -14,6 +14,7 @@ namespace CIS_3309_Term_Project
     public partial class frmUser : Form
     {
         UserCollectionController myUserController;
+        UserCollection userCollection = new UserCollection();
 
         public frmUser()
         {
@@ -76,6 +77,68 @@ namespace CIS_3309_Term_Project
                     myUserController.DeleteUser(selectedAsset);
                     dgvUser.DataSource = myUserController.LoadUsers();
                 }
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void btnSearchAsset_Click(object sender, EventArgs e)
+        {
+            if (cboSearchUser.Text == "")
+            {
+                MessageBox.Show("Please select a category.");
+                return;
+            }
+            if (txtSearchUser.Text.Trim() == "")
+            {
+                MessageBox.Show("Please enter a value to search for.");
+                return;
+            }
+
+            try
+            {
+                userCollection.Users = myUserController.LoadUsers();
+
+                UserCollectionController.ISearch searcher;
+
+                //room to add more searches later, just add another else if
+                if (cboSearchUser.Text == "ID")
+                {
+                    searcher = new UserCollectionController.SearchByID();
+                }
+                else if (cboSearchUser.Text == "First Name")
+                {
+                    searcher = new UserCollectionController.SearchByFirstName();
+                }
+                else if (cboSearchUser.Text == "Last Name")
+                {
+                    searcher = new UserCollectionController.SearchByLastName();
+                }
+                else if (cboSearchUser.Text == "Username")
+                {
+                    searcher = new UserCollectionController.SearchByUsername();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Search Category");
+                    return;
+                }
+
+                // searches based on teh collection
+                List<User> results = searcher.Search(txtSearchUser.Text.Trim(), userCollection);
+
+                if (results.Count == 0)
+                {
+                    MessageBox.Show("No record found!");
+                }
+
+                dgvUser.DataSource = results;
             }
             catch (OleDbException ex)
             {

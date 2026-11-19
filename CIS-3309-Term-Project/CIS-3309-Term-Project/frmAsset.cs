@@ -14,7 +14,7 @@ namespace CIS_3309_Term_Project
     public partial class frmAsset : Form
     {
         AssetCollectionController myAssetController;
-        AssetCollection assetCollection;
+        AssetCollection assetCollection = new AssetCollection();
         // Bring the current user from the dashboard form
         //BindingSource myBindingSource;
 
@@ -102,6 +102,64 @@ namespace CIS_3309_Term_Project
         {
             dgvAsset.DataSource = myAssetController.LoadRecentAsset();
 
+        }
+
+        private void btnSearchAsset_Click(object sender, EventArgs e)
+        {
+            if (cboSearchAsset.Text == "")
+            {
+                MessageBox.Show("Please select a category.");
+                return;
+            }
+            if (txtSearchAsset.Text.Trim() == "")
+            {
+                MessageBox.Show("Please enter a value to search for.");
+                return;
+            }
+
+            try
+            {
+                assetCollection.Assets = myAssetController.LoadAssets();
+
+                AssetCollectionController.ISearch searcher;
+
+                //room to add more searches later, just add another else if
+                if (cboSearchAsset.Text == "ID")
+                {
+                    searcher = new AssetCollectionController.SearchByID();
+                }
+                else if (cboSearchAsset.Text == "Make")
+                {
+                    searcher = new AssetCollectionController.SearchByMake();
+                }
+                else if (cboSearchAsset.Text == "Model")
+                {
+                    searcher = new AssetCollectionController.SearchByModel();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Search Category");
+                    return;
+                }
+
+                // searches based on teh collection
+                List<Asset> results = searcher.Search(txtSearchAsset.Text.Trim(), assetCollection);
+
+                if (results.Count == 0)
+                {
+                    MessageBox.Show("No record found!");
+                }
+
+                dgvAsset.DataSource = results;
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message);
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }
