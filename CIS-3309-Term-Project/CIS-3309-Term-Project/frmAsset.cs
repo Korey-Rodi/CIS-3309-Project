@@ -161,5 +161,15 @@ namespace CIS_3309_Term_Project
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnCheckIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

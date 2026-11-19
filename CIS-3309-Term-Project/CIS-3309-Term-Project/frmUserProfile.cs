@@ -20,6 +20,8 @@ namespace CIS_3309_Term_Project
         {
             AssetCollection = assetCollection;
             currentUser = user;
+
+            
             InitializeComponent();
         }
 
@@ -74,10 +76,6 @@ namespace CIS_3309_Term_Project
 
         private void frmUserProfile_Load(object sender, EventArgs e)
         {
-            if (currentUser.ProfilePicture.Length > 0)
-            {
-                pbxProfile.Load(currentUser.ProfilePicture);
-            }
             txtUsername.Text = currentUser.Username;
             txtPassword.Text = currentUser.Password;
             txtFirst.Text = currentUser.FirstName;
@@ -91,7 +89,15 @@ namespace CIS_3309_Term_Project
             txtUrl.Text = currentUser.ProfilePicture;
             List<Asset> assets = AssetCollection.LoadMyDevices(currentUser);
             dgvMyAssets.DataSource = assets;
-
+            //throws an error but still works
+            try
+            {
+                pbxProfile.Load(currentUser.ProfilePicture);
+            }
+            catch (SystemException ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void btnViewSelectedAsset_Click(object sender, EventArgs e)

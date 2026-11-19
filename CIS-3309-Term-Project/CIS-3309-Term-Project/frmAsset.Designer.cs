@@ -129,7 +129,7 @@
             // 
             this.txtSearchAsset.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchAsset.Location = new System.Drawing.Point(567, 89);
-            this.txtSearchAsset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearchAsset.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearchAsset.Name = "txtSearchAsset";
             this.txtSearchAsset.Size = new System.Drawing.Size(125, 22);
             this.txtSearchAsset.TabIndex = 93;
@@ -138,7 +138,7 @@
             // 
             this.btnSearchAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchAsset.Location = new System.Drawing.Point(753, 82);
-            this.btnSearchAsset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearchAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearchAsset.Name = "btnSearchAsset";
             this.btnSearchAsset.Size = new System.Drawing.Size(128, 31);
             this.btnSearchAsset.TabIndex = 92;
@@ -250,6 +250,7 @@
             this.btnCheckIn.TabIndex = 118;
             this.btnCheckIn.Text = "Check In\r\n";
             this.btnCheckIn.UseVisualStyleBackColor = true;
+            this.btnCheckIn.Click += new System.EventHandler(this.btnCheckIn_Click);
             // 
             // btnCheckOut
             // 
@@ -260,6 +261,7 @@
             this.btnCheckOut.TabIndex = 119;
             this.btnCheckOut.Text = "Check Out";
             this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // frmAsset
             // 
