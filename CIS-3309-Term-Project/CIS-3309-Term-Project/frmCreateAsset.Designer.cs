@@ -62,7 +62,7 @@
             this.txtRam.Location = new System.Drawing.Point(423, 492);
             this.txtRam.Margin = new System.Windows.Forms.Padding(2);
             this.txtRam.Name = "txtRam";
-            this.txtRam.Size = new System.Drawing.Size(173, 30);
+            this.txtRam.Size = new System.Drawing.Size(173, 22);
             this.txtRam.TabIndex = 46;
             // 
             // txtCPU
@@ -71,7 +71,7 @@
             this.txtCPU.Location = new System.Drawing.Point(423, 458);
             this.txtCPU.Margin = new System.Windows.Forms.Padding(2);
             this.txtCPU.Name = "txtCPU";
-            this.txtCPU.Size = new System.Drawing.Size(173, 30);
+            this.txtCPU.Size = new System.Drawing.Size(173, 22);
             this.txtCPU.TabIndex = 45;
             // 
             // lblRAM
@@ -83,7 +83,7 @@
             this.lblRAM.Location = new System.Drawing.Point(350, 495);
             this.lblRAM.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRAM.Name = "lblRAM";
-            this.lblRAM.Size = new System.Drawing.Size(50, 23);
+            this.lblRAM.Size = new System.Drawing.Size(33, 13);
             this.lblRAM.TabIndex = 43;
             this.lblRAM.Text = "RAM:";
             // 
@@ -96,7 +96,7 @@
             this.lblState.Location = new System.Drawing.Point(349, 326);
             this.lblState.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(53, 23);
+            this.lblState.Size = new System.Drawing.Size(35, 13);
             this.lblState.TabIndex = 42;
             this.lblState.Text = "State:";
             // 
@@ -109,7 +109,7 @@
             this.lblCPU.Location = new System.Drawing.Point(350, 465);
             this.lblCPU.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCPU.Name = "lblCPU";
-            this.lblCPU.Size = new System.Drawing.Size(47, 23);
+            this.lblCPU.Size = new System.Drawing.Size(30, 13);
             this.lblCPU.TabIndex = 41;
             this.lblCPU.Text = "CPU:";
             // 
@@ -134,7 +134,7 @@
             this.chkAssetAutofill.Location = new System.Drawing.Point(394, 427);
             this.chkAssetAutofill.Margin = new System.Windows.Forms.Padding(2);
             this.chkAssetAutofill.Name = "chkAssetAutofill";
-            this.chkAssetAutofill.Size = new System.Drawing.Size(291, 27);
+            this.chkAssetAutofill.Size = new System.Drawing.Size(189, 17);
             this.chkAssetAutofill.TabIndex = 38;
             this.chkAssetAutofill.Text = "Autofill with my computer\'s specs";
             this.chkAssetAutofill.UseVisualStyleBackColor = false;
@@ -145,7 +145,7 @@
             this.txtLocation.Location = new System.Drawing.Point(422, 357);
             this.txtLocation.Margin = new System.Windows.Forms.Padding(2);
             this.txtLocation.Name = "txtLocation";
-            this.txtLocation.Size = new System.Drawing.Size(173, 30);
+            this.txtLocation.Size = new System.Drawing.Size(173, 22);
             this.txtLocation.TabIndex = 37;
             // 
             // txtMake
@@ -154,7 +154,7 @@
             this.txtMake.Location = new System.Drawing.Point(422, 287);
             this.txtMake.Margin = new System.Windows.Forms.Padding(2);
             this.txtMake.Name = "txtMake";
-            this.txtMake.Size = new System.Drawing.Size(173, 30);
+            this.txtMake.Size = new System.Drawing.Size(173, 22);
             this.txtMake.TabIndex = 34;
             // 
             // txtModel
@@ -163,7 +163,7 @@
             this.txtModel.Location = new System.Drawing.Point(422, 254);
             this.txtModel.Margin = new System.Windows.Forms.Padding(2);
             this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(173, 30);
+            this.txtModel.Size = new System.Drawing.Size(173, 22);
             this.txtModel.TabIndex = 33;
             // 
             // lblStorage
@@ -175,7 +175,7 @@
             this.lblStorage.Location = new System.Drawing.Point(350, 561);
             this.lblStorage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStorage.Name = "lblStorage";
-            this.lblStorage.Size = new System.Drawing.Size(73, 23);
+            this.lblStorage.Size = new System.Drawing.Size(47, 13);
             this.lblStorage.TabIndex = 32;
             this.lblStorage.Text = "Storage:";
             // 
@@ -188,7 +188,7 @@
             this.lblOS.Location = new System.Drawing.Point(350, 528);
             this.lblOS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOS.Name = "lblOS";
-            this.lblOS.Size = new System.Drawing.Size(36, 23);
+            this.lblOS.Size = new System.Drawing.Size(23, 13);
             this.lblOS.TabIndex = 30;
             this.lblOS.Text = "OS:";
             // 
@@ -201,7 +201,7 @@
             this.lblLocation.Location = new System.Drawing.Point(349, 360);
             this.lblLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(79, 23);
+            this.lblLocation.Size = new System.Drawing.Size(50, 13);
             this.lblLocation.TabIndex = 29;
             this.lblLocation.Text = "Location:";
             // 
@@ -214,7 +214,7 @@
             this.lblMake.Location = new System.Drawing.Point(347, 290);
             this.lblMake.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMake.Name = "lblMake";
-            this.lblMake.Size = new System.Drawing.Size(55, 23);
+            this.lblMake.Size = new System.Drawing.Size(36, 13);
             this.lblMake.TabIndex = 27;
             this.lblMake.Text = "Make:";
             // 
@@ -227,7 +227,7 @@
             this.lblModel.Location = new System.Drawing.Point(347, 261);
             this.lblModel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(62, 23);
+            this.lblModel.Size = new System.Drawing.Size(40, 13);
             this.lblModel.TabIndex = 26;
             this.lblModel.Text = "Model:";
             // 
@@ -244,7 +244,7 @@
             this.cboState.Location = new System.Drawing.Point(422, 323);
             this.cboState.Margin = new System.Windows.Forms.Padding(2);
             this.cboState.Name = "cboState";
-            this.cboState.Size = new System.Drawing.Size(173, 31);
+            this.cboState.Size = new System.Drawing.Size(173, 21);
             this.cboState.TabIndex = 50;
             // 
             // txtOS
@@ -253,7 +253,7 @@
             this.txtOS.Location = new System.Drawing.Point(423, 525);
             this.txtOS.Margin = new System.Windows.Forms.Padding(2);
             this.txtOS.Name = "txtOS";
-            this.txtOS.Size = new System.Drawing.Size(173, 30);
+            this.txtOS.Size = new System.Drawing.Size(173, 22);
             this.txtOS.TabIndex = 36;
             // 
             // txtStorage
@@ -262,7 +262,7 @@
             this.txtStorage.Location = new System.Drawing.Point(423, 558);
             this.txtStorage.Margin = new System.Windows.Forms.Padding(2);
             this.txtStorage.Name = "txtStorage";
-            this.txtStorage.Size = new System.Drawing.Size(173, 30);
+            this.txtStorage.Size = new System.Drawing.Size(173, 22);
             this.txtStorage.TabIndex = 51;
             // 
             // lblDisplay
@@ -274,7 +274,7 @@
             this.lblDisplay.Location = new System.Drawing.Point(348, 21);
             this.lblDisplay.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(472, 32);
+            this.lblDisplay.Size = new System.Drawing.Size(315, 21);
             this.lblDisplay.TabIndex = 76;
             this.lblDisplay.Text = "Input device information and hit create!";
             // 
@@ -284,7 +284,7 @@
             this.txtImageURL.Location = new System.Drawing.Point(422, 391);
             this.txtImageURL.Margin = new System.Windows.Forms.Padding(2);
             this.txtImageURL.Name = "txtImageURL";
-            this.txtImageURL.Size = new System.Drawing.Size(173, 30);
+            this.txtImageURL.Size = new System.Drawing.Size(173, 22);
             this.txtImageURL.TabIndex = 78;
             // 
             // label1
@@ -296,7 +296,7 @@
             this.label1.Location = new System.Drawing.Point(263, 394);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 23);
+            this.label1.Size = new System.Drawing.Size(143, 13);
             this.label1.TabIndex = 77;
             this.label1.Text = "Asset Image URL (Optional):";
             // 
@@ -332,17 +332,17 @@
             this.lblAssignedUser.Location = new System.Drawing.Point(418, 51);
             this.lblAssignedUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAssignedUser.Name = "lblAssignedUser";
-            this.lblAssignedUser.Size = new System.Drawing.Size(198, 32);
+            this.lblAssignedUser.Size = new System.Drawing.Size(133, 21);
             this.lblAssignedUser.TabIndex = 83;
             this.lblAssignedUser.Text = "lblAssignedUser";
             // 
             // frmCreateAsset
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1482, 1073);
+            this.ClientSize = new System.Drawing.Size(1482, 1061);
             this.Controls.Add(this.lblAssignedUser);
             this.Controls.Add(this.pbxProfile);
             this.Controls.Add(this.btnCancel);
@@ -369,6 +369,7 @@
             this.Controls.Add(this.lblModel);
             this.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmCreateAsset";
+            this.ShowIcon = false;
             this.Text = "Asset Manager System - Create Asset";
             this.Load += new System.EventHandler(this.frmCreateAsset_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).EndInit();

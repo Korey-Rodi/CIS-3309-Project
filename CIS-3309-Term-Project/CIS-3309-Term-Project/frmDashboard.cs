@@ -32,7 +32,7 @@ namespace CIS_3309_Term_Project
         //asset form
         private void viewAssetsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new frmAsset();
+            Form frm = new frmAsset(currentUser);
             frm.ShowDialog();
         }
         //user form 
@@ -64,13 +64,19 @@ namespace CIS_3309_Term_Project
             }
 
             fpBarChartUsersByDept.Plot.Clear();
-            fpBarChartUsersByDept.Plot.Add.Bars(xs, ys);
+            fpBarChartUsersByDept.Plot.Add.Bars(xs, ys).Color = Colors.DarkSeaGreen;
             fpBarChartUsersByDept.Plot.Axes.Bottom.SetTicks(xs, departments);
             fpBarChartUsersByDept.Plot.Axes.Margins(bottom: 0);
+            fpBarChartUsersByDept.Plot.DataBackground.Color = Colors.White;
+            fpBarChartUsersByDept.Plot.FigureBackground.Color = Colors.White;
+            fpBarChartUsersByDept.Plot.HideGrid();
+            fpBarChartUsersByDept.Plot.Grid.MajorLineColor = Colors.LightGray;
+            //fpBarChartUsersByDept.Plot.Title("Users By Department");
             fpBarChartUsersByDept.Plot.Axes.AutoScale();
             fpBarChartUsersByDept.Refresh();
 
 
+            // Populate Assets by state graph
             Dictionary<String, int> AssetsByState = assetCollection.GetAssetsByState();
             string[] State = AssetsByState.Keys.ToArray();
             int[] AssetsCount = AssetsByState.Values.ToArray();
@@ -85,11 +91,53 @@ namespace CIS_3309_Term_Project
             }
 
             fpBarChartAssetsByState.Plot.Clear();
-            fpBarChartAssetsByState.Plot.Add.Bars(x2, y2);
+            fpBarChartAssetsByState.Plot.Add.Bars(x2, y2).Color = Colors.YellowGreen;
             fpBarChartAssetsByState.Plot.Axes.Bottom.SetTicks(x2, State);
             fpBarChartAssetsByState.Plot.Axes.Margins(bottom: 0);
+            fpBarChartAssetsByState.Plot.DataBackground.Color = Colors.White;
+            fpBarChartAssetsByState.Plot.FigureBackground.Color = Colors.White;
+            fpBarChartAssetsByState.Plot.HideGrid();
+            fpBarChartAssetsByState.Plot.Grid.MajorLineColor = Colors.LightGray;
+            //fpBarChartAssetsByState.Plot.Title("Assets By State");
             fpBarChartUsersByDept.Plot.Axes.AutoScale();
             fpBarChartAssetsByState.Refresh();
+
+
+            // Populate pie chart of assets graph
+            fpPieChart.Plot.Clear();
+
+            int totalAssets = assetCollection.GetAssetCount();
+            List<PieSlice> slices = new List<PieSlice>
+            {
+                new PieSlice
+                {
+                    Value = totalAssets, FillColor = Colors.Orange, Label = "Total Assets " + totalAssets, LegendText = "Total Assets"
+                },
+                new PieSlice
+                {
+                    Value = 5, FillColor = Colors.Green, Label = "In Stock", LegendText = "In Stock"
+                },
+                new PieSlice
+                {
+                    Value = 8, FillColor = Colors.Blue, Label = "In Use", LegendText = "In Use"
+                },
+                new PieSlice
+                {
+                    Value = 12, FillColor = Colors.Yellow, Label = "Broken", LegendText = "Broken"
+                },
+                new PieSlice
+                {
+                    Value = 5, FillColor = Colors.Red, Label = "Retired", LegendText = "Retired"
+                }
+            };
+
+            fpPieChart.Plot.Add.Pie(slices);
+            fpPieChart.Plot.Axes.AutoScale();
+            fpPieChart.Plot.FigureBackground.Color = Colors.AliceBlue;
+            fpPieChart.Plot.Axes.Frameless();
+            fpPieChart.Plot.HideGrid();
+            fpPieChart.Plot.ShowLegend();
+            fpPieChart.Refresh();
         }
 
         private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)

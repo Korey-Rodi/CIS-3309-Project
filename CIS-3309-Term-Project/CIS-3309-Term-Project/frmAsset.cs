@@ -15,12 +15,14 @@ namespace CIS_3309_Term_Project
     {
         AssetCollectionController myAssetController;
         AssetCollection assetCollection = new AssetCollection();
+        User currentUser;
         // Bring the current user from the dashboard form
         //BindingSource myBindingSource;
 
 
-        public frmAsset()
+        public frmAsset(User user)
         {
+            currentUser = user;
             InitializeComponent();
         }
         private void frmAsset_Load(object sender, EventArgs e)
@@ -30,7 +32,6 @@ namespace CIS_3309_Term_Project
             {
                 myAssetController = new AssetCollectionController();
                 dgvAsset.DataSource = myAssetController.LoadAssets();
-                // Add assets to a form as well; there also might be an easier way to do this with data source
             }
             catch (OleDbException ex)
             {
@@ -41,6 +42,7 @@ namespace CIS_3309_Term_Project
 
         private void dgvAsset_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // I think this may have been added my mistake lets touch base and see if we can remove this
 
         }
 
@@ -52,7 +54,7 @@ namespace CIS_3309_Term_Project
 
         private void btnViewAsset_Click(object sender, EventArgs e)
         {
-            Asset selectedAsset = (Asset)dgvAsset.CurrentRow.DataBoundItem;//gets whole object back
+            Asset selectedAsset = (Asset)dgvAsset.CurrentRow.DataBoundItem; //gets whole object back
             frmAssetView frm = new frmAssetView();
             frm.currentAsset = selectedAsset;
             frm.ShowDialog();
@@ -164,11 +166,26 @@ namespace CIS_3309_Term_Project
 
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
-
+            Asset selectedAsset = (Asset)dgvAsset.CurrentRow.DataBoundItem;
+            if (myAssetController.CheckInAsset(selectedAsset))
+            {
+                MessageBox.Show("Successfully checked in user device");
+            } else
+            {
+                MessageBox.Show("Error checking in user device");
+            }
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
+            Asset selectedAsset = (Asset)dgvAsset.CurrentRow.DataBoundItem;
+            if (myAssetController.CheckOutAsset(selectedAsset, currentUser))
+            {
+                MessageBox.Show("Successfully checked out device");
+            } else
+            {
+                MessageBox.Show("Error checking out device");
+            }
 
         }
     }

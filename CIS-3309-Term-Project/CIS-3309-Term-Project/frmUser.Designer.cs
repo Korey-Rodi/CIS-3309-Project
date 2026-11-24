@@ -67,7 +67,7 @@
             this.lblNewForms.BackColor = System.Drawing.Color.Transparent;
             this.lblNewForms.Font = new System.Drawing.Font("Ebrima", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewForms.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNewForms.Location = new System.Drawing.Point(11, 650);
+            this.lblNewForms.Location = new System.Drawing.Point(166, 15);
             this.lblNewForms.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNewForms.Name = "lblNewForms";
             this.lblNewForms.Size = new System.Drawing.Size(255, 26);
@@ -81,7 +81,7 @@
             this.lblNotice.BackColor = System.Drawing.Color.Transparent;
             this.lblNotice.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNotice.Location = new System.Drawing.Point(503, 50);
+            this.lblNotice.Location = new System.Drawing.Point(581, 43);
             this.lblNotice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNotice.Name = "lblNotice";
             this.lblNotice.Size = new System.Drawing.Size(239, 17);
@@ -142,7 +142,7 @@
             // 
             this.txtSearchUser.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchUser.Location = new System.Drawing.Point(660, 74);
-            this.txtSearchUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearchUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearchUser.Name = "txtSearchUser";
             this.txtSearchUser.Size = new System.Drawing.Size(132, 22);
             this.txtSearchUser.TabIndex = 107;
@@ -151,7 +151,7 @@
             // 
             this.btnSearchAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchAsset.Location = new System.Drawing.Point(837, 66);
-            this.btnSearchAsset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearchAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearchAsset.Name = "btnSearchAsset";
             this.btnSearchAsset.Size = new System.Drawing.Size(125, 33);
             this.btnSearchAsset.TabIndex = 106;
@@ -185,14 +185,14 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Ebrima", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Ebrima", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTitle.Location = new System.Drawing.Point(420, 9);
+            this.lblTitle.Location = new System.Drawing.Point(22, 9);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(138, 32);
+            this.lblTitle.Size = new System.Drawing.Size(76, 32);
             this.lblTitle.TabIndex = 116;
-            this.lblTitle.Text = "Users View";
+            this.lblTitle.Text = "Users";
             // 
             // btnDelete
             // 

@@ -68,7 +68,7 @@
             // btnCreateAsset
             // 
             this.btnCreateAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAsset.Location = new System.Drawing.Point(285, 595);
+            this.btnCreateAsset.Location = new System.Drawing.Point(27, 595);
             this.btnCreateAsset.Name = "btnCreateAsset";
             this.btnCreateAsset.Size = new System.Drawing.Size(125, 49);
             this.btnCreateAsset.TabIndex = 1;
@@ -79,7 +79,7 @@
             // btnViewAsset
             // 
             this.btnViewAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAsset.Location = new System.Drawing.Point(416, 595);
+            this.btnViewAsset.Location = new System.Drawing.Point(250, 595);
             this.btnViewAsset.Name = "btnViewAsset";
             this.btnViewAsset.Size = new System.Drawing.Size(125, 49);
             this.btnViewAsset.TabIndex = 2;
@@ -137,10 +137,10 @@
             // btnSearchAsset
             // 
             this.btnSearchAsset.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchAsset.Location = new System.Drawing.Point(753, 82);
+            this.btnSearchAsset.Location = new System.Drawing.Point(747, 78);
             this.btnSearchAsset.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearchAsset.Name = "btnSearchAsset";
-            this.btnSearchAsset.Size = new System.Drawing.Size(128, 31);
+            this.btnSearchAsset.Size = new System.Drawing.Size(128, 33);
             this.btnSearchAsset.TabIndex = 92;
             this.btnSearchAsset.Text = "Search";
             this.btnSearchAsset.UseVisualStyleBackColor = true;
@@ -183,9 +183,9 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Ebrima", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Ebrima", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTitle.Location = new System.Drawing.Point(418, 9);
+            this.lblTitle.Location = new System.Drawing.Point(21, 9);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(148, 32);
@@ -198,7 +198,7 @@
             this.lblNewForms.BackColor = System.Drawing.Color.Transparent;
             this.lblNewForms.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNewForms.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNewForms.Location = new System.Drawing.Point(14, 595);
+            this.lblNewForms.Location = new System.Drawing.Point(476, 9);
             this.lblNewForms.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNewForms.Name = "lblNewForms";
             this.lblNewForms.Size = new System.Drawing.Size(266, 39);
@@ -222,7 +222,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(547, 595);
+            this.btnDelete.Location = new System.Drawing.Point(451, 595);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(125, 49);
             this.btnDelete.TabIndex = 116;
@@ -244,7 +244,7 @@
             // btnCheckIn
             // 
             this.btnCheckIn.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckIn.Location = new System.Drawing.Point(678, 595);
+            this.btnCheckIn.Location = new System.Drawing.Point(633, 595);
             this.btnCheckIn.Name = "btnCheckIn";
             this.btnCheckIn.Size = new System.Drawing.Size(125, 49);
             this.btnCheckIn.TabIndex = 118;
@@ -255,7 +255,7 @@
             // btnCheckOut
             // 
             this.btnCheckOut.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut.Location = new System.Drawing.Point(809, 595);
+            this.btnCheckOut.Location = new System.Drawing.Point(820, 595);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(125, 49);
             this.btnCheckOut.TabIndex = 119;
